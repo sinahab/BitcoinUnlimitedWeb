@@ -28,6 +28,10 @@ module.exports = function(grunt) {
                 '**/*.gz'
             ],
             tasks: ['copy']
+        },
+        sass: {
+            files: ['src/public/css/*.scss'],
+            tasks: ['sass']
         }
     };
 

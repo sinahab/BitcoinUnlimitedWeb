@@ -54,6 +54,7 @@
     "grunt-config-dir": "^0.3.2",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1",
     "history": "^1.17.0",
     "nodemon": "^1.11.0",
