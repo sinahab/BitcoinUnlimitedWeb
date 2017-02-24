@@ -23,26 +23,27 @@ export default React.createClass({
                                 <img src='/img/bitcoin-unlimited.png' width='98%' height='100%' />
                             </Link>
                         </li>
-                        <li className={this.getClassName('index')}>
-                            <Link to='/'>{strings().header.home}</Link>
+
+                        <li className={this.getClassName('solutions')}>
+                            <Link to='/solutions'>{strings().header.solutions}</Link>
                         </li>
-                        <li className={this.getClassName('download')}>
-                            <Link to='/download'>{strings().header.download}</Link>
-                        </li>
-                        <li className={this.getClassName('faq')}>
-                            <Link to='/faq'>{strings().header.faq}</Link>
-                        </li>
-                        <li className={this.getClassName('buip')}>
-                            <Link to='/buip'>{strings().header.proposals}</Link>
-                        </li>
-                        <li className={this.getClassName('members')}>
-                            <Link to='/members'>{strings().header.members}</Link>
+                        <li className={this.getClassName('technologies')}>
+                            <Link to='/technologies'>{strings().header.technologies}</Link>
                         </li>
                         <li className={this.getClassName('resources')}>
                             <Link to='/resources'>{strings().header.resources}</Link>
                         </li>
-                        <li className={this.getClassName('conference')}>
-                            <Link to='/conferences'>{strings().header.conference}</Link>
+                        <li className={this.getClassName('faq')}>
+                            <Link to='/faq'>{strings().header.faq}</Link>
+                        </li>
+                        <li className={this.getClassName('members')}>
+                            <Link to='/members'>{strings().header.about}</Link>
+                        </li>
+                        <li className={this.getClassName('donate')}>
+                            <Link to='/donate'>{strings().header.donate}</Link>
+                        </li>
+                        <li className={this.getClassName('download')}>
+                            <Link to='/download'>{strings().header.download}</Link>
                         </li>
                     </ul>
                 </nav>

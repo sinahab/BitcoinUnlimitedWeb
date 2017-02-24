@@ -103,17 +103,70 @@
         "free": "Free and Decentralized",
         "freeText": "Free and decentralised emerging consensus."
     },
+    "index": {
+        "hero": {
+            "title": "The Peer-to-Peer Electronic Cash System for Planet Earth",
+            "subtitle": "Using Emergent Consensus and safe signalling to enable on-chain scaling.",
+            "button": "Download Bitcoin Unlimited"
+        },
+        "solutions": {
+            "title": "Solutions",
+            "description": "Bitcoin Unlimited provides a voice to all stakeholders in the Bitcoin ecosystem.",
+            "users": {
+                "title": "For Users",
+                "body": "Bitcoin is a worldwide peer-to-peer electronic cash system. To the members of Bitcoin Unlimited, this means low and predictable fees, reliable confirmation times, and useable instant transactions."
+            },
+            "nodes": {
+                "title": "For Node Operators",
+                "body": "Bigger blocks are coming. When they arrive, you want your node to be ready. Bitcoin Unlimited allows you to securely track consensus as defined by the most proof-of-work chain composed of valid transactions, regardless of the outcome of the \"block size limit debate.\""
+            },
+            "miners": {
+                "title": "For Miners",
+                "body": "Say \"no\" to supply quotas and central planning of the block space market. If there is demand for block space, miners should be free to compete to meet that demand. By running Bitcoin Unlimited, you are casting a vote to continue growing Bitcoin in the most simple and proven manner: with more on-chain transactions."
+            },
+            "investors": {
+                "title": "For Investors",
+                "body": "Supporting our objective to lift the block size limit will return control over Bitcoin's evolution back to the market. By removing this limit, Bitcoin's user base will be free to grow, along with it its market capitalization."
+            },
+            "link": "Learn more"
+        },
+        "divider": "Bitcoin is the world's first electronic cash system, allowing users to send payments quickly, cheaply, and from anywhere with an Internet connection, all without relying on banks, payment processors, or any other third party. Bitcoin Unlimited software helps the network backbone scale to meet the demands of this global economy.",
+        "technologies": {
+            "title": "Technologies",
+            "description": "Bitcoin Unlimited powers the backbone of the Bitcoin network by using novel technologies.",
+            "consensus": {
+                "title": "Emergent Consensus",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            "xthin": {
+                "title": "Xthin",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            "shaping": {
+                "title": "Traffic shaping",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            "validation": {
+                "title": "Parallel validation",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            "research": {
+                "title": "Our research",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            }
+        }
+    },
     "member": {
         "application": "Application"
     },
     "header": {
-        "home": "Home",
         "download": "Download",
+        "donate": "Donate",
+        "about": "About",
         "faq": "FAQ",
-        "proposals": "Proposals",
-        "members": "Members",
         "resources": "Resources",
-        "conference": "Conferences"
+        "solutions": "Solutions",
+        "technologies": "Technologies",
     },
     "footer": {
         "latest": "Our Latest Work",
