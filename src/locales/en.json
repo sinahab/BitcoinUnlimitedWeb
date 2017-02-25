@@ -156,6 +156,42 @@
             }
         }
     },
+    "solutions": {
+        "title": "Solutions",
+        "subtitle": "Bitcoin Unlimited provides a voice to all stakeholders in the Bitcoin ecosystem.",
+        "users": {
+            "title": "For Users",
+            "body": [
+                "Say \"no\" to supply quotas and central planning of the block space market. If there is demand for block space, miners should be free to compete to meet that demand. By running Bitcoin Unlimited, you are literally casting a vote in your coinbase transaction for a free market in block space, and thus a vote to continue growing Bitcoin in the most simple and proven manner: with more on-chain transactions.",
+                "Watch the block size preference of the network evolve by examining the block-size limit settings of both network nodes (expressed in the user-agent string) and other miners (expressed in the coinbase transactions), ensuring that you always have precise information regarding how big you can safely make your blocks.",
+                "But Bitcoin Unlimited is not just about a free market in block space. Bitcoin Unlimited’s Xpedited block relay (based on Xthin technology) ensures that you're always mining on the latest block and that the blocks you solve propagate across the network quickly regardless of their size, increasing your profitability. Bitcoin Unlimited developers are also happy to work with progressive miners to ensure that the features you need to be successful are included in our software."
+            ]
+        },
+        "nodes": {
+            "title": "For Node Operators",
+            "body": [
+                "Say \"no\" to supply quotas and central planning of the block space market. If there is demand for block space, miners should be free to compete to meet that demand. By running Bitcoin Unlimited, you are literally casting a vote in your coinbase transaction for a free market in block space, and thus a vote to continue growing Bitcoin in the most simple and proven manner: with more on-chain transactions.",
+                "Watch the block size preference of the network evolve by examining the block-size limit settings of both network nodes (expressed in the user-agent string) and other miners (expressed in the coinbase transactions), ensuring that you always have precise information regarding how big you can safely make your blocks.",
+                "But Bitcoin Unlimited is not just about a free market in block space. Bitcoin Unlimited’s Xpedited block relay (based on Xthin technology) ensures that you're always mining on the latest block and that the blocks you solve propagate across the network quickly regardless of their size, increasing your profitability. Bitcoin Unlimited developers are also happy to work with progressive miners to ensure that the features you need to be successful are included in our software."
+            ]
+        },
+        "miners": {
+            "title": "For Miners",
+            "body": [
+                "Say \"no\" to supply quotas and central planning of the block space market. If there is demand for block space, miners should be free to compete to meet that demand. By running Bitcoin Unlimited, you are literally casting a vote in your coinbase transaction for a free market in block space, and thus a vote to continue growing Bitcoin in the most simple and proven manner: with more on-chain transactions.",
+                "Watch the block size preference of the network evolve by examining the block-size limit settings of both network nodes (expressed in the user-agent string) and other miners (expressed in the coinbase transactions), ensuring that you always have precise information regarding how big you can safely make your blocks.",
+                "But Bitcoin Unlimited is not just about a free market in block space. Bitcoin Unlimited’s Xpedited block relay (based on Xthin technology) ensures that you're always mining on the latest block and that the blocks you solve propagate across the network quickly regardless of their size, increasing your profitability. Bitcoin Unlimited developers are also happy to work with progressive miners to ensure that the features you need to be successful are included in our software."
+            ]
+        },
+        "investors": {
+            "title": "For Investors",
+            "body": [
+                "Say \"no\" to supply quotas and central planning of the block space market. If there is demand for block space, miners should be free to compete to meet that demand. By running Bitcoin Unlimited, you are literally casting a vote in your coinbase transaction for a free market in block space, and thus a vote to continue growing Bitcoin in the most simple and proven manner: with more on-chain transactions.",
+                "Watch the block size preference of the network evolve by examining the block-size limit settings of both network nodes (expressed in the user-agent string) and other miners (expressed in the coinbase transactions), ensuring that you always have precise information regarding how big you can safely make your blocks.",
+                "But Bitcoin Unlimited is not just about a free market in block space. Bitcoin Unlimited’s Xpedited block relay (based on Xthin technology) ensures that you're always mining on the latest block and that the blocks you solve propagate across the network quickly regardless of their size, increasing your profitability. Bitcoin Unlimited developers are also happy to work with progressive miners to ensure that the features you need to be successful are included in our software."
+            ]
+        }
+    },
     "member": {
         "application": "Application"
     },

@@ -6,6 +6,8 @@ import { Router, Route, Link, IndexRoute } from 'react-router';
 import { createHistory } from 'history';
 
 import Index from './pages/index.jsx';
+import Solutions from './pages/solutions.jsx';
+
 import Download from './pages/download.jsx';
 import Faq from './pages/faq.jsx';
 import Buip from './pages/buip.jsx';
@@ -21,6 +23,8 @@ ReactDOM.render((
         <Route path='/'>
             <IndexRoute component={Index} />
             <Route path='index' component={Index} />
+            <Route path='solutions' component={Solutions} />
+
             <Route path='download' component={Download} />
             <Route path='faq' component={Faq} />
             <Route path='buip' component={Buip} />
