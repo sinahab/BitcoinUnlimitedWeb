@@ -48,7 +48,7 @@ class Solutions extends React.Component {
 
     getInvestorsTitle() {
         return (
-            <div className="inline-block bold">
+            <div className="inline-block">
                 <div className='inline pr1 icon--center'>
                     <InvestorIcon width='25' height='25' />
                 </div>
@@ -59,7 +59,7 @@ class Solutions extends React.Component {
 
     getUsersTitle() {
         return (
-            <div className="inline-block bold">
+            <div className="inline-block">
                 <div className='inline pr1 icon--center'>
                     <UserIcon width='20' height='24' />
                 </div>
@@ -70,7 +70,7 @@ class Solutions extends React.Component {
 
     getMinersTitle() {
         return (
-            <div className="inline-block bold">
+            <div className="inline-block">
                 <div className='inline pr1 icon--center'>
                     <MinerIcon width='24' height='20' />
                 </div>
@@ -81,7 +81,7 @@ class Solutions extends React.Component {
 
     getNodesTitle() {
         return (
-            <div className="inline-block bold">
+            <div className="inline-block">
                 <div className='inline pr1 icon--center'>
                     <NodeIcon width='25' height='25' />
                 </div>

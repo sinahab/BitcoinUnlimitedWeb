@@ -21,7 +21,7 @@ import Conferences from './pages/conferences.jsx';
 import Donate from './pages/donate.jsx';
 
 ReactDOM.render((
-    <Router history={createHistory()}>
+    <Router onUpdate={() => window.scrollTo(0, 0)} history={createHistory()}>
         <Route path='/'>
             <IndexRoute component={Index} />
             <Route path='index' component={Index} />
