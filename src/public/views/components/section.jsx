@@ -42,7 +42,9 @@ class Section extends React.Component {
     render() {
         return (
             <div>
-                { this.renderDisclosureArrow() }
+                <div className='inline pr1'>
+                    { this.renderDisclosureArrow() }
+                </div>
                 { this.props.title }
                 <div className={this.getExpandedClass()}>{ this.props.body }</div>
             </div>

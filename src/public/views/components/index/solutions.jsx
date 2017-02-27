@@ -3,6 +3,10 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { strings } from '../../../lib/i18n';
+import UserIcon from '../icons/userIcon.jsx'
+import InvestorIcon from '../icons/investorIcon.jsx'
+import MinerIcon from '../icons/minerIcon.jsx'
+import NodeIcon from '../icons/nodeIcon.jsx'
 
 export default React.createClass({
 
@@ -14,25 +18,45 @@ export default React.createClass({
 
                 <div>
                     <div className="align-top left-align px4 py3 inline-block info__container">
-                        <div className='bold'>{ strings().index.solutions.users.title }</div>
+                        <div className='bold'>
+                            <div className='inline pr1 icon--center'>
+                                <UserIcon width='20' height='24' />
+                            </div>
+                            { strings().index.solutions.users.title }
+                        </div>
                         <div className='lh-copy py1'>{ strings().index.solutions.users.body }</div>
                         <Link className='link--underline dim gray pt1' to="/solutions/users">{ strings().index.solutions.link }</Link>
                     </div>
                     <div className="align-top left-align px4 py3 inline-block info__container">
-                        <div className='bold'>{ strings().index.solutions.nodes.title }</div>
+                        <div className='bold'>
+                            <div className='inline pr1 icon--center'>
+                                <NodeIcon width='25' height='25' />
+                            </div>
+                            { strings().index.solutions.nodes.title }
+                        </div>
                         <div className='lh-copy py1'>{ strings().index.solutions.nodes.body }</div>
                         <Link className='link--underline dim gray pt1' to="/solutions/nodes">{ strings().index.solutions.link }</Link>
                     </div>
                 </div>
                 <div>
                     <div className="align-top left-align px4 py3 inline-block info__container">
-                        <div className='bold'>{ strings().index.solutions.miners.title }</div>
+                        <div className='bold'>
+                            <div className='inline pr1 icon--center'>
+                                <MinerIcon width='24' height='20' />
+                            </div>
+                            { strings().index.solutions.miners.title }
+                        </div>
                         <div className='lh-copy py1'>{ strings().index.solutions.miners.body }</div>
                         <Link className='link--underline dim gray pt1' to="/solutions/miners">{ strings().index.solutions.link }</Link>
                     </div>
 
                     <div className="align-top left-align px4 py3 inline-block info__container">
-                        <div className='bold'>{ strings().index.solutions.investors.title }</div>
+                        <div className='bold'>
+                            <div className='inline pr1 icon--center'>
+                                <InvestorIcon width='25' height='25' />
+                            </div>
+                            { strings().index.solutions.investors.title }
+                        </div>
                         <div className='lh-copy py1'>{ strings().index.solutions.investors.body }</div>
                         <Link className='link--underline dim gray pt1' to="/solutions/investors">{ strings().index.solutions.link }</Link>
                     </div>
