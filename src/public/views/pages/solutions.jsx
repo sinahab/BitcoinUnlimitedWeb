@@ -2,15 +2,12 @@
 
 import React from 'react';
 import { strings } from '../../lib/i18n';
-
-import Header from '../header.jsx';
-import Footer from '../footer.jsx';
-import Section from '../components/section.jsx'
+import Page from '../page.jsx'
 
 class Solutions extends React.Component {
     constructor(props) {
         super(props)
-        
+
         this.sections = [
             {
                 key: 'users',
@@ -98,21 +95,12 @@ class Solutions extends React.Component {
 
     render() {
         return (
-            <div id='solutions'>
-                <Header active='solutions' />
-                <div>
-                    <div>{ strings().solutions.title }</div>
-                    <div>{ strings().solutions.subtitle }</div>
-
-                    <div>
-                        { this.sections.map((section) => {
-                            return <Section key={section.key} expanded={section.expanded} title={section.title} body={section.body} />
-                        }) }
-                    </div>
-
-                </div>
-                <Footer />
-            </div>
+            <Page
+                name="solutions"
+                title={ strings().solutions.title }
+                subtitle={ strings().solutions.subtitle }
+                sections={ this.sections }
+                />
         );
     }
 }

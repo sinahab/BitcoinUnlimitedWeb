@@ -3,9 +3,7 @@
 import React from 'react';
 import { strings } from '../../lib/i18n';
 
-import Header from '../header.jsx';
-import Footer from '../footer.jsx';
-import Section from '../components/section.jsx'
+import Page from '../page.jsx';
 
 class Technologies extends React.Component {
     constructor(props) {
@@ -67,21 +65,12 @@ class Technologies extends React.Component {
 
     render() {
         return (
-            <div id='technologies'>
-                <Header active='technologies' />
-                <div>
-                    <div>{ strings().technologies.title }</div>
-                    <div>{ strings().technologies.subtitle }</div>
-
-                    <div>
-                        { this.sections.map((section) => {
-                            return <Section key={section.key} expanded={section.expanded} title={section.title} body={section.body} />
-                        }) }
-                    </div>
-
-                </div>
-                <Footer />
-            </div>
+            <Page
+                name="technologies"
+                title={ strings().technologies.title }
+                subtitle={ strings().technologies.subtitle }
+                sections={ this.sections }
+                />
         );
     }
 }
