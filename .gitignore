@@ -3,3 +3,4 @@
 node_modules
 src/public/components
 .sass-cache
+.DS_Store

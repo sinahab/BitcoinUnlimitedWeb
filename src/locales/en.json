@@ -192,6 +192,42 @@
             ]
         }
     },
+    "technologies": {
+        "title": "Technologies",
+        "subtitle": "Bitcoin Unlimited powers the backbone of the Bitcoin network by using novel technologies.",
+        "emergentConsensus": {
+            "title": "Emergent Consensus",
+            "body": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum volutpat aliquam. Donec luctus purus vel lectus auctor, eget blandit ante lobortis. Sed non lectus faucibus, auctor augue at, feugiat odio. Ut nisl arcu, pretium faucibus massa nec, finibus lobortis neque. Aliquam vel orci a dolor efficitur placerat. Aenean luctus, ipsum eu feugiat vestibulum, enim elit auctor leo, vitae dapibus arcu tortor nec leo."
+            ]
+        },
+        "xthin": {
+            "title": "Xthin",
+            "body": [
+                "Xthin fixes an inefficiency that exists in Bitcoin Core that results in transactions often being received twice by each node: once when the transaction is first broadcast by a user to the peer-to-peer network, and again when a solved block containing the now-confirmed transaction is found by a miner.",
+                "Rather than requesting the block verbatim, an Xthin-equipped node images its mempool onto a Bloom filter that its sends with its \"get data\" request; the transmitting node sends the block contents by hash for all the transactions imaged onto the Bloom filter and in full otherwise. In the unlikely event that the receiving node is unable to reconstruct the block, it requests the still-missing transactions, resulting in a second round trip between the nodes."
+            ]
+        },
+        "bandwidthShaping": {
+            "title": "Bandwidth shaping",
+            "body": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum volutpat aliquam. Donec luctus purus vel lectus auctor, eget blandit ante lobortis. Sed non lectus faucibus, auctor augue at, feugiat odio. Ut nisl arcu, pretium faucibus massa nec, finibus lobortis neque. Aliquam vel orci a dolor efficitur placerat. Aenean luctus, ipsum eu feugiat vestibulum, enim elit auctor leo, vitae dapibus arcu tortor nec leo."
+            ]
+        },
+        "parallelValidation": {
+            "title": "Parallel Validation",
+            "body": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum volutpat aliquam. Donec luctus purus vel lectus auctor, eget blandit ante lobortis. Sed non lectus faucibus, auctor augue at, feugiat odio. Ut nisl arcu, pretium faucibus massa nec, finibus lobortis neque. Aliquam vel orci a dolor efficitur placerat. Aenean luctus, ipsum eu feugiat vestibulum, enim elit auctor leo, vitae dapibus arcu tortor nec leo."
+            ]
+        },
+        "ourResearch": {
+            "title": "Our Research",
+            "body": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum volutpat aliquam. Donec luctus purus vel lectus auctor, eget blandit ante lobortis. Sed non lectus faucibus, auctor augue at, feugiat odio. Ut nisl arcu, pretium faucibus massa nec, finibus lobortis neque. Aliquam vel orci a dolor efficitur placerat. Aenean luctus, ipsum eu feugiat vestibulum, enim elit auctor leo, vitae dapibus arcu tortor nec leo."
+            ]
+        }
+    },
+
     "member": {
         "application": "Application"
     },
