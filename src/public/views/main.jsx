@@ -8,6 +8,7 @@ import { createHistory } from 'history';
 import Index from './pages/index.jsx';
 import Solutions from './pages/solutions.jsx';
 import Technologies from './pages/technologies.jsx';
+import About from './pages/about.jsx';
 
 import Download from './pages/download.jsx';
 import Faq from './pages/faq.jsx';
@@ -26,6 +27,7 @@ ReactDOM.render((
             <Route path='index' component={Index} />
             <Route path="solutions(/:section)" component={Solutions} />
             <Route path='technologies(/:section)' component={Technologies} />
+            <Route path='about(/:section)' component={About} />
 
             <Route path='download' component={Download} />
             <Route path='faq' component={Faq} />
