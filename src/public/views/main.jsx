@@ -24,8 +24,8 @@ ReactDOM.render((
         <Route path='/'>
             <IndexRoute component={Index} />
             <Route path='index' component={Index} />
-            <Route path='solutions' component={Solutions} />
-            <Route path='technologies' component={Technologies} />
+            <Route path="solutions(/:section)" component={Solutions} />
+            <Route path='technologies(/:section)' component={Technologies} />
 
             <Route path='download' component={Download} />
             <Route path='faq' component={Faq} />

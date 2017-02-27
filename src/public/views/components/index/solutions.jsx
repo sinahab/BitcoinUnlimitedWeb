@@ -16,12 +16,12 @@ export default React.createClass({
                     <div className="col-md-6">
                         <div>{ strings().index.solutions.users.title }</div>
                         <div>{ strings().index.solutions.users.body }</div>
-                        <Link to="/">{ strings().index.solutions.link }</Link>
+                        <Link to="/solutions/users">{ strings().index.solutions.link }</Link>
                     </div>
                     <div className="col-md-6">
                         <div>{ strings().index.solutions.nodes.title }</div>
                         <div>{ strings().index.solutions.nodes.body }</div>
-                        <Link to="/">{ strings().index.solutions.link }</Link>
+                        <Link to="/solutions/nodes">{ strings().index.solutions.link }</Link>
                     </div>
                 </div>
 
@@ -29,13 +29,13 @@ export default React.createClass({
                     <div className="col-md-6">
                         <div>{ strings().index.solutions.miners.title }</div>
                         <div>{ strings().index.solutions.miners.body }</div>
-                        <Link to="/">{ strings().index.solutions.link }</Link>
+                        <Link to="/solutions/miners">{ strings().index.solutions.link }</Link>
                     </div>
 
                     <div className="col-md-6">
                         <div>{ strings().index.solutions.investors.title }</div>
                         <div>{ strings().index.solutions.investors.body }</div>
-                        <Link to="/">{ strings().index.solutions.link }</Link>
+                        <Link to="/solutions/investors">{ strings().index.solutions.link }</Link>
                     </div>
                 </div>
 

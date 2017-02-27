@@ -15,26 +15,31 @@ class Technologies extends React.Component {
             {
                 key: 'emergentConsensus',
                 title: strings().technologies.emergentConsensus.title,
+                expanded: this.props.params.section === 'emergent-consensus',
                 body: this.stringsToParagraphs(strings().technologies.emergentConsensus.body)
             },
             {
                 key: 'xthin',
                 title: strings().technologies.xthin.title,
+                expanded: this.props.params.section === 'xthin',
                 body: this.getXthinBody()
             },
             {
                 key: 'bandwidthShaping',
                 title: strings().technologies.bandwidthShaping.title,
+                expanded: this.props.params.section === 'bandwidth-shaping',
                 body: this.stringsToParagraphs(strings().technologies.bandwidthShaping.body)
             },
             {
                 key: 'parallelValidation',
                 title: strings().technologies.parallelValidation.title,
+                expanded: this.props.params.section === 'parallel-validation',
                 body: this.stringsToParagraphs(strings().technologies.parallelValidation.body)
             },
             {
                 key: 'ourResearch',
                 title: strings().technologies.ourResearch.title,
+                expanded: this.props.params.section === 'research',
                 body: this.stringsToParagraphs(strings().technologies.ourResearch.body)
             }
         ]
@@ -70,7 +75,7 @@ class Technologies extends React.Component {
 
                     <div>
                         { this.sections.map((section) => {
-                            return <Section key={section.key} title={section.title} body={section.body} />
+                            return <Section key={section.key} expanded={section.expanded} title={section.title} body={section.body} />
                         }) }
                     </div>
 

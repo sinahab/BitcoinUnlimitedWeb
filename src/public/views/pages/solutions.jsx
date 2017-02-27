@@ -10,25 +10,29 @@ import Section from '../components/section.jsx'
 class Solutions extends React.Component {
     constructor(props) {
         super(props)
-
+        
         this.sections = [
             {
-                key: 'user',
+                key: 'users',
+                expanded: this.props.params.section === 'users',
                 title: this.getUsersTitle(),
                 body: this.stringsToParagraphs(strings().solutions.users.body)
             },
             {
                 key: 'nodes',
+                expanded: this.props.params.section === 'nodes',
                 title: this.getNodesTitle(),
                 body: this.stringsToParagraphs(strings().solutions.nodes.body)
             },
             {
                 key: 'miners',
+                expanded: this.props.params.section === 'miners',
                 title: this.getMinersTitle(),
                 body: this.stringsToParagraphs(strings().solutions.miners.body)
             },
             {
                 key: 'investors',
+                expanded: this.props.params.section === 'investors',
                 title: this.getInvestorsTitle(),
                 body: this.stringsToParagraphs(strings().solutions.investors.body)
             }
@@ -102,7 +106,7 @@ class Solutions extends React.Component {
 
                     <div>
                         { this.sections.map((section) => {
-                            return <Section key={section.key} title={section.title} body={section.body} />
+                            return <Section key={section.key} expanded={section.expanded} title={section.title} body={section.body} />
                         }) }
                     </div>
 

@@ -6,7 +6,7 @@ class Section extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            expanded: false
+            expanded: this.props.expanded || false
         };
 
         this.toggleExpanded = this.toggleExpanded.bind(this);
