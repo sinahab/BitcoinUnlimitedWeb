@@ -3,110 +3,64 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { strings } from '../lib/i18n';
+import FooterSection from './components/footerSection.jsx';
 
-export default React.createClass({
+class Footer extends React.Component {
+    constructor(props) {
+        super(props);
 
-    render: function () {
+        this.sections = [
+            {
+                title: strings().footer.latest,
+                links: [
+                    { href: '/articles', text: strings().footer.articles },
+                    { href: '/resources/feemarket.pdf', text: strings().footer.fee },
+                    { href: '/resources/subchains.pdf', text: strings().footer.subchains },
+                    { href: '/resources/1txn.pdf', text: strings().footer.analysis }
+                ]
+            },
+            {
+                title: strings().footer.join,
+                links: [
+                    { href: 'https://www.bitco.in/forum', text: strings().footer.forum },
+                    { href: 'https://reddit.com/r/btc', text: strings().footer.reddit1 },
+                    { href: 'https://reddit.com/r/bitcoin_unlimited', text: strings().footer.reddit2 },
+                    { href: 'mailto:trevinhofmann@gmail.com?subject=Bitcoin%20Unlimited%20Slack%20Invite&body=Hi%21%0D%0A%0D%0ACould%20you%20please%20invite%20me%20to%20the%20Bitcoin%20Unlimited%20Slack%20group%3F%20My%20email%20address%20is%20%5BINSERT%20EMAIL%20ADDRESS%20HERE%5D.%0D%0A%0D%0AThank%20you%21', text: strings().footer.slack },
+                    { href: 'https://webchat.freenode.net/?channels=##btc', text: strings().footer.irc }
+                ]
+            },
+            {
+                title: strings().footer.news,
+                links: [
+                    { href: 'http://gavinandresen.ninja/time-to-roll-out-bigger-blocks', text: strings().footer.time },
+                    { href: 'https://medium.com/faith-and-future/why-is-bitcoin-forking-d647312d22c1', text: strings().footer.why },
+                    { href: 'https://medium.com/@octskyward/on-consensus-and-forks-c6a050c792e7#.s7d93q1a9', text: strings().footer.consensus },
+                    { href: 'http://gavinandresen.ninja/designing-for-success', text: strings().footer.designing }
+                ]
+            }
+        ]
+    }
+
+    render() {
         return (
-            <div className="footer">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-footer col-md-3 col-xs-6">
-                            <h3>{strings().footer.latest}</h3>
-                            <div>
-                                <div className="portfolio-image">
-                                    <ul className="no-list-style footer-navigate-section">
-                                        <li>
-                                            <Link to='/articles'>{strings().footer.articles}</Link>
-                                        </li>
-                                        <li>
-                                            <a href="/resources/feemarket.pdf">{strings().footer.fee}</a>
-                                        </li>
-                                        <li>
-                                            <a href="/resources/subchains.pdf">{strings().footer.subchains}</a>
-                                        </li>
-                                        <li>
-                                            <a href="/resources/1txn.pdf">{strings().footer.analysis}</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-footer col-md-3 col-xs-6">
-                            <h3>{strings().footer.navigate}</h3>
-                            <ul className="no-list-style footer-navigate-section">
-                                <li>
-                                    <Link to='/'>{strings().footer.home}</Link>
-                                </li>
-                                <li>
-                                    <Link to='/download'>{strings().footer.download}</Link>
-                                </li>
-                                <li>
-                                    <Link to='/faq'>{strings().footer.faq}</Link>
-                                </li>
-                                <li>
-                                    <Link to='/donate'>{strings().footer.donate}</Link>
-                                </li>
-                                <li>
-                                    <Link to='/buip'>{strings().footer.proposals}</Link>
-                                </li>
-                                <li>
-                                    <Link to='/members'>{strings().footer.members}</Link>
-                                </li>
-                                <li>
-                                    <Link to='/resources'>{strings().footer.resources}</Link>
-                                </li>
-                                <li>
-                                    <Link to='/conferences'>{strings().footer.conferences}</Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="col-footer col-md-4 col-xs-6">
-                            <h3>{strings().footer.join}</h3>
-                            <p className="contact-us-details">
-                                <li>
-                                    <a href="https://www.bitco.in/forum">{strings().footer.forum}</a>
-                                </li>
-                                <li>
-                                    <a href="https://reddit.com/r/btc">{strings().footer.reddit1}</a>
-                                </li>
-                                <li>
-                                    <a href="https://reddit.com/r/bitcoin_unlimited">{strings().footer.reddit2}</a>
-                                </li>
-                                <li>
-                                    <a href="mailto:trevinhofmann@gmail.com?subject=Bitcoin%20Unlimited%20Slack%20Invite&body=Hi%21%0D%0A%0D%0ACould%20you%20please%20invite%20me%20to%20the%20Bitcoin%20Unlimited%20Slack%20group%3F%20My%20email%20address%20is%20%5BINSERT%20EMAIL%20ADDRESS%20HERE%5D.%0D%0A%0D%0AThank%20you%21">{strings().footer.slack}</a>
-                                </li>
-                                <li>
-                                    <a href="https://webchat.freenode.net/?channels=##btc">{strings().footer.irc}</a>
-                                </li>
-                            </p>
-                        </div>
-                        <div className="col-footer col-md-2 col-xs-6">
-                            <h3>{strings().footer.news}</h3>
-                            <ul className="no-list-style footer-navigate-section">
-                                <li>
-                                    <a href="http://gavinandresen.ninja/time-to-roll-out-bigger-blocks">{strings().footer.time}</a>
-                                </li>
-                                <li>
-                                    <a href="https://medium.com/faith-and-future/why-is-bitcoin-forking-d647312d22c1">{strings().footer.why}</a>
-                                </li>
-                                <li>
-                                    <a href="https://medium.com/@octskyward/on-consensus-and-forks-c6a050c792e7#.s7d93q1a9">{strings().footer.consensus}</a>
-                                </li>
-                                <li>
-                                    <a href="http://gavinandresen.ninja/designing-for-success">{strings().footer.designing}</a>
-                                </li>
-                            </ul>
-                        </div>
+            <div>
+                <div className='banner'></div>
+                <div className='footer__container center white px3'>
+                    <div className="pb1">
+                        { this.sections.map((section, i) => {
+                            return (
+                                <FooterSection key={i} title={section.title} links={section.links} />
+                            )
+                        }) }
                     </div>
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="footer-copyright">&copy; {strings().footer.copy}</div>
-                        </div>
+                    <div className="py3">
+                        <div>&copy; {strings().footer.copy}</div>
                     </div>
                 </div>
             </div>
         );
     }
 
-});
+};
+
+export default Footer;

@@ -7,7 +7,9 @@ export default React.createClass({
 
     render: function () {
         return (
-            <div> { strings().index.divider } </div>
+            <div className="h3 center white divider__container">
+                <p className="inline-block left-align lh-copy divider__text">{ strings().index.divider }</p>
+            </div>
         );
     }
 

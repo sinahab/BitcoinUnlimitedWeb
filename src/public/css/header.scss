@@ -1,0 +1,41 @@
+
+.header__container {
+    height: 110px;
+    font-size: 17px;
+    box-sizing: border-box;
+    padding: 30px 40px;
+}
+
+.header__logo {
+    height: 50px;
+}
+
+.header__link {
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+
+.header__link:hover {
+    color: black;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+
+.header__link:active {
+    color: black;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+
+.header__link:focus {
+    color: black;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
