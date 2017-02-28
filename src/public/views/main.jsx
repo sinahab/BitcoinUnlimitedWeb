@@ -10,9 +10,9 @@ import Solutions from './pages/solutions.jsx';
 import Technologies from './pages/technologies.jsx';
 import About from './pages/about.jsx';
 import Resources from './pages/resources.jsx';
+import Faq from './pages/faq.jsx';
 
 import Download from './pages/download.jsx';
-import Faq from './pages/faq.jsx';
 import Buip from './pages/buip.jsx';
 import Members from './pages/members.jsx';
 import Articles from './pages/articles.jsx';
@@ -29,9 +29,9 @@ ReactDOM.render((
             <Route path='technologies(/:section)' component={Technologies} />
             <Route path='about(/:section)' component={About} />
             <Route path='resources(/:section)' component={Resources} />
+            <Route path='faq(/:section)' component={Faq} />
 
             <Route path='download' component={Download} />
-            <Route path='faq' component={Faq} />
             <Route path='buip' component={Buip} />
             <Route path='members' component={Members} />
             <Route path='articles' component={Articles} />
