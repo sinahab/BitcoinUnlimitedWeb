@@ -30,12 +30,6 @@ class About extends React.Component {
                 body: this.stringsToParagraphs(strings().about.join.body)
             },
             {
-                key: 'donate',
-                expanded: selectedSection === 'donate',
-                title: strings().about.donate.title,
-                body: this.stringsToParagraphs(strings().about.donate.body)
-            },
-            {
                 key: 'contact',
                 expanded: selectedSection === 'contact',
                 title: strings().about.contact.title,
