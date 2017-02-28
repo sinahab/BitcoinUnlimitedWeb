@@ -16,9 +16,14 @@ body {
 }
 
 .section__container {
-    max-width: 840px;
+    width: 64%;
+    min-width: 340px;
 }
 
 .section__filler {
     width: 840px;
+}
+
+.section__image {
+    max-width: 640px;
 }

@@ -9,12 +9,12 @@ import Index from './pages/index.jsx';
 import Solutions from './pages/solutions.jsx';
 import Technologies from './pages/technologies.jsx';
 import About from './pages/about.jsx';
+import Resources from './pages/resources.jsx';
 
 import Download from './pages/download.jsx';
 import Faq from './pages/faq.jsx';
 import Buip from './pages/buip.jsx';
 import Members from './pages/members.jsx';
-import Resources from './pages/resources.jsx';
 import Articles from './pages/articles.jsx';
 import NotFound from './pages/not-found.jsx';
 import Conferences from './pages/conferences.jsx';
@@ -28,12 +28,12 @@ ReactDOM.render((
             <Route path="solutions(/:section)" component={Solutions} />
             <Route path='technologies(/:section)' component={Technologies} />
             <Route path='about(/:section)' component={About} />
+            <Route path='resources(/:section)' component={Resources} />
 
             <Route path='download' component={Download} />
             <Route path='faq' component={Faq} />
             <Route path='buip' component={Buip} />
             <Route path='members' component={Members} />
-            <Route path='resources' component={Resources} />
             <Route path='articles' component={Articles} />
             <Route path='conferences' component={Conferences} />
             <Route path='donate' component={Donate} />

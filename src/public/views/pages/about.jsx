@@ -8,34 +8,36 @@ class About extends React.Component {
     constructor(props) {
         super(props)
 
+        const selectedSection = this.props.params.section || 'organization'
+
         this.sections = [
             {
                 key: 'organization',
-                expanded: this.props.params.section === 'organization',
+                expanded: selectedSection === 'organization',
                 title: strings().about.organization.title,
                 body: this.getOrganizationBody()
             },
             {
                 key: 'members',
-                expanded: this.props.params.section === 'members',
+                expanded: selectedSection === 'members',
                 title: strings().about.members.title,
                 body: this.stringsToParagraphs(strings().about.members.body)
             },
             {
                 key: 'join',
-                expanded: this.props.params.section === 'join',
+                expanded: selectedSection === 'join',
                 title: strings().about.join.title,
                 body: this.stringsToParagraphs(strings().about.join.body)
             },
             {
                 key: 'donate',
-                expanded: this.props.params.section === 'donate',
+                expanded: selectedSection === 'donate',
                 title: strings().about.donate.title,
                 body: this.stringsToParagraphs(strings().about.donate.body)
             },
             {
                 key: 'contact',
-                expanded: this.props.params.section === 'contact',
+                expanded: selectedSection === 'contact',
                 title: strings().about.contact.title,
                 body: this.stringsToParagraphs(strings().about.contact.body)
             },
@@ -46,7 +48,7 @@ class About extends React.Component {
         return (
             <div>
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum volutpat aliquam. Donec luctus purus vel lectus auctor, eget blandit ante lobortis. Sed non lectus faucibus, auctor augue at, feugiat odio. Ut nisl arcu, pretium faucibus massa nec, finibus lobortis neque. Aliquam vel orci a dolor efficitur placerat. Aenean luctus, ipsum eu feugiat vestibulum, enim elit auctor leo, vitae dapibus arcu tortor nec leo."</p>
-                <p>Our Articles of Federation can be found <a href="/resources/BUarticles.pdf" target="_blank">here</a>.</p>
+                <p>Our Articles of Federation can be found <a className='link--underline dim black' href="/resources/BUarticles.pdf" target="_blank">here</a>.</p>
             </div>
         )
     }

@@ -2,11 +2,8 @@
 
 import React from 'react';
 import { strings } from '../../lib/i18n';
-
-import Header from '../header.jsx';
-import Footer from '../footer.jsx';
-import Title from '../components/title.jsx';
 import Resource from '../components/resources/resource.jsx';
+import Page from '../page.jsx'
 
 const RESOURCES = [
     {
@@ -32,10 +29,41 @@ const RESOURCES = [
     }
 ];
 
-export default React.createClass({
 
-    render: function() {
+class Resources extends React.Component {
+    constructor(props) {
+        super(props)
 
+        const selectedSection = this.props.params.section || 'articles'
+
+        this.sections = [
+            {
+                key: 'articles',
+                expanded: selectedSection === 'articles',
+                title: strings().resources.articles.title,
+                body: this.getArticlesBody()
+            },
+            {
+                key: 'block-size',
+                expanded: selectedSection === 'block-size',
+                title: strings().resources.size.title,
+                body: this.getBlockSizeBody()
+            }
+        ]
+    }
+
+    getBlockSizeBody() {
+        return (
+            <div>
+                <p>This chart shows the percentage of the network that will reject a block of a given size. The <a className="link--underline black dim" href="#">emergent block size</a> limit is defined as the greatest block size that no less than half of the hash power will accept.</p>
+                <div className='center p1'>
+                    <img className='section__image' src="../img/block-size.png" alt="Emergent Block Size Limit" />
+                </div>
+            </div>
+        )
+    }
+
+    getArticlesBody() {
         let resources = RESOURCES.map(function(resource, i) {
             return (
                 <Resource title={resource.title} html={resource.html} pdf={resource.pdf} key={i} />
@@ -43,29 +71,22 @@ export default React.createClass({
         });
 
         return (
-            <div id='resources'>
-                <Header active='resources' />
-                <Title title={strings().resources.title} />
-                <div className='section'>
-                    <div className='container'>
-                        <div className='row service-wrapper-row'>
-                            <div className='col-sm-4'>
-                                <div className='service-image'>
-                                    <img src='/img/330px-Knowledge-Reid-Highsmith.jpeg' alt='Knowledge' />
-                                </div>
-                            </div>
-                            <div className='col-sm-8'>
-                                <h2 className='green'>{strings().resources.supporting}</h2>
-                                <ul>
-                                    {resources}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <Footer />
-            </div>
-        );
+            <ul>
+                {resources}
+            </ul>
+        )
     }
 
-});
+    render() {
+        return (
+            <Page
+                name="resources"
+                title={ strings().resources.title }
+                subtitle={ strings().resources.subtitle }
+                sections={ this.sections }
+                />
+        );
+    }
+}
+
+export default Resources

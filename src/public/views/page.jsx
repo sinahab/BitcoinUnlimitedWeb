@@ -16,7 +16,6 @@ class Page extends React.Component {
                     <div className="py2 h3">{ this.props.subtitle }</div>
 
                     <div className='inline-block left-align p2 pb4 section__container'>
-                        <div className='section__filler'></div>
                         { this.props.sections.map((section) => {
                             return <Section key={section.key} expanded={section.expanded} title={section.title} body={section.body} />
                         }) }

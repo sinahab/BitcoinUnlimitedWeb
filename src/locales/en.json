@@ -227,6 +227,18 @@
             ]
         }
     },
+    "resources": {
+        "title": "Resources",
+        "subtitle": "",
+        "articles": {
+            "title": "Academic Articles and Founding Documents",
+            "body": []
+        },
+        "size": {
+            "title": "Emergent Block Size Limit",
+            "body": []
+        }
+    },
     "about": {
         "title": "About",
         "subtitle": "",
@@ -297,10 +309,6 @@
         "consensus": "On consensus and forks",
         "designing": "Designing for success",
         "copy": "MIT License. No Rights Reserved."
-    },
-    "resources": {
-        "title": "Academic Articles and Founding Documents",
-        "supporting": "Bitcoin Unlimited Supporting Documents"
     },
     "notfound": {
         "error": "Error 404: File Not Found",

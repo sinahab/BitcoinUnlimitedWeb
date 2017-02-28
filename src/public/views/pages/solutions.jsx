@@ -12,28 +12,30 @@ class Solutions extends React.Component {
     constructor(props) {
         super(props)
 
+        const selectedSection = this.props.params.section || 'users'
+
         this.sections = [
             {
                 key: 'users',
-                expanded: this.props.params.section === 'users',
+                expanded: selectedSection === 'users',
                 title: this.getUsersTitle(),
                 body: this.stringsToParagraphs(strings().solutions.users.body)
             },
             {
                 key: 'nodes',
-                expanded: this.props.params.section === 'nodes',
+                expanded: selectedSection === 'nodes',
                 title: this.getNodesTitle(),
                 body: this.stringsToParagraphs(strings().solutions.nodes.body)
             },
             {
                 key: 'miners',
-                expanded: this.props.params.section === 'miners',
+                expanded: selectedSection === 'miners',
                 title: this.getMinersTitle(),
                 body: this.stringsToParagraphs(strings().solutions.miners.body)
             },
             {
                 key: 'investors',
-                expanded: this.props.params.section === 'investors',
+                expanded: selectedSection === 'investors',
                 title: this.getInvestorsTitle(),
                 body: this.stringsToParagraphs(strings().solutions.investors.body)
             }

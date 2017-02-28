@@ -48,7 +48,7 @@ class Section extends React.Component {
                 <div className="inline bold">
                     { this.props.title }
                 </div>
-                <div className={this.getExpandedClass()}>{ this.props.body }</div>
+                <div className={'lh-copy ' + this.getExpandedClass()}>{ this.props.body }</div>
             </div>
         );
     }
