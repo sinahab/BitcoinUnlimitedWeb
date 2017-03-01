@@ -57,7 +57,7 @@ class GeneralFaq extends React.Component {
                 <p>
                     {strings().faq.a1c}
                     {' '}
-                    <a href='/resources/feemarket.html'>{strings().faq.a1d}</a>.
+                    <a className='link--underline dim black' href='/resources/feemarket.html'>{strings().faq.a1d}</a>.
                 </p>
             </div>
         )
@@ -71,7 +71,7 @@ class GeneralFaq extends React.Component {
                 <p>
                     {strings().faq.a2b}
                     {' '}
-                    <a href='/resources/1txn.pdf'>{strings().faq.a2c}</a>.
+                    <a className='link--underline dim black' href='/resources/1txn.pdf'>{strings().faq.a2c}</a>.
                 </p>
             </div>
         )
@@ -91,7 +91,7 @@ class GeneralFaq extends React.Component {
                 <p>
                     {strings().faq.a3e}
                     {' '}
-                    <Link to='/articles'>{strings().faq.a3f}</Link></p>
+                    <Link className='link--underline dim black' to='/articles'>{strings().faq.a3f}</Link></p>
             </div>
         )
     }
@@ -129,7 +129,7 @@ class GeneralFaq extends React.Component {
                 <p>
                     {strings().faq.a7c}
                     {' '}
-                    <a href='https://en.wikipedia.org/wiki/Random_walk'>{strings().faq.a7d}</a>
+                    <a className='link--underline dim black' href='https://en.wikipedia.org/wiki/Random_walk'>{strings().faq.a7d}</a>
                     {' '}
                     {strings().faq.a7e}
                 </p>
