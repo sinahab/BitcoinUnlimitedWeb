@@ -1,60 +1,4 @@
 {
-    "experimental": {
-        "releases": "Experimental Releases",
-        "none": "NONE"
-    },
-    "official": {
-        "satoshi": "The Bitcoin Unlimited project maintains an enhanced version of the Bitcoin Core \"Satoshi\" client.",
-        "supporting": "We are currently supporting the 1.0.0 release and have older releases 0.11.2, 0.12.0, and 0.12.1",
-        "verify": "Please verify binary signatures before installation!",
-        "signatures": "Scroll down to the Signatures section to see the SHA-256 checksums of the binaries and our signatures on that statement.",
-        "release": "Official Release",
-        "binary": "Binary Downloads",
-        "releasenotes":"Release Notes",
-        "releasenotes_1_0_0_1": "1.0.0.1: This release contains a single critical bug fix described ",
-        "releasenotes_1_0_0_0": "1.0.0.0: Release notes are ",
-        "windows": "Windows",
-        "linux": "Linux",
-        "osx": "Mac OSX",
-        "ARM": "ARM",
-        "version": "Version",
-        "date": "Jan 31, 2017",
-        "bit64": "64-bit",
-        "bit32": "32-bit",
-        "installation": "Linux Installation Instructions",
-        "source": "Source Code",
-        "branch": "Github branch",
-        "here": "here"
-    },
-    "instructions": {
-        "title": "Quick Installation Guide (Linux)",
-        "helpZero": "Once you downloaded the file that matches your system in the section above (e.g. 64 bit linux), open a terminal window then type:",
-        "helpOne": "If you're running an Ubuntu system you could use our official repository. It supports four archs - amd64, i386, arm and arm64 - and 3 Ubuntu versions - 14.04, 16.04 and 16.10. To install the binaries from the repository execute these commands from a console:",
-        "helpTwo": "If you want to compile from source just follow and execute these commands:"
-    },
-    "signatures": {
-        "signatures": "These signatures attest that the individual named compiled Bitcoin Unlimited from Github source and produced the following files with the corresponding sha256 hashes.",
-        "helpOne": "To validate these signatures, use 'File->verify signatures' on any Satoshi Client.",
-        "helpTwo": "Paste the signer's address into the first field, the signature statement into the second field, and the signature into the third one.",
-        "helpThree": "Note: do not change the whitespace of the signature statement.",
-        "helpFour": "Finally run 'sha256sum' on your downloaded file to make sure it matches.",
-        "helpFive": "You can check that an address corresponds to a user on the users' profile page on the",
-        "forum": "bitco.in forum",
-        "statement": "Signed Statement",
-        "tip": "Do not add a final return character to the statement above when verifying the signature in the Bitcoin client.",
-        "andrew": "By: Andrew Stone (thezerg)",
-        "awemany": "By: awemany",
-        "sickpig": "By: Andrea Suisani (sickpig)",
-        "deadalnix": "By: Amaury SECHET (deadalnix)",
-        "thezerg": "",
-        "signature": "Signature"
-    },
-    "calltoaction": {
-        "partOne": "The Only Bitcoin Client That Gives",
-        "partTwo": "You",
-        "partThree": "Complete Freedom!",
-        "download": "Download here!"
-    },
     "description": {
         "title": "What is Bitcoin Unlimited?",
         "a1": "The Bitcoin Unlimited (BU) project seeks to provide a voice to all stakeholders in the Bitcoin ecosystem.",
@@ -94,14 +38,6 @@
         "resources": "Resources",
         "resourcesText": "Bitcoin is out of the box thinking. We follow in Satoshi's tradition and present you an interdisciplinary approach.",
         "read": "Read more"
-    },
-    "slider": {
-        "cryptography": "In Cryptography we Trust",
-        "cryptographyText": "The whole is truly greater than the sum of its parts.",
-        "vires": "Vires in Numeris",
-        "viresText": "Bitcoin Unlimited: A Peer-to-Peer Electronic Cash System",
-        "free": "Free and Decentralized",
-        "freeText": "Free and decentralised emerging consensus."
     },
     "index": {
         "hero": {
@@ -320,9 +256,61 @@
         "a7f": "If the network is undergoing a period of block size instability, whether that be due to a struggle between two block-size-is-part-of-consensus clients like XT and Core or due to a struggle between miners of similar hash power, it may make sense for users to wait for additional confirmations or convergence to avoid double spends.",
         "a7g": "In Bitcoin Unlimited, we hope to eventually track ALL nontrivial forks and visually indicate when transactions have been confirmed on all forks, eliminating the possibility of a double spend.  This will allow users to use the bitcoin network normally during these periods.  However, since we do not believe that these periods will last long because they will cause a dramatic drop in miner revenue, it is not a priority."
     },
-
-    "member": {
-        "application": "Application"
+    "download": {
+        "title": "Download",
+        "subtitle": "The Bitcoin Unlimited project maintains an enhanced version of the Bitcoin Core \"Satoshi\" client.",
+        "latest": {
+            "title": "Latest Release",
+            "download": "Download the latest release of Bitcoin Unlimited",
+            "version": "v1.0.0.1",
+            "date": "Jan 31, 2017",
+            "windows": "Windows",
+            "linux": "Linux",
+            "osx": "Mac OSX",
+            "ARM": "ARM",
+            "bit64": "64-bit",
+            "bit32": "32-bit",
+            "dmg": "DMG",
+            "exe": "exe",
+            "zip": "zip",
+            "view": "View the",
+            "source": "source code",
+            "verify": "Please verify binary signatures before installation.",
+            "signatures": "Scroll down to the Signatures section to see the SHA-256 checksums of the binaries and our signatures on that statement."
+        },
+        "notes": {
+            "title": "Release Notes",
+            "releasenotes_1_0_0_1": "1.0.0.1: This release contains a single critical bug fix described ",
+            "releasenotes_1_0_0_0": "1.0.0.0: Release notes are ",
+            "here": "here"
+        },
+        "signatures": {
+            "title": "Signatures",
+            "signatures": "These signatures attest that the individual named compiled Bitcoin Unlimited from Github source and produced the following files with the corresponding sha256 hashes.",
+            "helpOne": "To validate these signatures, use 'File->verify signatures' on any Satoshi Client.",
+            "helpTwo": "Paste the signer's address into the first field, the signature statement into the second field, and the signature into the third one.",
+            "helpThree": "Note: do not change the whitespace of the signature statement.",
+            "helpFour": "Finally run 'sha256sum' on your downloaded file to make sure it matches.",
+            "helpFive": "You can check that an address corresponds to a user on the users' profile page on the",
+            "forum": "bitco.in forum",
+            "statement": "Signed Statement",
+            "tip": "Do not add a final return character to the statement above when verifying the signature in the Bitcoin client.",
+            "andrew": "By: Andrew Stone (thezerg)",
+            "awemany": "By: awemany",
+            "sickpig": "By: Andrea Suisani (sickpig)",
+            "deadalnix": "By: Amaury SECHET (deadalnix)",
+            "thezerg": "",
+            "signature": "Signature"
+        },
+        "installation": {
+            "title": "Installation Notes",
+            "helpZero": "Once you downloaded the file that matches your system in the section above (e.g. 64 bit linux), open a terminal window then type:",
+            "helpOne": "If you're running an Ubuntu system you could use our official repository. It supports four archs - amd64, i386, arm and arm64 - and 3 Ubuntu versions - 14.04, 16.04 and 16.10. To install the binaries from the repository execute these commands from a console:",
+            "helpTwo": "If you want to compile from source just follow and execute these commands:"
+        },
+        "older": {
+            "title": "Older Releases"
+        }
     },
     "header": {
         "download": "Download",
@@ -361,15 +349,15 @@
         "designing": "Designing for success",
         "copy": "MIT License. No Rights Reserved."
     },
+    "member": {
+        "application": "Application"
+    },
     "notfound": {
         "error": "Error 404: File Not Found",
         "message": "The requested file could not be found."
     },
     "members": {
         "title": "Supporting Members"
-    },
-    "download": {
-        "title": "Download Bitcoin Unlimited"
     },
     "buip": {
         "title": "Contribute an Improvement Proposal",

@@ -35,29 +35,18 @@ export default React.createClass({
 
     render: function () {
         return (
-            <div className='row service-wrapper-row'>
-                <div className='col-sm-4'>
-                    <div className='service-image'>
-                    </div>
-                </div>
-                <div className='col-sm-8'>
-                    <h2>{strings().instructions.title}</h2>
-                    <div className='instructions'>
-                        <div className='instructionsText'>
-                            {strings().instructions.helpZero}
-                            <br /><br />
-                            <pre>{BASH0}</pre>
-                            <br />
-                            {strings().instructions.helpOne}
-                            <br /><br />
-                            <pre>{BASH1}</pre>
-                            <br />
-                            {strings().instructions.helpTwo}
-                            <br /><br />
-                            <pre>{BASH2}</pre>
-                        </div>
-                    </div>
-                </div>
+            <div className='py2'>
+                {strings().download.installation.helpZero}
+                <br /><br />
+                <pre>{BASH0}</pre>
+                <br />
+                {strings().download.installation.helpOne}
+                <br /><br />
+                <pre>{BASH1}</pre>
+                <br />
+                {strings().download.installation.helpTwo}
+                <br /><br />
+                <pre>{BASH2}</pre>
             </div>
         );
     }

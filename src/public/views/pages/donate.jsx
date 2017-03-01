@@ -24,7 +24,7 @@ class Donate extends React.Component {
                         { this.stringsToParagraphs(strings().donate.body) }
                         <div className='pt1 center'>
                             <img src='/img/donation-address-qr.png' alt='Fingerprint' />
-                            <pre>36XTMVtgJqqNYymsSvRonpUsbZRGkm1jvX</pre>
+                            <div>36XTMVtgJqqNYymsSvRonpUsbZRGkm1jvX</div>
                         </div>
                     </div>
                 </div>

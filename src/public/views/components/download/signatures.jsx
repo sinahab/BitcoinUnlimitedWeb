@@ -70,83 +70,75 @@ export default React.createClass({
 
     render: function () {
         return (
-            <div className='row service-wrapper-row'>
-                <div className='col-sm-4'>
-                    <div className='service-image'>
-                    </div>
+            <div className='py2'>
+                <div>
+                    {strings().download.signatures.signatures}
+                    <br /><br />
+                <div>
+                    {strings().download.signatures.helpOne}
+                    {' '}
+                    {strings().download.signatures.helpTwo}
+                    {' '}
+                    {strings().download.signatures.helpThree}
+                    {' '}
+                    {strings().download.signatures.helpFour}
+                    {' '}
+                    {strings().download.signatures.helpFive}
+                    {' '}
+                    <a className='link--underlined dim black' href='http://www.bitco.in/forum'>{strings().download.signatures.forum}</a>.<br/>
                 </div>
-                <div className='col-sm-8'>
-                    <h2>Signatures</h2>
-                    <div className='signatures'>
-                        <div className='signatureText'>
-                            {strings().signatures.signatures}
-                            <br /><br />
-                        <div id='signatureHelp'>
-                            {strings().signatures.helpOne}
-                            {' '}
-                            {strings().signatures.helpTwo}
-                            {' '}
-                            {strings().signatures.helpThree}
-                            {' '}
-                            {strings().signatures.helpFour}
-                            {' '}
-                            {strings().signatures.helpFive}
-                            {' '}
-                            <a href='http://www.bitco.in/forum'>{strings().signatures.forum}</a>.<br/>
-                        </div>
-                        <br /><br />
-                            1.0.0.1 {strings().signatures.statement}:<br /><br />
-                            <pre>{CHECKSUMS1_0_0_1}</pre>
-                            <br />
-                            {strings().signatures.tip}
-                            <br/>
-                            <br />
-                            {strings().signatures.andrew} (1zerg12nRXZ41Pw4tfCTqgtdiJx6D1We3 - {strings().signatures.thezerg})
-                            <br/>
-                            {strings().signatures.signature}:<br />HAyvt/ZfhC0rTxuz2baDMJIe6ETI/D7WoqXBjWgciOmCY6lv+dKoG/TaaalE5zYHJSn2va+OucYYJtePKekijr4=
-                            <br/><br/>
-                            {strings().signatures.sickpig} (1LwvkQTWmotqTosgBcK8kFPCKzW2BPiE1G)<br/>
-                            {strings().signatures.signature}:<br />IEDdGccB3yN0sdc3SyjuRi3FZgyZUya2TqnOc64R3ADUbozKeV/UKzi/zTLm8k+3+qAWV5YtqF6hNqzjDtXAIys=
-                            <br/><br/>
-                            {strings().signatures.deadalnix} (1KEaWZ7tpLF4n5xFf5bpTPff7G7uJZiDGw)<br/>
-                            {strings().signatures.signature}:<br />H+OGhBmcEA4xr3nGrjH1riihwybxw9mBb7n3Bzf/Z/geOV9tV5qjsr21/jDP6WZ1VEsauWf+a+enrOLEgDsUfA8=
-                            <br/><br/>
-                            0.12.1 {strings().signatures.statement}:<br /><br />
-                            <pre>{CHECKSUMS0121b}</pre>
-                            <br />
-                            {strings().signatures.tip}
-                            <br/>
-                            <br />
-                            {strings().signatures.andrew} (1zerg12nRXZ41Pw4tfCTqgtdiJx6D1We3 - {strings().signatures.thezerg})
-                            <br/>
-                            {strings().signatures.signature}:<br />G1W1Uq8QagCARx0eK895+5ZBQzwFqpQmRVOP+yPNDkCuAh8yC9BUxp59BtIP0ieHZvZBeHpvdkvepAC4YOkgwu4=
-                            <br/><br/>
-                            {strings().signatures.sickpig} (1LwvkQTWmotqTosgBcK8kFPCKzW2BPiE1G)<br/>
-                            {strings().signatures.signature}:<br />H0YIZtMm92ntSh321FRIG6Js7TYDDTmTsXoRYwh48UilQzh5uadFz9VHsLqoHshr0wpULEWqeE1WyH6ME9FB+Ec=
-                            <br/><br/>
-                            0.12.0 {strings().signatures.statement}:<br /><br />
-                            <pre>{CHECKSUMS12}</pre>
-                            <br />
-                            {strings().signatures.andrew} (1zerg12nRXZ41Pw4tfCTqgtdiJx6D1We3)
-                            <br/>
-                            {strings().signatures.signature}:<br />HIoKBs2zqpn5yXpTlu1IQ6raPbHBmfyZLpDX8PG1xjXadtAHJbVv6MD8CXMcJddjOmDSLXRwCbI7W/JrY/fX/Wk=
-                            <br /><br />
-                            0.11.2 {strings().signatures.statement}:<br /><br />
-                            <pre>{CHECKSUMS}</pre>
-                            <br />
-                            {strings().signatures.andrew} (1zerg12nRXZ41Pw4tfCTqgtdiJx6D1We3)
-                            <br/>
-                            {strings().signatures.signature}: G75i+ydDAY9K/9go5tgac+SwTZi8mZZhj/0apZf1Gww5LsrWnLozR7e+MC0fMQqGfftVQ0nkrjNcnpVnJ6kXeHQ=
-                            <br/><br/>
-                            {strings().signatures.sickpig} (1LwvkQTWmotqTosgBcK8kFPCKzW2BPiE1G)
-                            <br/>
-                            {strings().signatures.signature}: IG+bTcn/bbm2m0eXXTnJZOTWop3vQ+hi1G2q2ZBfB9BIa9+qFNr0WfuuFLi1Xng3VPP4meYnVMWkuXWs402BORc=
-                            <br/><br/>
-                            {strings().signatures.awemany} (1BCnpopAZ4xFSxdX8NvVqUaSvsPffQhNRd)
-                            <br/>
-                            {strings().signatures.signature}: IH1gTO8LfLt3ZiGef5GO2tgI87PgT7mLf8+JHwN8n4a5YswQgg7RqmgDYNAiCa3S2EtaWOjluJYwzIdfBB4/wx4=
-                        </div>
-                    </div>
+
+                <br /><br />
+                    1.0.0.1 {strings().download.signatures.statement}:<br /><br />
+                    <pre>{CHECKSUMS1_0_0_1}</pre>
+                    <br />
+                    {strings().download.signatures.tip}
+                    <br/>
+                    <br />
+                    {strings().download.signatures.andrew} (1zerg12nRXZ41Pw4tfCTqgtdiJx6D1We3 - {strings().download.signatures.thezerg})
+                    <br/>
+                    {strings().download.signatures.signature}:<br />HAyvt/ZfhC0rTxuz2baDMJIe6ETI/D7WoqXBjWgciOmCY6lv+dKoG/TaaalE5zYHJSn2va+OucYYJtePKekijr4=
+                    <br/><br/>
+                    {strings().download.signatures.sickpig} (1LwvkQTWmotqTosgBcK8kFPCKzW2BPiE1G)<br/>
+                {strings().download.signatures.signature}:<br />IEDdGccB3yN0sdc3SyjuRi3FZgyZUya2TqnOc64R3ADUbozKeV/UKzi/zTLm8k+3+qAWV5YtqF6hNqzjDtXAIys=
+                    <br/><br/>
+                    {strings().download.signatures.deadalnix} (1KEaWZ7tpLF4n5xFf5bpTPff7G7uJZiDGw)<br/>
+                {strings().download.signatures.signature}:<br />H+OGhBmcEA4xr3nGrjH1riihwybxw9mBb7n3Bzf/Z/geOV9tV5qjsr21/jDP6WZ1VEsauWf+a+enrOLEgDsUfA8=
+                    <br/><br/>
+                    0.12.1 {strings().download.signatures.statement}:<br /><br />
+                    <pre>{CHECKSUMS0121b}</pre>
+                    <br />
+                    {strings().download.signatures.tip}
+                    <br/>
+                    <br />
+                    {strings().download.signatures.andrew} (1zerg12nRXZ41Pw4tfCTqgtdiJx6D1We3 - {strings().download.signatures.thezerg})
+                    <br/>
+                    {strings().download.signatures.signature}:<br />G1W1Uq8QagCARx0eK895+5ZBQzwFqpQmRVOP+yPNDkCuAh8yC9BUxp59BtIP0ieHZvZBeHpvdkvepAC4YOkgwu4=
+                    <br/><br/>
+                    {strings().download.signatures.sickpig} (1LwvkQTWmotqTosgBcK8kFPCKzW2BPiE1G)<br/>
+                {strings().download.signatures.signature}:<br />H0YIZtMm92ntSh321FRIG6Js7TYDDTmTsXoRYwh48UilQzh5uadFz9VHsLqoHshr0wpULEWqeE1WyH6ME9FB+Ec=
+                    <br/><br/>
+                    0.12.0 {strings().download.signatures.statement}:<br /><br />
+                    <pre>{CHECKSUMS12}</pre>
+                    <br />
+                    {strings().download.signatures.andrew} (1zerg12nRXZ41Pw4tfCTqgtdiJx6D1We3)
+                    <br/>
+                    {strings().download.signatures.signature}:<br />HIoKBs2zqpn5yXpTlu1IQ6raPbHBmfyZLpDX8PG1xjXadtAHJbVv6MD8CXMcJddjOmDSLXRwCbI7W/JrY/fX/Wk=
+                    <br /><br />
+                    0.11.2 {strings().download.signatures.statement}:<br /><br />
+                    <pre>{CHECKSUMS}</pre>
+                    <br />
+                    {strings().download.signatures.andrew} (1zerg12nRXZ41Pw4tfCTqgtdiJx6D1We3)
+                    <br/>
+                    {strings().download.signatures.signature}: G75i+ydDAY9K/9go5tgac+SwTZi8mZZhj/0apZf1Gww5LsrWnLozR7e+MC0fMQqGfftVQ0nkrjNcnpVnJ6kXeHQ=
+                    <br/><br/>
+                    {strings().download.signatures.sickpig} (1LwvkQTWmotqTosgBcK8kFPCKzW2BPiE1G)
+                    <br/>
+                    {strings().download.signatures.signature}: IG+bTcn/bbm2m0eXXTnJZOTWop3vQ+hi1G2q2ZBfB9BIa9+qFNr0WfuuFLi1Xng3VPP4meYnVMWkuXWs402BORc=
+                    <br/><br/>
+                    {strings().download.signatures.awemany} (1BCnpopAZ4xFSxdX8NvVqUaSvsPffQhNRd)
+                    <br/>
+                    {strings().download.signatures.signature}: IH1gTO8LfLt3ZiGef5GO2tgI87PgT7mLf8+JHwN8n4a5YswQgg7RqmgDYNAiCa3S2EtaWOjluJYwzIdfBB4/wx4=
                 </div>
             </div>
         );

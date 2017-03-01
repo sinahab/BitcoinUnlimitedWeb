@@ -12,8 +12,8 @@ import About from './pages/about.jsx';
 import Donate from './pages/donate.jsx';
 import Resources from './pages/resources.jsx';
 import Faq from './pages/faq.jsx';
-
 import Download from './pages/download.jsx';
+
 import Buip from './pages/buip.jsx';
 import Members from './pages/members.jsx';
 import Articles from './pages/articles.jsx';
@@ -31,8 +31,8 @@ ReactDOM.render((
             <Route path='donate' component={Donate} />
             <Route path='resources(/:section)' component={Resources} />
             <Route path='faq(/:section)' component={Faq} />
+            <Route path='download(/:section)' component={Download} />
 
-            <Route path='download' component={Download} />
             <Route path='buip' component={Buip} />
             <Route path='members' component={Members} />
             <Route path='articles' component={Articles} />
