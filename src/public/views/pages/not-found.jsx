@@ -12,11 +12,12 @@ export default React.createClass({
         return (
             <div id='not-found'>
                 <Header active='not-found' />
-                <h1>{strings().notfound.error}</h1>
-                <p>{strings().notfound.message}</p>
+                <div className="p2 py4 center not-found__container">
+                    <div className="py2 h1">{strings().notfound.error}</div>
+                    <div className="py3 h3">{strings().notfound.message}</div>
+                </div>
                 <Footer />
             </div>
         );
     }
-
 });

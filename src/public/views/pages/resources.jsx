@@ -8,7 +8,7 @@ import Page from '../page.jsx'
 const RESOURCES = [
     {
         title: 'Articles of Federation',
-        html: '/articles',
+        // html: '/articles',
         pdf: '/resources/BUarticles.pdf'
     },
     {
@@ -38,18 +38,35 @@ class Resources extends React.Component {
 
         this.sections = [
             {
+                key: 'block-size',
+                expanded: selectedSection === 'block-size',
+                title: strings().resources.size.title,
+                body: this.getBlockSizeBody()
+            },
+            {
                 key: 'articles',
                 expanded: selectedSection === 'articles',
                 title: strings().resources.articles.title,
                 body: this.getArticlesBody()
             },
             {
-                key: 'block-size',
-                expanded: selectedSection === 'block-size',
-                title: strings().resources.size.title,
-                body: this.getBlockSizeBody()
+                key: 'buips',
+                expanded: selectedSection === 'buips',
+                title: strings().resources.buips.title,
+                body: this.getBuipsBody()
             }
         ]
+    }
+
+    getBuipsBody() {
+        return(
+            <div className='py1'>
+                <a className='link--underline dim black' href='https://bitco.in/forum/threads/buip001-unlimited-inspired-extensions-to-the-bitcoin-client.222' target='_blank'>BUIP-001</a>
+                &nbsp;"Unlimited" inspired extensions to the Bitcoin Client&nbsp;
+                <div className='inline green'>(PASSED on &nbsp;2/13/2016)</div>
+
+            </div>
+        )
     }
 
     getBlockSizeBody() {

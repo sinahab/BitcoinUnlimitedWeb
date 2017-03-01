@@ -85,7 +85,7 @@ export default React.createClass({
                     {' '}
                     {strings().download.signatures.helpFive}
                     {' '}
-                    <a className='link--underlined dim black' href='http://www.bitco.in/forum'>{strings().download.signatures.forum}</a>.<br/>
+                    <a className='link--underline dim black' href='http://www.bitco.in/forum'>{strings().download.signatures.forum}</a>.<br/>
                 </div>
 
                 <br /><br />

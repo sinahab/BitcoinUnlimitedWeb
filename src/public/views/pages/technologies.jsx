@@ -9,35 +9,37 @@ class Technologies extends React.Component {
     constructor(props) {
         super(props)
 
+        const selectedSection = this.props.params.section || 'xthin'
+
         this.sections = [
             {
                 key: 'emergentConsensus',
                 title: strings().technologies.emergentConsensus.title,
-                expanded: this.props.params.section === 'emergent-consensus',
+                expanded: selectedSection === 'emergent-consensus',
                 body: this.stringsToParagraphs(strings().technologies.emergentConsensus.body)
             },
             {
                 key: 'xthin',
                 title: strings().technologies.xthin.title,
-                expanded: this.props.params.section === 'xthin',
+                expanded: selectedSection === 'xthin',
                 body: this.getXthinBody()
             },
             {
                 key: 'bandwidthShaping',
                 title: strings().technologies.bandwidthShaping.title,
-                expanded: this.props.params.section === 'bandwidth-shaping',
+                expanded: selectedSection === 'bandwidth-shaping',
                 body: this.stringsToParagraphs(strings().technologies.bandwidthShaping.body)
             },
             {
                 key: 'parallelValidation',
                 title: strings().technologies.parallelValidation.title,
-                expanded: this.props.params.section === 'parallel-validation',
+                expanded: selectedSection === 'parallel-validation',
                 body: this.stringsToParagraphs(strings().technologies.parallelValidation.body)
             },
             {
                 key: 'ourResearch',
                 title: strings().technologies.ourResearch.title,
-                expanded: this.props.params.section === 'research',
+                expanded: selectedSection === 'research',
                 body: this.stringsToParagraphs(strings().technologies.ourResearch.body)
             }
         ]

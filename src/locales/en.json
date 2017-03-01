@@ -173,6 +173,9 @@
         "size": {
             "title": "Emergent Block Size Limit",
             "body": []
+        },
+        "buips": {
+            "title": "Bitcoin Unlimited Improvement Proposals (BUIPs)"
         }
     },
     "donate": {
