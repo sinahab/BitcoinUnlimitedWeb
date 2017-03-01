@@ -14,7 +14,6 @@ import Resources from './pages/resources.jsx';
 import Faq from './pages/faq.jsx';
 import Download from './pages/download.jsx';
 
-import Buip from './pages/buip.jsx';
 import Members from './pages/members.jsx';
 import Articles from './pages/articles.jsx';
 import NotFound from './pages/not-found.jsx';
@@ -33,7 +32,6 @@ ReactDOM.render((
             <Route path='faq(/:section)' component={Faq} />
             <Route path='download(/:section)' component={Download} />
 
-            <Route path='buip' component={Buip} />
             <Route path='members' component={Members} />
             <Route path='articles' component={Articles} />
             <Route path='conferences' component={Conferences} />
