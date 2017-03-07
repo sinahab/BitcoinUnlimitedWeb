@@ -165,9 +165,31 @@
     "resources": {
         "title": "Resources",
         "subtitle": "",
-        "articles": {
-            "title": "Academic Articles and Founding Documents",
-            "body": []
+        "technical": {
+            "title": "Select Technical Works by Bitcoin Unlimited Members",
+            "space": [
+                { "body": "In this paper, Dr. Peter R. Rizun shows that a transaction fee market exists without a block size limit, due to the increased risk a miner faces of having his block orphaned for each additional transaction he includes in his block. In the corresponding video, Rizun explains how block space has the properties of a normal economic commodity and satisfies the laws of supply and demand. He argues that the 1 MB block size limit is now acting as a \"production quota,\" thereby resulting in a deadweight loss of economic activity in the Bitcoin economy." },
+                { "body": "In this paper, Bitcoin Unlimited lead developer G. Andrew Stone explores the mystery behind the \"empty block\" phenomenon and shows that empty blocks place a natural restriction on the rate at which the blockchain can grow." },
+            ],
+            "propogation": [
+                { "body": "Xthin is arguably the innovation that put Bitcoin Unlimited on the map. In this article series, Bitcoin Unlimited developers compare the performance of Xthin block propagation to standard block propagation. They show that Xthin blocks are 5.6x faster across the normal P2P network and cross the Great Firewall of China in 8.7x less time, both while using 24x fewer bytes." },
+                { "body": "In this article, Rizun explores a pre-consensus technique based on weak blocks. He shows how the technique permits larger blocks for a given level of orphan risk, diverts transaction fees to pay for hashing (blockchain security), and improves the security of unconfirmed transactions, all while maintaining the transaction fee market." }
+            ],
+            "consensus": [
+                { "body": "Bitcoin Unlimited empowers node operators to control how they enforce certain Bitcoin block validity rules on their own node. In this article, BU member Antony Zegers explores the market incentives facing node operators when they choose to enforce block validity rules, and how these incentives lead to an emergent consensus on the Bitcoin network." },
+                { "body": "In this video, Bitcoin Unlimited member John Swingle argues that \"hard forks\" should generally be preferred over \"soft forks\" because while the former increase user and market choice, the latter undermine user and market choice by increasing the coordination cost of resisting an unpopular or controversial change. Swingle further argues that in many cases, the added constraints of making a protocol change as a soft fork necessitate the introduction of additional and inherently-dangerous complexity." }
+            ],
+            "bu": [
+                { "body": "Bitcoin Unlimited's consensus layer is concerned with preserving the money property of Bitcoin. Using simple animations, Peter Rizun explains how a BU node deals with blocks that are potentially problematic to accept for technical (non-monetary) reasons." }
+            ]
+        },
+        "nonTechnical": {
+            "title": "Select Non-technical Works by Bitcoin Unlimited Members",
+            "articles": [
+                { "body": "Because Bitcoin has no center (it is decentralized), node operators must take matters into their own hands in order to create change. This article explains how Bitcoin Unlimited can be used as a tool to help create that change." },
+                { "body": "Bitcoin Unlimited does not constrain node operators or miners to one particular coordination scheme with regards to the block size limit; instead it is a tool that can be used to implement several different schemes. In this article, Bitcoin Unlimited member and ViaBTC Mining Pool CEO Haipo Yang proposes a way for miners to coordinate for the upcoming increase in the size of blocks." },
+                { "body": "Generally, a problem can rarely be solved unless it is properly recognized. Specifically, Bitcoin's centralized maximum block size is put into historical context and a decentralized solution is presented. This article introduces emergence, which is a fundamental aspect of nature giving rise to many levels of complexity. Further, its important and long-term applicability for determining the optimum block size limit in the Bitcoin network is shown."}
+            ]
         },
         "size": {
             "title": "Emergent Block Size Limit",
