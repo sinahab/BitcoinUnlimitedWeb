@@ -10,7 +10,7 @@ class Faq extends React.Component {
     constructor(props) {
         super(props)
 
-        const selectedSection = this.props.params.section || 'general'
+        const selectedSection = this.props.params.section
 
         this.sections = [
             {
