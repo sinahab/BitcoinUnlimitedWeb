@@ -57,7 +57,7 @@ class Technologies extends React.Component {
                 { this.makeParagraph(strings().technologies.xthin.body[0]) }
                 { this.makeParagraph(strings().technologies.xthin.body[1]) }
                 <div className='center'>
-                    <img src="img/xthin.png" alt="Xthin" />
+                    <img className="section__image" src="img/xthin.png" alt="Xthin" />
                 </div>
                 <p>
                     Test results validated that Xthin improved block propagation times by a factor of 5.6x across the normal P2P network, by a factor of 8.7x across the Great Firewall of China, while reducing the number of bytes required by a factor of 24x. For further information, please refer to our <a className='black dim link--underline' href="#">five-part Xthin article series</a>.

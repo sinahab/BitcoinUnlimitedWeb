@@ -3,10 +3,15 @@
 import React from 'react';
 import { strings } from '../../lib/i18n';
 import Page from '../page.jsx'
-import UserIcon from '../components/icons/userIcon.jsx'
-import InvestorIcon from '../components/icons/investorIcon.jsx'
-import MinerIcon from '../components/icons/minerIcon.jsx'
-import NodeIcon from '../components/icons/nodeIcon.jsx'
+
+import Users from '../components/solutions/users.jsx'
+import UsersTitle from '../components/solutions/usersTitle.jsx'
+import Nodes from '../components/solutions/nodes.jsx'
+import NodesTitle from '../components/solutions/nodesTitle.jsx'
+import Miners from '../components/solutions/miners.jsx'
+import MinersTitle from '../components/solutions/minersTitle.jsx'
+import Investors from '../components/solutions/investors.jsx'
+import InvestorsTitle from '../components/solutions/investorsTitle.jsx'
 
 class Solutions extends React.Component {
     constructor(props) {
@@ -18,78 +23,28 @@ class Solutions extends React.Component {
             {
                 key: 'users',
                 expanded: selectedSection === 'users',
-                title: this.getUsersTitle(),
-                body: this.stringsToParagraphs(strings().solutions.users.body)
+                title: (() => { return <UsersTitle /> })(),
+                body: (() => { return <Users /> })()
             },
             {
                 key: 'nodes',
                 expanded: selectedSection === 'nodes',
-                title: this.getNodesTitle(),
-                body: this.stringsToParagraphs(strings().solutions.nodes.body)
+                title: (() => { return <NodesTitle /> })(),
+                body: (() => { return <Nodes /> })()
             },
             {
                 key: 'miners',
                 expanded: selectedSection === 'miners',
-                title: this.getMinersTitle(),
-                body: this.stringsToParagraphs(strings().solutions.miners.body)
+                title: (() => { return <MinersTitle /> })(),
+                body: (() => { return <Miners /> })()
             },
             {
                 key: 'investors',
                 expanded: selectedSection === 'investors',
-                title: this.getInvestorsTitle(),
-                body: this.stringsToParagraphs(strings().solutions.investors.body)
+                title: (() => { return <InvestorsTitle /> })(),
+                body: (() => { return <Investors /> })()
             }
         ]
-    }
-
-    makeParagraph(string, index) { return <p key={index}>{string}</p> }
-
-    stringsToParagraphs(strings) {
-        return strings.map((string, i) => this.makeParagraph(string, i))
-    }
-
-    getInvestorsTitle() {
-        return (
-            <div className="inline-block">
-                <div className='inline pr1 icon--center'>
-                    <InvestorIcon width='25' height='25' />
-                </div>
-                { strings().solutions.investors.title }
-            </div>
-        )
-    }
-
-    getUsersTitle() {
-        return (
-            <div className="inline-block">
-                <div className='inline pr1 icon--center'>
-                    <UserIcon width='20' height='24' />
-                </div>
-                { strings().solutions.users.title }
-            </div>
-        )
-    }
-
-    getMinersTitle() {
-        return (
-            <div className="inline-block">
-                <div className='inline pr1 icon--center'>
-                    <MinerIcon width='24' height='20' />
-                </div>
-                { strings().solutions.miners.title }
-            </div>
-        )
-    }
-
-    getNodesTitle() {
-        return (
-            <div className="inline-block">
-                <div className='inline pr1 icon--center'>
-                    <NodeIcon width='25' height='25' />
-                </div>
-                { strings().solutions.nodes.title }
-            </div>
-        )
     }
 
     render() {
