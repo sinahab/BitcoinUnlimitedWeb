@@ -6,48 +6,6 @@ import { strings } from '../../../lib/i18n';
 import Section from '../section.jsx'
 
 class GeneralFaq extends React.Component {
-    constructor(props) {
-        super(props)
-
-        this.sections = [
-            {
-                title: strings().faq.q1,
-                body: this.getQ1Body(),
-                expanded: false
-            },
-            {
-                title: strings().faq.q2,
-                body: this.getQ2Body(),
-                expanded: false
-            },
-            {
-                title: strings().faq.q3,
-                body: this.getQ3Body(),
-                expanded: false
-            },
-            {
-                title: strings().faq.q4,
-                body: this.getQ4Body(),
-                expanded: false
-            },
-            {
-                title: strings().faq.q5,
-                body: this.getQ5Body(),
-                expanded: false
-            },
-            {
-                title: strings().faq.q6,
-                body: this.getQ6Body(),
-                expanded: false
-            },
-            {
-                title: strings().faq.q7,
-                body: this.getQ7Body(),
-                expanded: false
-            }
-        ]
-    }
-
     getQ1Body() {
         return (
             <div>
@@ -142,11 +100,40 @@ class GeneralFaq extends React.Component {
     render() {
         return (
             <div className="pt2">
-                { this.sections.map((section, index) => {
-                    return (
-                        <Section key={index} expanded={false} title={section.title} body={section.body} />
-                    )
-                }) }
+                <Section
+                    title={strings().faq.q1}
+                    body={this.getQ1Body()}
+                    expanded={false} />
+
+                <Section
+                    title={strings().faq.q2}
+                    body={this.getQ2Body()}
+                    expanded={false} />
+
+                <Section
+                    title={strings().faq.q3}
+                    body={this.getQ3Body()}
+                    expanded={false} />
+
+                <Section
+                    title={strings().faq.q4}
+                    body={this.getQ4Body()}
+                    expanded={false} />
+
+                <Section
+                    title={strings().faq.q5}
+                    body={this.getQ5Body()}
+                    expanded={false} />
+
+                <Section
+                    title={strings().faq.q6}
+                    body={this.getQ6Body()}
+                    expanded={false} />
+
+                <Section
+                    title={strings().faq.q7}
+                    body={this.getQ7Body()}
+                    expanded={false} />
             </div>
         );
     }

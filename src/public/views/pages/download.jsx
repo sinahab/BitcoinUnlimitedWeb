@@ -6,73 +6,47 @@ import { strings } from '../../lib/i18n';
 import OfficialRelease from '../components/download/official-release.jsx';
 import InstallInstructions from '../components/download/install-instructions.jsx';
 import Signatures from '../components/download/signatures.jsx';
+import ReleaseNotes from '../components/download/releaseNotes.jsx';
 
 import Page from '../page.jsx';
+import Section from '../components/section.jsx';
 
 class Download extends React.Component {
-    constructor(props) {
-        super(props)
-
-        const selectedSection = this.props.params.section || 'latest'
-
-        this.sections = [
-            {
-                key: 'latest',
-                expanded: selectedSection === 'latest',
-                title: strings().download.latest.title,
-                body: this.getLatestBody()
-            },
-            {
-                key: 'notes',
-                expanded: selectedSection === 'notes',
-                title: strings().download.notes.title,
-                body: this.getReleaseNodesBody()
-            },
-            {
-                key: 'signatures',
-                expanded: selectedSection === 'signatures',
-                title: strings().download.signatures.title,
-                body: this.getSignaturesBody()
-            },
-            {
-                key: 'installation',
-                expanded: selectedSection === 'installation',
-                title: strings().download.installation.title,
-                body: this.getInstallationBody()
-            },
-            {
-                key: 'older',
-                expanded: selectedSection === 'older',
-                title: strings().download.older.title,
-                body: ''
-            },
-        ]
-    }
-
-    getLatestBody() { return (<OfficialRelease />) }
-
-    getReleaseNodesBody() {
-        return (
-            <p>
-                {strings().download.notes.releasenotes_1_0_0_1} <a className='link--underline dim black' href='https://bitco.in/forum/threads/buir-2017-01-29-statement-regarding-excessive-block-by-bitcoin-unlimited-software-29-jan-2017.1790/'>{strings().download.notes.here}</a>
-                <br/>
-                {strings().download.notes.releasenotes_1_0_0_0} <a className='link--underline dim black' href='https://github.com/BitcoinUnlimited/BitcoinUnlimited/blob/release/doc/release-notes/release-notes-1.0.0.md'>{strings().download.notes.here}</a>
-            </p>
-        )
-    }
-
-    getInstallationBody() { return ( <InstallInstructions /> ) }
-
-    getSignaturesBody() { return ( <Signatures /> ) }
+    selectedSection() { return (this.props.params.section || 'latest') }
 
     render() {
         return (
-            <Page
-                name="download"
-                title={ strings().download.title }
-                subtitle={ strings().download.subtitle }
-                sections={ this.sections }
-                />
+            <Page name="download" title={ strings().download.title } subtitle={ strings().download.subtitle } >
+                <Section
+                    key='latest'
+                    expanded={this.selectedSection() === 'latest'}
+                    title={ strings().download.latest.title }
+                    body={ <OfficialRelease /> } />
+
+                <Section
+                    key='notes'
+                    expanded={this.selectedSection() === 'notes'}
+                    title={ strings().download.notes.title }
+                    body={ <ReleaseNotes /> } />
+
+                <Section
+                    key='signatures'
+                    expanded={this.selectedSection() === 'signatures'}
+                    title={ strings().download.signatures.title }
+                    body={ <Signatures /> } />
+
+                <Section
+                    key='installation'
+                    expanded={this.selectedSection() === 'installation'}
+                    title={ strings().download.installation.title }
+                    body={ <InstallInstructions /> } />
+
+                <Section
+                    key='older'
+                    expanded={this.selectedSection() === 'older'}
+                    title={ strings().download.older.title }
+                    body={ '' } />
+            </Page>
         );
     }
 }
