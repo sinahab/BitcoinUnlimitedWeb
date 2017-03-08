@@ -15,7 +15,7 @@ class Members extends React.Component {
     render() {
         return (
             <div>
-                <img src="img/about/Andrew_Clifford.jpg" alt="Andrew Clifford" />
+                <img src="../img/about/Andrew_Clifford.jpg" alt="Andrew Clifford" />
             </div>
 
         );

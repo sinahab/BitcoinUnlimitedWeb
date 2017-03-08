@@ -11,7 +11,7 @@ export default React.createClass({
             <div>
                 <p> { strings().solutions.users.body[0] } </p>
                 <div className='center py3'>
-                    <img className='section__image' src="img/solutions/users.gif" alt="users" />
+                    <img className='section__image' src="../img/solutions/users.gif" alt="users" />
                 </div>
                 <p> { strings().solutions.users.body[1] } </p>
             </div>
