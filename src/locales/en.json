@@ -225,9 +225,7 @@
         },
         "contact": {
             "title": "Contact us",
-            "body": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum volutpat aliquam. Donec luctus purus vel lectus auctor, eget blandit ante lobortis. Sed non lectus faucibus, auctor augue at, feugiat odio. Ut nisl arcu, pretium faucibus massa nec, finibus lobortis neque. Aliquam vel orci a dolor efficitur placerat. Aenean luctus, ipsum eu feugiat vestibulum, enim elit auctor leo, vitae dapibus arcu tortor nec leo."
-            ]
+            "body": "Please contact us at",
         }
     },
     "faq": {
