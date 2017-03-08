@@ -14,7 +14,6 @@ import Resources from './pages/resources.jsx';
 import Faq from './pages/faq.jsx';
 import Download from './pages/download.jsx';
 
-import Members from './pages/members.jsx';
 import NotFound from './pages/not-found.jsx';
 import Conferences from './pages/conferences.jsx';
 
@@ -31,7 +30,6 @@ ReactDOM.render((
             <Route path='faq(/:section)' component={Faq} />
             <Route path='download(/:section)' component={Download} />
 
-            <Route path='members' component={Members} />
             <Route path='conferences' component={Conferences} />
             <Route path='*' component={NotFound} />
         </Route>
