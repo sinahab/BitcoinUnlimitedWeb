@@ -6,6 +6,10 @@ import Page from '../page.jsx'
 import Section from '../components/section.jsx';
 
 import GeneralFaq from '../components/faq/generalFaq.jsx'
+import UserFaq from '../components/faq/userFaq.jsx'
+import NodeFaq from '../components/faq/nodeFaq.jsx'
+import MinerFaq from '../components/faq/minerFaq.jsx'
+import InvestorFaq from '../components/faq/investorFaq.jsx'
 
 class Faq extends React.Component {
     selectedSection() { return (this.props.params.section) }
@@ -23,25 +27,25 @@ class Faq extends React.Component {
                     key='users'
                     expanded={this.selectedSection() === 'users'}
                     title={ strings().faq.users.title }
-                    body='' />
+                    body={ <UserFaq /> } />
 
                 <Section
                     key='nodes'
                     expanded={this.selectedSection() === 'nodes'}
                     title={ strings().faq.nodes.title }
-                    body='' />
+                    body={ <NodeFaq /> } />
 
                 <Section
                     key='miners'
                     expanded={this.selectedSection() === 'miners'}
                     title={ strings().faq.miners.title }
-                    body='' />
+                    body={ <MinerFaq /> } />
 
                 <Section
                     key='investors'
                     expanded={this.selectedSection() === 'investors'}
                     title={ strings().faq.investors.title }
-                    body='' />
+                    body={ <InvestorFaq /> } />
             </Page>
         );
     }

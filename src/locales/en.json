@@ -235,16 +235,272 @@
             "title": "General"
         },
         "users": {
-            "title": "For Users"
+            "title": "For Users",
+            "questions": {
+                "q1": {
+                    "q": "How do I switch from my existing client to Bitcoin Unlimited?",
+                    "a": "It is simple as downloading Bitcoin Unlimited and copying over your DB directory, wallet.dat and bitcoin.conf to the new install location."
+                },
+                "q2": {
+                    "q": "Will Bitcoin Unlimited split the blockchain?",
+                    "a": "No, Bitcoin Unlimited will not split the block-chain."
+                },
+                "q3": {
+                    "q": "What is Bitcoin Unlimited doing exactly?",
+                    "a1": "Ensuring Bitcoin functions as a peer-to-peer electronic cash system. Read a detailed explanation",
+                    "a2": "here."
+                },
+                "q4": {
+                    "q": "Does Bitcoin Unlimited appeal to authority figures?",
+                    "a": "Bitcoin Unlimited has no authority figure to appeal to."
+                },
+                "q5": {
+                    "q": "Is an uncapped blocksize a radical and risky change?",
+                    "a": "No, the blocksize is not uncapped."
+                },
+                "q6": {
+                    "q": "Should I be worried about Bitcoin Unlimited?**",
+                    "a": "No, Bitcoin Unlimited is the 2nd most popular Bitcoin implementation."
+                },
+                "q7": {
+                    "q": "Is Bitcoin Unlimited, Bitcoin?",
+                    "a": "Yes, Bitcoin Unlimited follows the most-proof-of-work Bitcoin blockchain which has the most hash-power behind it."
+                },
+                "q8": {
+                    "q": "Does Bitcoin Unlimited completely remove the block-size?",
+                    "a": "No,  Bitcoin Unlimited allows users to manually configure their software."
+                },
+                "q9": {
+                    "q": "Does Bitcoin Unlimited want absolute control of Bitcoin?",
+                    "a": "No, Bitcoin Unlimited is a software implementation of Bitcoin."
+                },
+                "q10": {
+                    "q": "Is Bitcoin Unlimited trivially broken?",
+                    "a": "No, Bitcoin Unlimited has been operating on the Bitcoin network since 2015."
+                },
+                "q11": {
+                    "q": "Will Bitcoin Unlimited affect my Bitcoin wallet?",
+                    "a": "No, Bitcoin Unlimited does not affect your wallet."
+                },
+                "q12": {
+                    "q": "Is the Bitcoin blockchain immutable with Bitcoin Unlimited?",
+                    "a": "Yes, it is the Bitcoin blockchain."
+                },
+                "q13": {
+                    "q": "Is Bitcoin Unlimited better than Segwit?",
+                    "a": "Bitcoin Unlimited offers the Bitcoin full-node implementation, whereas Segwit is an addition to Bitcoin Core."
+                },
+                "q14": {
+                    "q": "Will Bitcoin Unlimited support Schnorr signatures?",
+                    "a": "Bitcoin Unlimited has R&D into Schnorrs, although has not yet introduced support for Schnorr signatures."
+                },
+                "q15": {
+                    "q": "Can Bitcoin safely scale with Bitcoin Unlimited?",
+                    "a": "Yes, Bitcoin Unlimited safely scales as it adheres to Nakamato consensus providing users with easy options to-do-so."
+                },
+                "q16": {
+                    "q": "Will Bitcoin Unlimited adopt Segwit?",
+                    "a": "No, Bitcoin Unlimited will not be adopting Segwit from Bitcoin Core."
+                },
+                "q17": {
+                    "q": "How does Bitcoin Unlimited keep the community informed?",
+                    "a": "Bitcoin Unlimited is built up of its users of whom keep the community informed."
+                },
+                "q18": {
+                    "q": "Is Bitcoin Unlimited a conspiracy?",
+                    "a": "No, Bitcoin Unlimited is not a conspiracy."
+                },
+                "q19": {
+                    "q": "Does Bitcoin Unlimited collude with individuals?",
+                    "a": "No, Bitcoin Unlimited does not collude with individuals."
+                },
+                "q20": {
+                    "q": "Does Bitcoin Unlimited have fake nodes?",
+                    "a": "It is impossible to have a fake-node."
+                },
+                "q21": {
+                    "q": "How does the Bitcoin Unlimited foundation feel about government regulation of Bitcoin?",
+                    "a": "Bitcoin Unlimited has no say in government regulation of Bitcoin."
+                },
+                "q22": {
+                    "q": "Does Bitcoin Unlimited enter into formal agreements with participants of the Bitcoin industry?",
+                    "a": "No, Bitcoin Unlimited does not enter into formal agreements with participants of the Bitcoin industry."
+                },
+                "q23": {
+                    "q": "Does Bitcoin Unlimited condemn censorship?",
+                    "a": "Yes, Bitcoin Unlimited condemns censorship."
+                },
+                "q24": {
+                    "q": "Why isn't Bitcoin Unlimited calling itself \"Bitcoin\"?",
+                    "a": "Bitcoin Unlimited is Bitcoin."
+                },
+                "q25": {
+                    "q": "Which users and businesses officially support Bitcoin Unlimited?",
+                    "a": "Many users and businesses officially support Bitcoin Unlimited including; bitcoin.com, viabtc.com and coinbase.com."
+                },
+                "q26": {
+                    "q": "Does Bitcoin Unlimited believe in free-market choice?",
+                    "a": "Yes, Bitcoin Unlimited believes in free-market choice."
+                },
+                "q27": {
+                    "q": "Why doesn't Bitcoin Unlimited move to another crypto-currency?",
+                    "a": "Bitcoin Unlimited is the Bitcoin block-chain."
+                },
+                "q28": {
+                    "q": "Does Bitcoin Unlimited support hardware wallets?",
+                    "a": "Yes, Bitcoin Unlimited supports hardware wallets."
+                },
+                "q29": {
+                    "q": "Does Bitcoin Unlimited make transactions harder to trace?",
+                    "a": "No, Bitcoin Unlimited does not make transactions harder to trace."
+                },
+                "q30": {
+                    "q": "Does Bitcoin Unlimited follow the longest chain of proof-of-work?",
+                    "a": "Yes, Bitcoin Unlimited follows the longest Bitcoin proof-of-work."
+                },
+                "q31": {
+                    "q": "Is Bitcoin Unlimited more than a simple block-size increase?",
+                    "a": "Bitcoin Unlimited offers many features including the controls to increase the block-size."
+                },
+                "q32": {
+                    "q": "Does Bitcoin Unlimited follow Nakamoto consensus?",
+                    "a": "Yes, Bitcoin Unlimited follows Nakamoto consensus."
+                },
+                "q33": {
+                    "q": "Does Bitcoin Unlimited scale the number of individuals?",
+                    "a": "Yes, Bitcoin Unlimited scales the number of individuals."
+                },
+                "q34": {
+                    "q": "Why is a formal Bitcoin Unlimited Articles of Federation necessary?",
+                    "a": "To ensure the user voice is voted and heard."
+                },
+                "q35": {
+                    "q": "Will an Unlimited block-size result in no fee market?",
+                    "a": "No, it will not, however, it will decrease fees to potentially sub-penny and improve confirmation times."
+                },
+                "q36": {
+                    "q": "Does Bitcoin Unlimited affect blockchain consensus?",
+                    "a": "No, Bitcoin Unlimited follows Nakamoto consensus."
+                },
+                "q37": {
+                    "q": "How do I update my current software to Bitcoin Unlimited using Ubuntu?",
+                    "a1": "Use the following commands with-out commas: bitcoin-cli stop, sudo apt remove bitcoind, sudo rm /etc/apt/sources.list.d/bitcoin-ubuntu-bitcoin*, sudo add-apt-repository ppa:bitcoin-unlimited/bu-ppa, sudo apt update, sudo apt install bitcoind, bitcoind -daemon",
+                    "a2": "Or you can use this 1 command recipe, copy/paste the following command: bitcoin-cli stop && sudo apt remove bitcoind && sudo rm /etc/apt/sources.list.d/bitcoin-ubuntu-bitcoin* && sudo add-apt-repository ppa:bitcoin-unlimited/bu-ppa && sudo apt update && sudo apt install bitcoind && bitcoind -daemon"
+                },
+                "q38": {
+                    "q": "How do I use Bitcoin Unlimited with Raspberry Pi?",
+                    "a1": "A good tutorial for Raspberry Pi is located",
+                    "a2": "here."
+                },
+                "q39": {
+                    "q": "Where is the Bitcoin Unlimited Testnet?",
+                    "a": "Bitcoin Unlimited has a dedicated test network which can be accessed using the -chain_nol option."
+                },
+            }
         },
         "nodes": {
-            "title": "For Node Operators"
+            "title": "For Node Operators",
+            "questions": {
+                 "q1": {
+                    "q": "Will nodes refuse blocks based on different configurations?",
+                    "a": "If it is a Bitcoin Unlimited node, no."
+                },
+                "q2": {
+                    "q": "What if I don't upgrade to Bitcoin Unlimited?",
+                    "a": "It is possible the implementation of Bitcoin you are using may experience down-time, contact your vendor."
+                },
+                "q3": {
+                    "q": "Will Bitcoin Unlimited implement Flexible Transactions?",
+                    "a": "Additions to Bitcoin Unlimited are by member-vote."
+                },
+                "q4": {
+                    "q": "Does Bitcoin Unlimited fix malleability?",
+                    "a": "Yes, Bitcoin Unlimited has R&D into FlexTrans from Bitcoin Classic, an implementation of Bitcoin."
+                },
+                "q5": {
+                    "q": "How much bandwidth has Bitcoin Unlimited's Xthin saved?",
+                    "a": "3TB globally."
+                },
+                "q6": {
+                    "q": "Does Bitcoin Unlimited have technical debt?",
+                    "a": "No, Bitcoin Unlimited does not have technical debt."
+                },
+            }
         },
         "miners": {
-            "title": "For Miners"
+            "title": "For Miners",
+            "questions": {
+                "q1": {
+                    "q": "Is mining Bitcoin Unlimited blocks be a waste of electricity?",
+                    "a": "No, each block is valued as any other Bitcoin Block."
+                },
+                "q2": {
+                    "q": "How much miner support does Bitcoin Unlimited require to hard-fork?",
+                    "a": "51% to 75% is a safe threshold."
+                },
+                "q3": {
+                    "q": "Will Bitcoin Unlimited ever change the proof-of-work?",
+                    "a": "No, the Bitcoin proof-of-work has been successfully working since 2009."
+                },
+                "q4": {
+                    "q": "Does Bitcoin Unlimited believe in soft-forks?",
+                    "a": "No, a soft-fork is a malicious fork."
+                },
+                "q5": {
+                    "q": "Is it possible there are additional bugs in Bitcoin Unlimited?",
+                    "a": "As with any software implementation, there is the possibility of additional bugs."
+                },
+                "q6": {
+                    "q": "How fast does Bitcoin Unlimited respond and deploy solutions for bugs?",
+                    "a": "With-in 1 to 3 hours."
+                },
+                "q7": {
+                    "q": "How many Bitcoin Unlimited developers work for different companies?",
+                    "a": "Several, Bitcoin Unlimited is a diverse group of users."
+                },
+                "q8": {
+                    "q": "How much code have Bitcoin Unlimited developers contributed?",
+                    "a": "Over 10,000 lines of code."
+                },
+                "q9": {
+                    "q": "Are Bitcoin Unlimited developers qualified and capable?",
+                    "a": "Yes, Bitcoin Unlimited developers are qualified and capable."
+                },
+                "q10": {
+                    "q": "Where does Bitcoin Unlimited obtain development talent from?",
+                    "a": "Anyone from the community is able to participate in Bitcoin development."
+                },
+                "q11": {
+                    "q": "Is the economic benefit of mining Bitcoin Unlimited good?",
+                    "a": "Yes, the economic benefit of mining Bitcoin Unlimited is good."
+                },
+                "q12": {
+                    "q": "Will Bitcoin Unlimited work as advertised?",
+                    "a": "Yes, Bitcoin Unlimited works as advertised."
+                }
+            }
         },
         "investors": {
-            "title": "For Investors"
+            "title": "For Investors",
+            "questions": {
+                "q1": {
+                    "q": "Is Bitcoin Unlimited a registered not-for-profit organization?",
+                    "a": "Yes, Bitcoin Unlimited is a registered not-for-profit organization."
+                },
+                "q2": {
+                    "q": "Is there a donation address for Bitcoin Unlimited?",
+                    "a": "Yes, you can send Bitcoin (BTC) donations to: 36XTMVtgJqqNYymsSvRonpUsbZRGkm1jvX"
+                },
+                "q3": {
+                    "q": "Where can I find Bitcoin Unlimited's financial statements?",
+                    "a": "Bitcoin Unlimited does not provide public financial statements."
+                },
+                "q4": {
+                    "q": "Has Bitcoin Unlimited issued a financial report?",
+                    "a1": "Yes, it is located",
+                    "a2": "here."
+                }
+            }
         },
         "q1": "Will unlimited size blocks actually result in no fee market?",
         "a1a": "No. Intuitively you can understand this by realizing that it will take a lot longer to propagate a gigantic block across the network than a small one. Therefore a gigantic block has a higher likelihood of being \"orphaned\" -- that is, a competing block will be found, propagated across the network and supplant the gigantic block. In this case the miner of the gigantic block will lose the block subsidy and transaction fees. Therefore miners are incentivised by limitations in the underlying physical network to produce smaller blocks, and incentivized by transaction fees to produce larger ones.",
