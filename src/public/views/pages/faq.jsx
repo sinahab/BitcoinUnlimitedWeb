@@ -5,7 +5,6 @@ import { strings } from '../../lib/i18n';
 import Page from '../page.jsx'
 import Section from '../components/section.jsx';
 
-import GeneralFaq from '../components/faq/generalFaq.jsx'
 import UserFaq from '../components/faq/userFaq.jsx'
 import NodeFaq from '../components/faq/nodeFaq.jsx'
 import MinerFaq from '../components/faq/minerFaq.jsx'
@@ -17,12 +16,6 @@ class Faq extends React.Component {
     render() {
         return (
             <Page title={ strings().faq.title } subtitle={ strings().faq.subtitle } >
-                <Section
-                    key='general'
-                    expanded={this.selectedSection() === 'general'}
-                    title={ strings().faq.general.title }
-                    body={ <GeneralFaq /> } />
-
                 <Section
                     key='users'
                     expanded={this.selectedSection() === 'users'}
