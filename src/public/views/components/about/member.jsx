@@ -12,14 +12,20 @@ class Member extends React.Component {
         }
     }
 
+    renderAvatar() {
+        if (this.props.avatar) {
+            return(<div>({this.props.avatar})</div>)
+        } else {
+            return('')
+        }
+    }
+
     render() {
         return (
-            <div className='p2 inline-block member__container'>
+            <div className='p2 inline-block align-top member__container'>
                 { this.renderImage() }
                 <div className='pt1'>
-                    <a className='black dim' href={this.props.application} target='_blank'>
-                        {this.props.name}
-                    </a>
+                    {this.props.name}{ this.renderAvatar() }
                 </div>
             </div>
         )
