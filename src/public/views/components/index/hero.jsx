@@ -9,11 +9,28 @@ export default React.createClass({
     render: function () {
         return (
             <div className="hero__container center py3 white">
-                    <div className="h1 py2">{strings().index.hero.title}</div>
-                    <div className="h2 py3">{strings().index.hero.subtitle}</div>
-                <div className="mt3 pb3 pt4">
-                    <Link className="h3 dim btn--primary-large" to='/download'>{strings().index.hero.button}</Link>
+                <div className="slideshow">
+                    <section>
+                        <span></span>
+                        <div>
+                            <p className='p2 h1'>{ strings().index.hero.v2.titleOne }</p>
+                        </div>
+                    </section>
+                    <section>
+                        <span></span>
+                        <div>
+                            <p className='p2 h1'>{ strings().index.hero.v2.titleTwo }</p>
+                        </div>
+                    </section>
+                    <section>
+                        <span></span>
+                        <div>
+                            <p className='p2 h1'>{ strings().index.hero.v2.titleThree }</p>
+                        </div>
+                    </section>
+                    <div className='slideshow__image--start'></div>
                 </div>
+                <Link className="h3 btn--primary-large hero--button" to='/download'>{strings().index.hero.v1.button}</Link>
             </div>
         );
     }

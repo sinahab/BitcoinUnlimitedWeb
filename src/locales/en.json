@@ -41,9 +41,17 @@
     },
     "index": {
         "hero": {
-            "title": "The Peer-to-Peer Electronic Cash System for Planet Earth",
-            "subtitle": "Using Emergent Consensus and safe signalling to enable on-chain scaling",
-            "button": "Download Bitcoin Unlimited"
+            "v1": {
+                "title": "The Peer-to-Peer Electronic Cash System for Planet Earth",
+                "subtitle": "Using Emergent Consensus and safe signalling to enable on-chain scaling",
+                "button": "Download Bitcoin Unlimited"
+            },
+            "v2": {
+                "titleOne": " Bitcoin: A Peer-to-Peer Electronic Cash System for Planet Earth",
+                "titleTwo": "Decentralized On-chain Scaling Solutions for Node Operators",
+                "titleThree": "Safe Signaling and Emergent Consensus Techniques for Miners",
+                "button": "Download Bitcoin Unlimited"
+            }
         },
         "solutions": {
             "title": "Solutions",

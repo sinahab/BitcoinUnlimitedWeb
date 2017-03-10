@@ -25,7 +25,7 @@ export default React.createClass({
                             { strings().index.solutions.users.title }
                         </div>
                         <div className='lh-copy py1'>{ strings().index.solutions.users.body }</div>
-                        <Link className='link--underline dim gray pt1' to="/solutions/users">{ strings().index.solutions.link }</Link>
+                        <Link className='link--underline dim black pt1' to="/solutions/users">{ strings().index.solutions.link }</Link>
                     </div>
                     <div className="align-top left-align px4 py3 inline-block info__container">
                         <div className='bold'>
@@ -35,7 +35,7 @@ export default React.createClass({
                             { strings().index.solutions.nodes.title }
                         </div>
                         <div className='lh-copy py1'>{ strings().index.solutions.nodes.body }</div>
-                        <Link className='link--underline dim gray pt1' to="/solutions/nodes">{ strings().index.solutions.link }</Link>
+                        <Link className='link--underline dim black pt1' to="/solutions/nodes">{ strings().index.solutions.link }</Link>
                     </div>
                 </div>
                 <div>
@@ -47,7 +47,7 @@ export default React.createClass({
                             { strings().index.solutions.miners.title }
                         </div>
                         <div className='lh-copy py1'>{ strings().index.solutions.miners.body }</div>
-                        <Link className='link--underline dim gray pt1' to="/solutions/miners">{ strings().index.solutions.link }</Link>
+                        <Link className='link--underline dim black pt1' to="/solutions/miners">{ strings().index.solutions.link }</Link>
                     </div>
 
                     <div className="align-top left-align px4 py3 inline-block info__container">
@@ -58,7 +58,7 @@ export default React.createClass({
                             { strings().index.solutions.investors.title }
                         </div>
                         <div className='lh-copy py1'>{ strings().index.solutions.investors.body }</div>
-                        <Link className='link--underline dim gray pt1' to="/solutions/investors">{ strings().index.solutions.link }</Link>
+                        <Link className='link--underline dim black pt1' to="/solutions/investors">{ strings().index.solutions.link }</Link>
                     </div>
                 </div>
 
