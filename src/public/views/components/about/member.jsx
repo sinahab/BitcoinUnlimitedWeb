@@ -2,6 +2,7 @@
 'use strict';
 
 import React from 'react';
+import ReactTooltip from 'react-tooltip'
 
 class Member extends React.Component {
     renderImage() {
@@ -12,11 +13,11 @@ class Member extends React.Component {
         }
     }
 
-    renderAvatar() {
-        if (this.props.avatar) {
-            return(<div>({this.props.avatar})</div>)
+    setClickableClass() {
+        if (this.props.publicKey) {
+            return('inline-block px0 member--clickable')
         } else {
-            return('')
+            return('inline-block px0')
         }
     }
 
@@ -24,9 +25,17 @@ class Member extends React.Component {
         return (
             <div className='p2 inline-block align-top member__container'>
                 { this.renderImage() }
+
                 <div className='pt1'>
-                    {this.props.name}{ this.renderAvatar() }
+                    <div> {this.props.name} </div>
+                    <div data-tip data-for={this.props.publicKey} className={ this.setClickableClass() }>
+                        ({this.props.avatar})
+                    </div>
                 </div>
+
+                <ReactTooltip className='member__tooltip' event='click' id={this.props.publicKey}>
+                    <span>Public key: {this.props.publicKey}</span>
+                </ReactTooltip>
             </div>
         )
     }
