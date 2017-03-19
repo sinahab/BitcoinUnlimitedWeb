@@ -13,38 +13,45 @@ import Page from '../page.jsx';
 import Section from '../components/section.jsx';
 
 class Download extends React.Component {
-    selectedSection() { return (this.props.params.section || 'latest') }
+    constructor(props) {
+        super(props);
+        this.state = { selectedSection: this.props.params.section || 'latest' };
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setState({ selectedSection: nextProps.params.section || 'latest' })
+    }
 
     render() {
         return (
             <Page name="download" title={ strings().download.title } subtitle={ strings().download.subtitle } >
                 <Section
                     key='latest'
-                    expanded={this.selectedSection() === 'latest'}
+                    expanded={ this.state.selectedSection === 'latest'}
                     title={ strings().download.latest.title }
                     body={ <OfficialRelease /> } />
 
                 <Section
                     key='installation'
-                    expanded={this.selectedSection() === 'installation'}
+                    expanded={ this.state.selectedSection === 'installation'}
                     title={ strings().download.installation.title }
                     body={ <InstallInstructions /> } />
 
                 <Section
                     key='signatures'
-                    expanded={this.selectedSection() === 'signatures'}
+                    expanded={ this.state.selectedSection === 'signatures'}
                     title={ strings().download.signatures.title }
                     body={ <Signatures1011 /> } />
 
                 <Section
                     key='notes'
-                    expanded={this.selectedSection() === 'notes'}
+                    expanded={ this.state.selectedSection === 'notes'}
                     title={ strings().download.notes.title }
                     body={ <ReleaseNotes /> } />
 
                 <Section
                     key='older'
-                    expanded={this.selectedSection() === 'older'}
+                    expanded={ this.state.selectedSection === 'older'}
                     title={ strings().download.older.title }
                     body={ <OlderReleases /> } />
             </Page>

@@ -6,11 +6,12 @@ import ArrowIcon from './icons/arrowIcon.jsx'
 class Section extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            expanded: this.props.expanded || false
-        };
-
+        this.state = { expanded: this.props.expanded || false };
         this.toggleExpanded = this.toggleExpanded.bind(this);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setState({ expanded: nextProps.expanded || false })
     }
 
     getExpandedClass() {
@@ -19,10 +20,7 @@ class Section extends React.Component {
         }
     }
 
-    toggleExpanded() {
-        this.setState(Object.assign(this.state, {expanded: !this.state.expanded }))
-        return
-    }
+    toggleExpanded() { this.setState({expanded: !this.state.expanded }) }
 
     render() {
         return (

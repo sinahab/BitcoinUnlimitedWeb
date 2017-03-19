@@ -11,32 +11,39 @@ import NonTechnical from '../components/resources/nonTechnical.jsx';
 import Buips from '../components/resources/buips.jsx';
 
 class Resources extends React.Component {
-    selectedSection() { return (this.props.params.section || 'technical') }
+    constructor(props) {
+        super(props);
+        this.state = { selectedSection: this.props.params.section || 'technical' };
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setState({ selectedSection: nextProps.params.section || 'technical' })
+    }
 
     render() {
         return (
             <Page name="resources" title={ strings().resources.title } subtitle={ strings().resources.subtitle } >
                 <Section
                     key='block-size'
-                    expanded={this.selectedSection() === 'block-size'}
+                    expanded={ this.state.selectedSection === 'block-size'}
                     title={ strings().resources.size.title }
                     body={ <BlockSize /> } />
 
                 <Section
                     key='technical'
-                    expanded={this.selectedSection() === 'technical'}
+                    expanded={ this.state.selectedSection === 'technical'}
                     title={ strings().resources.technical.title }
                     body={ <Technical /> } />
 
                 <Section
                     key='non-technical'
-                    expanded={this.selectedSection() === 'non-technical'}
+                    expanded={ this.state.selectedSection === 'non-technical'}
                     title={ strings().resources.nonTechnical.title }
                     body={ <NonTechnical /> } />
 
                 <Section
                     key='buips'
-                    expanded={this.selectedSection() === 'buips'}
+                    expanded={ this.state.selectedSection === 'buips'}
                     title={ strings().resources.buips.title }
                     body={ <Buips /> } />
             </Page>

@@ -15,32 +15,39 @@ import Investors from '../components/solutions/investors.jsx'
 import InvestorsTitle from '../components/solutions/investorsTitle.jsx'
 
 class Solutions extends React.Component {
-    selectedSection() { return (this.props.params.section || 'users') }
+    constructor(props) {
+        super(props);
+        this.state = { selectedSection: this.props.params.section || 'users' };
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setState({ selectedSection: nextProps.params.section || 'users' })
+    }
 
     render() {
         return (
             <Page name="solutions" title={ strings().solutions.title } subtitle={ strings().solutions.subtitle }>
                 <Section
                     key='users'
-                    expanded={this.selectedSection() === 'users'}
+                    expanded={ this.state.selectedSection === 'users'}
                     title={ <UsersTitle /> }
                     body={ <Users /> } />
 
                 <Section
                     key='nodes'
-                    expanded={this.selectedSection() === 'nodes'}
+                    expanded={ this.state.selectedSection === 'nodes'}
                     title={ <NodesTitle /> }
                     body={ <Nodes /> } />
 
                 <Section
                     key='miners'
-                    expanded={this.selectedSection() === 'miners'}
+                    expanded={ this.state.selectedSection === 'miners'}
                     title={ <MinersTitle /> }
                     body={ <Miners /> } />
 
                 <Section
                     key='investors'
-                    expanded={this.selectedSection() === 'investors'}
+                    expanded={ this.state.selectedSection === 'investors'}
                     title={ <InvestorsTitle /> }
                     body={ <Investors /> } />
             </Page>

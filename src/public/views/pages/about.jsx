@@ -10,7 +10,14 @@ import Organization from '../components/about/organization.jsx'
 import Members from '../components/about/members.jsx'
 
 class About extends React.Component {
-    selectedSection() { return (this.props.params.section || 'organization') }
+    constructor(props) {
+        super(props);
+        this.state = { selectedSection: this.props.params.section || 'organization' };
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setState({ selectedSection: nextProps.params.section || 'organization' })
+    }
 
     makeParagraph(string, index) { return <p key={index}>{string}</p> }
 
@@ -23,25 +30,25 @@ class About extends React.Component {
             <Page name="about" title={ strings().about.title } subtitle={ strings().about.subtitle } >
                 <Section
                     key='organization'
-                    expanded={this.selectedSection() === 'organization'}
+                    expanded={ this.state.selectedSection === 'organization'}
                     title={ strings().about.organization.title }
                     body={ <Organization /> } />
 
                 <Section
                     key='members'
-                    expanded={this.selectedSection() === 'members'}
+                    expanded={ this.state.selectedSection === 'members'}
                     title={ strings().about.members.title }
                     body={ <Members /> } />
 
                 <Section
                     key='join'
-                    expanded={this.selectedSection() === 'join'}
+                    expanded={ this.state.selectedSection === 'join'}
                     title={ strings().about.join.title }
                     body={ this.stringsToParagraphs(strings().about.join.body) } />
 
                 <Section
                     key='contact'
-                    expanded={this.selectedSection() === 'contact'}
+                    expanded={ this.state.selectedSection === 'contact'}
                     title={ strings().about.contact.title }
                     body={ <Contact /> } />
             </Page>

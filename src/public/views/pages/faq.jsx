@@ -11,32 +11,39 @@ import MinerFaq from '../components/faq/minerFaq.jsx'
 import InvestorFaq from '../components/faq/investorFaq.jsx'
 
 class Faq extends React.Component {
-    selectedSection() { return (this.props.params.section) }
+    constructor(props) {
+        super(props);
+        this.state = { selectedSection: this.props.params.section };
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setState({ selectedSection: nextProps.params.section })
+    }
 
     render() {
         return (
             <Page title={ strings().faq.title } subtitle={ strings().faq.subtitle } >
                 <Section
                     key='users'
-                    expanded={this.selectedSection() === 'users'}
+                    expanded={ this.state.selectedSection === 'users'}
                     title={ strings().faq.users.title }
                     body={ <UserFaq /> } />
 
                 <Section
                     key='nodes'
-                    expanded={this.selectedSection() === 'nodes'}
+                    expanded={ this.state.selectedSection === 'nodes'}
                     title={ strings().faq.nodes.title }
                     body={ <NodeFaq /> } />
 
                 <Section
                     key='miners'
-                    expanded={this.selectedSection() === 'miners'}
+                    expanded={ this.state.selectedSection === 'miners'}
                     title={ strings().faq.miners.title }
                     body={ <MinerFaq /> } />
 
                 <Section
                     key='investors'
-                    expanded={this.selectedSection() === 'investors'}
+                    expanded={ this.state.selectedSection === 'investors'}
                     title={ strings().faq.investors.title }
                     body={ <InvestorFaq /> } />
             </Page>
