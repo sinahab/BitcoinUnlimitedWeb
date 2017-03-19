@@ -13,11 +13,11 @@ import Buips from '../components/resources/buips.jsx';
 class Resources extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { selectedSection: this.props.params.section || 'technical' };
+        this.state = { selectedSection: this.props.params.section };
     }
 
     componentWillReceiveProps(nextProps) {
-        this.setState({ selectedSection: nextProps.params.section || 'technical' })
+        this.setState({ selectedSection: nextProps.params.section })
     }
 
     render() {

@@ -17,11 +17,11 @@ import InvestorsTitle from '../components/solutions/investorsTitle.jsx'
 class Solutions extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { selectedSection: this.props.params.section || 'users' };
+        this.state = { selectedSection: this.props.params.section };
     }
 
     componentWillReceiveProps(nextProps) {
-        this.setState({ selectedSection: nextProps.params.section || 'users' })
+        this.setState({ selectedSection: nextProps.params.section })
     }
 
     render() {

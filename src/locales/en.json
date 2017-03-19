@@ -561,13 +561,51 @@
         }
     },
     "header": {
-        "download": "Download",
+        "download": {
+            "title": "Download",
+            "latest": "Latest Release",
+            "notes": "Release Notes",
+            "signatures": "Signatures",
+            "installation": "Installation Notes",
+            "older": "Older Releases"
+        },
         "donate": "Donate",
-        "about": "About",
-        "faq": "FAQ",
-        "resources": "Resources",
-        "solutions": "Solutions",
-        "technologies": "Technologies",
+        "about": {
+            "title": "About",
+            "organization": "Organization",
+            "members": "Members",
+            "join": "How to join",
+            "contact": "Contact us"
+        },
+        "faq": {
+            "title": "FAQ",
+            "users": "For Users",
+            "nodes": "For Node Operators",
+            "miners": "For Miners",
+            "investors": "For Investors"
+        },
+        "resources": {
+            "title": "Resources",
+            "technical": "Technical Works",
+            "nonTechnical": "Non-technical Works",
+            "size": "Emergent Block Size Limit",
+            "buips": "BUIPs"
+        },
+        "solutions": {
+            "title": "Solutions",
+            "users": "For Users",
+            "nodes": "For Node Operators",
+            "miners": "For Miners",
+            "investors": "For Investors"
+        },
+        "technologies": {
+            "title": "Technologies",
+            "emergentConsensus": "Emergent Consensus",
+            "xthin": "Xthin",
+            "bandwidthShaping": "Traffic shaping",
+            "parallelValidation": "Parallel validation",
+            "ourResearch": "Our research"
+        }
     },
     "footer": {
         "about": "About",

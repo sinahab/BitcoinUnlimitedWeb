@@ -12,11 +12,11 @@ import Members from '../components/about/members.jsx'
 class About extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { selectedSection: this.props.params.section || 'organization' };
+        this.state = { selectedSection: this.props.params.section };
     }
 
     componentWillReceiveProps(nextProps) {
-        this.setState({ selectedSection: nextProps.params.section || 'organization' })
+        this.setState({ selectedSection: nextProps.params.section })
     }
 
     makeParagraph(string, index) { return <p key={index}>{string}</p> }
