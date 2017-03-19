@@ -5,8 +5,9 @@ import { strings } from '../../lib/i18n';
 
 import OfficialRelease from '../components/download/official-release.jsx';
 import InstallInstructions from '../components/download/install-instructions.jsx';
-import Signatures from '../components/download/signatures.jsx';
+import Signatures1011 from '../components/download/signatures_1-0-1-1.jsx';
 import ReleaseNotes from '../components/download/releaseNotes.jsx';
+import OlderReleases from '../components/download/OlderReleases.jsx';
 
 import Page from '../page.jsx';
 import Section from '../components/section.jsx';
@@ -24,28 +25,28 @@ class Download extends React.Component {
                     body={ <OfficialRelease /> } />
 
                 <Section
-                    key='notes'
-                    expanded={this.selectedSection() === 'notes'}
-                    title={ strings().download.notes.title }
-                    body={ <ReleaseNotes /> } />
-
-                <Section
-                    key='signatures'
-                    expanded={this.selectedSection() === 'signatures'}
-                    title={ strings().download.signatures.title }
-                    body={ <Signatures /> } />
-
-                <Section
                     key='installation'
                     expanded={this.selectedSection() === 'installation'}
                     title={ strings().download.installation.title }
                     body={ <InstallInstructions /> } />
 
                 <Section
+                    key='signatures'
+                    expanded={this.selectedSection() === 'signatures'}
+                    title={ strings().download.signatures.title }
+                    body={ <Signatures1011 /> } />
+
+                <Section
+                    key='notes'
+                    expanded={this.selectedSection() === 'notes'}
+                    title={ strings().download.notes.title }
+                    body={ <ReleaseNotes /> } />
+
+                <Section
                     key='older'
                     expanded={this.selectedSection() === 'older'}
                     title={ strings().download.older.title }
-                    body={ '' } />
+                    body={ <OlderReleases /> } />
             </Page>
         );
     }
