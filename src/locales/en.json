@@ -570,6 +570,7 @@
         "technologies": "Technologies",
     },
     "footer": {
+        "about": "About",
         "latest": "Our Latest Work",
         "articles": "Articles of Federation",
         "fee": "Fee Market",
@@ -581,6 +582,7 @@
         "faq": "FAQ",
         "donate": "Donate",
         "proposals": "Proposals",
+        "organization": "Organization",
         "members": "Members",
         "resources": "Resources",
         "conferences": "Conferences",
@@ -595,7 +597,9 @@
         "why": "Why is Bitcoin forking?",
         "consensus": "On consensus and forks",
         "designing": "Designing for success",
-        "copy": "MIT License. No Rights Reserved."
+        "copy": "MIT License. No Rights Reserved.",
+        "technical": "Technical Works by Members",
+        "nonTechnical": "Non-technical Works by Members"
     },
     "notfound": {
         "error": "Error 404: File Not Found",
