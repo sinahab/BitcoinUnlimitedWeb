@@ -34,7 +34,7 @@ class Member extends React.Component {
                 </div>
 
                 <ReactTooltip className='member__tooltip' event='click' id={this.props.publicKey}>
-                    <span>Public key: {this.props.publicKey}</span>
+                    <span>Bitcoin address: {this.props.publicKey}</span>
                 </ReactTooltip>
             </div>
         )
