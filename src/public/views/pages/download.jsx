@@ -7,7 +7,7 @@ import OfficialRelease from '../components/download/official-release.jsx';
 import InstallInstructions from '../components/download/install-instructions.jsx';
 import Signatures1011 from '../components/download/signatures_1-0-1-1.jsx';
 import ReleaseNotes from '../components/download/releaseNotes.jsx';
-import OlderReleases from '../components/download/OlderReleases.jsx';
+import OlderReleases from '../components/download/olderReleases.jsx';
 
 import Page from '../page.jsx';
 import Section from '../components/section.jsx';

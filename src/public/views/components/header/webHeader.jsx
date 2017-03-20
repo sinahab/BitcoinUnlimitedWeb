@@ -3,7 +3,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 import { strings } from '../../../lib/i18n';
-import LinkDropdown from '../LinkDropdown.jsx'
+import LinkDropdown from '../linkDropdown.jsx'
 
 class WebHeader extends React.Component {
 

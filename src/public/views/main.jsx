@@ -13,6 +13,7 @@ import Donate from './pages/donate.jsx';
 import Resources from './pages/resources.jsx';
 import Faq from './pages/faq.jsx';
 import Download from './pages/download.jsx';
+import EmergentConsensusBU from './pages/emergent-consensus-bu.jsx';
 import EmergentConsensus from './pages/emergent-consensus.jsx';
 import NotFound from './pages/not-found.jsx';
 
@@ -28,6 +29,7 @@ ReactDOM.render((
             <Route path='resources(/:section)' component={Resources} />
             <Route path='faq(/:section)' component={Faq} />
             <Route path='download(/:section)' component={Download} />
+            <Route path='emergent-consensusBU' component={EmergentConsensusBU} />
             <Route path='emergent-consensus' component={EmergentConsensus} />
             <Route path='*' component={NotFound} />
         </Route>
