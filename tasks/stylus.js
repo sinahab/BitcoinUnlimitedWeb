@@ -7,7 +7,8 @@ module.exports = function(grunt) {
     return {
         dist: {
             files: {
-                '.dist/public/css/main.css': 'src/public/css/main.styl' // this is our main styl file
+                '.dist/public/css/site.css': 'src/public/css/site.styl', // this is the site's styl file
+                '.dist/public/css/bu.css': 'src/public/css/bu.styl' // this is the site's styl file
             }
         }
     };
