@@ -40,15 +40,15 @@
             "description": "Bitcoin Unlimited powers the backbone of the Bitcoin network by using novel technologies.",
             "adjustableCap": {
                 "title": "Adjustable Block-size Cap (ABC)",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                "text": "The BU client allows node operators and miners to easily adjust the size of blocks they accept without having to restart their node or recompile new executables."
             },
             "xthin": {
                 "title": "Xthin",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                "text": "Xthin fixes an inefficiency in Bitcoin Core that results in transactions often being received twice by each node. It improves block propagation times and reduces the number of required bytes."
             },
             "validation": {
                 "title": "Parallel validation",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                "text": "The BU client enables nodes to validate more than one block – along with new incoming transactions – all at the same time. This neutralizes an existing attack vector while improving the network’s performance."
             }
         }
     },
