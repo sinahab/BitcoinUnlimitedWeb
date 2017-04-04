@@ -161,9 +161,11 @@
         },
         "join": {
             "title": "How to join",
-            "body": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum volutpat aliquam. Donec luctus purus vel lectus auctor, eget blandit ante lobortis. Sed non lectus faucibus, auctor augue at, feugiat odio. Ut nisl arcu, pretium faucibus massa nec, finibus lobortis neque. Aliquam vel orci a dolor efficitur placerat. Aenean luctus, ipsum eu feugiat vestibulum, enim elit auctor leo, vitae dapibus arcu tortor nec leo."
-            ]
+            "body": {
+                "text1": "To apply for membership, please introduce yourself in",
+                "link1": "this thread",
+                "text2": "and state that you wish to become a member. The decision to admit new members is made by a vote from existing members, so be sure to provide enough verifiable information about yourself and your vision for the future of Bitcoin that the membership can make an informed decision regarding your application."
+            }
         },
         "contact": {
             "title": "Contact us",

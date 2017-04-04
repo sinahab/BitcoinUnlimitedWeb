@@ -8,6 +8,7 @@ import Section from '../components/section.jsx';
 import Contact from '../components/about/contact.jsx'
 import Organization from '../components/about/organization.jsx'
 import Members from '../components/about/members.jsx'
+import Join from '../components/about/join.jsx'
 
 class About extends React.Component {
     constructor(props) {
@@ -17,12 +18,6 @@ class About extends React.Component {
 
     componentWillReceiveProps(nextProps) {
         this.setState({ selectedSection: nextProps.params.section })
-    }
-
-    makeParagraph(string, index) { return <p key={index}>{string}</p> }
-
-    stringsToParagraphs(strings) {
-        return strings.map((string, i) => this.makeParagraph(string, i))
     }
 
     render() {
@@ -44,7 +39,7 @@ class About extends React.Component {
                     key='join'
                     expanded={ this.state.selectedSection === 'join'}
                     title={ strings().about.join.title }
-                    body={ this.stringsToParagraphs(strings().about.join.body) } />
+                    body={ <Join /> } />
 
                 <Section
                     key='contact'
