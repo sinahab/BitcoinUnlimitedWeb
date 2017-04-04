@@ -169,7 +169,8 @@
         },
         "contact": {
             "title": "Contact us",
-            "body": "Please contact us at",
+            "general": "For general inquiries, please contact us at",
+            "security": "To report a security issue, please contact us at"
         }
     },
     "faq": {

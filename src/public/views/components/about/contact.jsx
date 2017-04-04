@@ -8,10 +8,14 @@ export default React.createClass({
 
     render: function () {
         return (
-            <div>
-                <p> { strings().about.contact.body } <a className='link--underline dim black' href="mailto:info@bitcoinunlimited.info">info@bitcoinunlimited.info</a>.</p>
-            </div>
-
+            <ul className='py1'>
+                <li className='pb1'>
+                    { strings().about.contact.general } <a className='link--underline dim black' href="mailto:info@bitcoinunlimited.info">info@bitcoinunlimited.info</a>
+                </li>
+                <li>
+                    { strings().about.contact.security } <a className='link--underline dim black' href="mailto:security@bitcoinunlimited.info">security@bitcoinunlimited.info</a>
+                </li>
+            </ul>
         );
     }
 });
