@@ -27,7 +27,10 @@
             "name": "Andrea Suisani",
             "publicKey": "1LwvkQTWmotqTosgBcK8kFPCKzW2BPiE1G",
             "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/#post-3940",
-            "photoUrl": "img/about/Andrea_Suisani.png"
+            "photoUrl": "img/about/Andrea_Suisani.png",
+            "bio": [
+                "A software developer for almost twenty years, recently transitioned to what they use to call a full-stack software developer. That means doing 4 jobs while being payed only for one. On the bright side such a role gives opportunity to improve skills through a lot of IT fields like database system administration, system administration, coding and project management. Holding a Bachelor degree in statistics, and getting into Bitcoin in 2011, Andrea briefly pool mined with a Radeon GPU, and hasn't looked back since."
+            ]
         },
         {
             "avatar": "Peter Tschipper",
@@ -41,14 +44,24 @@
             "name": "Roger Ver",
             "publicKey": "1KubbeimkYerQhQjdMEufzUDpZvJEUcHfJ ",
             "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/page-6#post-31067",
-            "photoUrl": "img/about/Roger_Ver.png"
+            "photoUrl": "img/about/Roger_Ver.png",
+            "bio": [
+                "After founding several successful companies in Silicon Valley, Roger began his Bitcoin journey in February 2011.",
+                "Years before traditional venture capital firms became involved, he became the first person in the world to start investing in Bitcoin related startups, nearly singlehandedly funded the entire first generation of Bitcoin businesses.",
+                "His current investments include Bitcoin.com, Blockchain.com, Bitpay.com, Kraken.com, and many many others.",
+                "In his free time he enjoys competing in Brazilian Jujitsu tournaments."
+            ]
         },
         {
             "avatar": "chriswilmer",
             "name": "Christopher Wilmer",
             "publicKey": "1FdweEq46d3r67W6odR4YREUXJrZ8Vj7c",
             "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/page-5#post-28082",
-            "photoUrl": "img/about/Christopher_Wilmer.png"
+            "photoUrl": "img/about/Christopher_Wilmer.png",
+            "bio": [
+                "Prof. Christopher E. Wilmer began using Bitcoin in September 2011, after reading Wired Magazine's infamous article entitled \"The Rise and Fall of Bitcoin.\" Undeterred by Wired's confident view that the Bitcoin experiment was over, Chris bought some bitcoins for $3 each and began learning to use this exciting new technology. In 2014, he co-authored his first book on Bitcoin aimed at the general public, \"Bitcoin for the Befuddled,\" and also started the world's first academic journal for Bitcoin/cryptocurrency related research, called Ledger.",
+                "Prof. Wilmer directs a research lab at the University of Pittsburgh that uses large-scale molecular simulations, run on supercomputers, to understand and design new materials. His research group works closely with experimental chemists and materials scientists to synthesize and test promising materials. In 2012 he co-founded NuMat Technologies and was named by Forbes as one of the 30-Under-30 in Energy Innovation. Recently he was awarded an early career fellowship for promising scientists and engineers from the US National Science Foundation."
+            ]
         },
         {
             "avatar": "Haiyang",
@@ -142,12 +155,6 @@
             "name": "John Swingle",
             "publicKey": "1AmtAAg9NK3j44y5RB6QBYrLnYJo3cJAtb",
             "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/page-4#post-14340"
-        },
-        {
-            "avatar": "chriswilmer",
-            "name": "Chris Wilmer",
-            "publicKey": "1FdweEq46d3r67W6odR4YREUXJrZ8Vj7c",
-            "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/page-5#post-28082"
         },
         {
             "avatar": "tim potter",

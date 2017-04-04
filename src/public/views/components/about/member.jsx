@@ -21,6 +21,33 @@ class Member extends React.Component {
         }
     }
 
+    renderTooltipBody() {
+        let bio, name = ''
+
+        if (this.props.bio) {
+            bio = this.stringsToParagraphs(this.props.bio)
+            name = <p className='bold center'> {this.props.name} </p>
+        }
+
+        return (
+            <span>
+                <div className='left-align'>
+                    { name }
+                    { bio }
+                </div>
+                <div className='left-align'>
+                    Bitcoin address: {this.props.publicKey}
+                </div>
+            </span>
+        )
+    }
+
+    makeParagraph(string, index) { return <p key={index}>{string}</p> }
+
+    stringsToParagraphs(strings) {
+        return strings.map((string, i) => this.makeParagraph(string, i))
+    }
+
     render() {
         return (
             <div className='p2 inline-block align-top member__container'>
@@ -33,8 +60,8 @@ class Member extends React.Component {
                     </div>
                 </div>
 
-                <ReactTooltip className='member__tooltip' event='click' id={this.props.publicKey}>
-                    <span>Bitcoin address: {this.props.publicKey}</span>
+                <ReactTooltip className='member__tooltip' place='bottom' event='click' id={this.props.publicKey}>
+                    { this.renderTooltipBody() }
                 </ReactTooltip>
             </div>
         )

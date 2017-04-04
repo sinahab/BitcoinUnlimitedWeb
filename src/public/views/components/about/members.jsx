@@ -15,6 +15,7 @@ class Members extends React.Component {
                         return(
                             <Member
                                 image={ '../' + member.photoUrl }
+                                bio={member.bio}
                                 avatar={member.avatar}
                                 publicKey={member.publicKey}
                                 name={member.name}
