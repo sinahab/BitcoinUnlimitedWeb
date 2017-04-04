@@ -27,10 +27,10 @@ class Technologies extends React.Component {
         return (
             <Page name="technologies" title={ strings().technologies.title } subtitle={ strings().technologies.subtitle }>
                 <Section
-                    key='emergentConsensus'
-                    expanded={ this.state.selectedSection === 'emergent-consensus'}
-                    title={ strings().technologies.emergentConsensus.title }
-                    body={ this.stringsToParagraphs(strings().technologies.emergentConsensus.body) } />
+                    key='adjustableCap'
+                    expanded={ this.state.selectedSection === 'adjustable-block-size-cap'}
+                    title={ strings().technologies.adjustableCap.title }
+                    body={ this.stringsToParagraphs(strings().technologies.adjustableCap.body) } />
 
                 <Section
                     key='xthin'
@@ -39,22 +39,10 @@ class Technologies extends React.Component {
                     body={ <Xthin /> } />
 
                 <Section
-                    key='bandwidthShaping'
-                    expanded={ this.state.selectedSection === 'bandwidth-shaping'}
-                    title={ strings().technologies.bandwidthShaping.title }
-                    body={ this.stringsToParagraphs(strings().technologies.bandwidthShaping.body) } />
-
-                <Section
                     key='parallelValidation'
                     expanded={ this.state.selectedSection === 'parallel-validation'}
                     title={ strings().technologies.parallelValidation.title }
                     body={ this.stringsToParagraphs(strings().technologies.parallelValidation.body) } />
-
-                <Section
-                    key='ourResearch'
-                    expanded={ this.state.selectedSection === 'research'}
-                    title={ strings().technologies.ourResearch.title }
-                    body={ this.stringsToParagraphs(strings().technologies.ourResearch.body) } />
             </Page>
 
         );

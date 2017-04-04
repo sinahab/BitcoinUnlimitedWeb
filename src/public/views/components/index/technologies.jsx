@@ -18,8 +18,8 @@ export default React.createClass({
                         <div className='inline pr2'>
                             <BulletIcon width='8' height='8' />
                         </div>
-                        <Link className='link--underline dim black' to="/technologies/emergent-consensus">{ strings().index.technologies.consensus.title }</Link>:
-                        <div className="inline">&nbsp;{ strings().index.technologies.consensus.text }</div>
+                        <Link className='link--underline dim black' to="/technologies/adjustable-block-size-cap">{ strings().index.technologies.adjustableCap.title }</Link>:
+                        <div className="inline">&nbsp;{ strings().index.technologies.adjustableCap.text }</div>
                     </div>
                     <div className='py2 lh-copy'>
                         <div className='inline pr2'>
@@ -32,22 +32,8 @@ export default React.createClass({
                         <div className='inline pr2'>
                             <BulletIcon width='8' height='8' />
                         </div>
-                        <Link className='link--underline dim black' to="/technologies/bandwidth-shaping">{ strings().index.technologies.shaping.title }</Link>:
-                        <div className="inline">&nbsp;{ strings().index.technologies.shaping.text }</div>
-                    </div>
-                    <div className='py2 lh-copy'>
-                        <div className='inline pr2'>
-                            <BulletIcon width='8' height='8' />
-                        </div>
                         <Link className='link--underline dim black' to="/technologies/parallel-validation">{ strings().index.technologies.validation.title }</Link>:
                         <div className="inline">&nbsp;{ strings().index.technologies.validation.text }</div>
-                    </div>
-                    <div className='py2 lh-copy'>
-                        <div className='inline pr2'>
-                            <BulletIcon width='8' height='8' />
-                        </div>
-                        <Link className='link--underline dim black' to="/technologies/research">{ strings().index.technologies.research.title }</Link>:
-                        <div className="inline">&nbsp;{ strings().index.technologies.research.text }</div>
                     </div>
                 </div>
             </div>

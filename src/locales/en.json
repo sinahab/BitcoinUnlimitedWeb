@@ -38,24 +38,16 @@
         "technologies": {
             "title": "Technologies",
             "description": "Bitcoin Unlimited powers the backbone of the Bitcoin network by using novel technologies.",
-            "consensus": {
-                "title": "Emergent Consensus",
+            "adjustableCap": {
+                "title": "Adjustable Block-size Cap (ABC)",
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             },
             "xthin": {
                 "title": "Xthin",
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             },
-            "shaping": {
-                "title": "Traffic shaping",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
             "validation": {
                 "title": "Parallel validation",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            "research": {
-                "title": "Our research",
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             }
         }
@@ -98,10 +90,10 @@
     "technologies": {
         "title": "Technologies",
         "subtitle": "Bitcoin Unlimited powers the backbone of the Bitcoin network by using novel technologies.",
-        "emergentConsensus": {
-            "title": "Emergent Consensus",
+        "adjustableCap": {
+            "title": "Adjustable Block-size Cap (ABC)",
             "body": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum volutpat aliquam. Donec luctus purus vel lectus auctor, eget blandit ante lobortis. Sed non lectus faucibus, auctor augue at, feugiat odio. Ut nisl arcu, pretium faucibus massa nec, finibus lobortis neque. Aliquam vel orci a dolor efficitur placerat. Aenean luctus, ipsum eu feugiat vestibulum, enim elit auctor leo, vitae dapibus arcu tortor nec leo."
+                "Bitcoin Unlimited was the first client to provide the tools that node operators and miners need to remove the 1 MB block size limit currently limiting transaction throughput on the Bitcoin network. The BU client allows node operators to easily adjust the size of blocks their node accepts, without having to restart their node or recompile new executables from source code. Similarly, BU allows miners to begin producing larger blocks without a restart or a recompile. BU provides both groups the ability to signal their block size preferences across the network, using the user-agent string in the case of common nodes, and using the coinbase transaction of each new block in the case of mining nodes."
             ]
         },
         "xthin": {
@@ -111,22 +103,11 @@
                 "Rather than requesting the block verbatim, an Xthin-equipped node images its mempool onto a Bloom filter that its sends with its \"get data\" request; the transmitting node sends the block contents by hash for all the transactions imaged onto the Bloom filter and in full otherwise. In the unlikely event that the receiving node is unable to reconstruct the block, it requests the still-missing transactions, resulting in a second round trip between the nodes."
             ]
         },
-        "bandwidthShaping": {
-            "title": "Bandwidth shaping",
-            "body": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum volutpat aliquam. Donec luctus purus vel lectus auctor, eget blandit ante lobortis. Sed non lectus faucibus, auctor augue at, feugiat odio. Ut nisl arcu, pretium faucibus massa nec, finibus lobortis neque. Aliquam vel orci a dolor efficitur placerat. Aenean luctus, ipsum eu feugiat vestibulum, enim elit auctor leo, vitae dapibus arcu tortor nec leo."
-            ]
-        },
         "parallelValidation": {
             "title": "Parallel Validation",
             "body": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum volutpat aliquam. Donec luctus purus vel lectus auctor, eget blandit ante lobortis. Sed non lectus faucibus, auctor augue at, feugiat odio. Ut nisl arcu, pretium faucibus massa nec, finibus lobortis neque. Aliquam vel orci a dolor efficitur placerat. Aenean luctus, ipsum eu feugiat vestibulum, enim elit auctor leo, vitae dapibus arcu tortor nec leo."
-            ]
-        },
-        "ourResearch": {
-            "title": "Our Research",
-            "body": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum volutpat aliquam. Donec luctus purus vel lectus auctor, eget blandit ante lobortis. Sed non lectus faucibus, auctor augue at, feugiat odio. Ut nisl arcu, pretium faucibus massa nec, finibus lobortis neque. Aliquam vel orci a dolor efficitur placerat. Aenean luctus, ipsum eu feugiat vestibulum, enim elit auctor leo, vitae dapibus arcu tortor nec leo."
+                "Prior to parallel validation, when a node received a new block, it would essentially freeze until it had either accepted or rejected the block in question. During this validation period, the node would neither relay new transactions nor attempt to validate competing blocks. This resulted in an attack vector where a malicious entity could mine an extremely slow-to-verify block and temporarily freeze the network.",
+                "Parallel validation neutralizes this attack vector by allowing nodes to validate more than one block--along with new incoming transactions--all at the same time. This improves Bitcoin’s performance as a payment network because there is no longer any interruption in transaction processing during block validation. Furthermore, because a fast-to-validate block will \"win\" a block race against a slow-to-validate block found at the same time, the widespread adoption of parallel validation would add a cost of approximately 1.25 BTC per validation-minute due to the increased orphan risk of slow-to-verify blocks."
             ]
         }
     },
@@ -593,11 +574,9 @@
         },
         "technologies": {
             "title": "Technologies",
-            "emergentConsensus": "Emergent Consensus",
+            "adjustableCap": "Adjustable Block-size Cap",
             "xthin": "Xthin",
-            "bandwidthShaping": "Traffic shaping",
-            "parallelValidation": "Parallel validation",
-            "ourResearch": "Our research"
+            "parallelValidation": "Parallel validation"
         }
     },
     "footer": {

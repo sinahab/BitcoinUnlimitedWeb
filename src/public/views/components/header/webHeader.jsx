@@ -22,11 +22,9 @@ class WebHeader extends React.Component {
                     </LinkDropdown>
 
                     <LinkDropdown title={<Link className='non-decorated black inline-block mx2 py2' to='/technologies'>{strings().header.technologies.title}</Link>}>
-                        <Link className='non-decorated black block p2' to='/technologies/emergent-consensus'>{strings().header.technologies.emergentConsensus}</Link>
+                        <Link className='non-decorated black block p2' to='/technologies/adjustable-block-size-cap'>{strings().header.technologies.adjustableCap}</Link>
                         <Link className='non-decorated black block p2' to='/technologies/xthin'>{strings().header.technologies.xthin}</Link>
-                        <Link className='non-decorated black block p2' to='/technologies/bandwidth-shaping'>{strings().header.technologies.bandwidthShaping}</Link>
                         <Link className='non-decorated black block p2' to='/technologies/parallel-validation'>{strings().header.technologies.parallelValidation}</Link>
-                        <Link className='non-decorated black block p2' to='/technologies/research'>{strings().header.technologies.ourResearch}</Link>
                     </LinkDropdown>
 
                     <LinkDropdown title={<Link className='non-decorated black inline-block mx2 py2' to='/resources'>{strings().header.resources.title}</Link>}>
