@@ -564,9 +564,7 @@
         "resources": {
             "title": "Resources",
             "technical": "Technical Works",
-            "nonTechnical": "Non-technical Works",
-            "size": "Emergent Block Size Limit",
-            "buips": "BUIPs"
+            "nonTechnical": "Non-technical Works"
         },
         "solutions": {
             "title": "Solutions",
@@ -583,36 +581,48 @@
         }
     },
     "footer": {
-        "about": "About",
-        "latest": "Our Latest Work",
-        "articles": "Articles of Federation",
-        "fee": "Fee Market",
-        "subchains": "Subchains",
-        "analysis": "Bitcoin Unlimited Analysis (1-txn)",
-        "navigate": "Navigate",
-        "home": "Home",
-        "download": "Download",
-        "faq": "FAQ",
+        "download": {
+            "title": "Download",
+            "latest": "Latest Release",
+            "notes": "Release Notes",
+            "signatures": "Signatures",
+            "installation": "Installation Notes",
+            "older": "Older Releases"
+        },
         "donate": "Donate",
-        "proposals": "Proposals",
-        "organization": "Organization",
-        "members": "Members",
-        "resources": "Resources",
-        "conferences": "Conferences",
-        "join": "Join Us",
-        "forum": "The Bitcoin Forum",
-        "reddit1": "Reddit /r/btc",
-        "reddit2": "Reddit /r/bitcoin_unlimited",
-        "slack": "Slack",
-        "irc": "##btc on IRC",
-        "news": "News",
-        "time": "Time to roll out bigger blocks",
-        "why": "Why is Bitcoin forking?",
-        "consensus": "On consensus and forks",
-        "designing": "Designing for success",
-        "copy": "MIT License. No Rights Reserved.",
-        "technical": "Technical Works by Members",
-        "nonTechnical": "Non-technical Works by Members"
+        "about": {
+            "title": "About",
+            "organization": "Organization",
+            "members": "Members",
+            "join": "How to join",
+            "contact": "Contact us"
+        },
+        "faq": {
+            "title": "FAQ",
+            "users": "For Users",
+            "nodes": "For Node Operators",
+            "miners": "For Miners",
+            "investors": "For Investors"
+        },
+        "resources": {
+            "title": "Resources",
+            "technical": "Technical Works",
+            "nonTechnical": "Non-technical Works"
+        },
+        "solutions": {
+            "title": "Solutions",
+            "users": "For Users",
+            "nodes": "For Node Operators",
+            "miners": "For Miners",
+            "investors": "For Investors"
+        },
+        "technologies": {
+            "title": "Technologies",
+            "adjustableCap": "Adjustable Block-size Cap",
+            "xthin": "Xthin",
+            "parallelValidation": "Parallel validation"
+        },
+        "copy": "MIT License. No Rights Reserved."
     },
     "notfound": {
         "error": "Error 404: File Not Found",
