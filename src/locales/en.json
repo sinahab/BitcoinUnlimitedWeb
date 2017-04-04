@@ -158,13 +158,6 @@
                 { "body": "Bitcoin Unlimited does not constrain node operators or miners to one particular coordination scheme with regards to the block size limit; instead it is a tool that can be used to implement several different schemes. In this article, Bitcoin Unlimited member and ViaBTC Mining Pool CEO Haipo Yang proposes a way for miners to coordinate for the upcoming increase in the size of blocks." },
                 { "body": "Generally, a problem can rarely be solved unless it is properly recognized. Specifically, Bitcoin's centralized maximum block size is put into historical context and a decentralized solution is presented. This article introduces emergence, which is a fundamental aspect of nature giving rise to many levels of complexity. Further, its important and long-term applicability for determining the optimum block size limit in the Bitcoin network is shown."}
             ]
-        },
-        "size": {
-            "title": "Emergent Block Size Limit",
-            "body": []
-        },
-        "buips": {
-            "title": "Bitcoin Unlimited Improvement Proposals (BUIPs)"
         }
     },
     "donate": {

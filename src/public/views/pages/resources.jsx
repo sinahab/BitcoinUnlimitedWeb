@@ -24,12 +24,6 @@ class Resources extends React.Component {
         return (
             <Page name="resources" title={ strings().resources.title } subtitle={ strings().resources.subtitle } >
                 <Section
-                    key='block-size'
-                    expanded={ this.state.selectedSection === 'block-size'}
-                    title={ strings().resources.size.title }
-                    body={ <BlockSize /> } />
-
-                <Section
                     key='technical'
                     expanded={ this.state.selectedSection === 'technical'}
                     title={ strings().resources.technical.title }
@@ -40,12 +34,6 @@ class Resources extends React.Component {
                     expanded={ this.state.selectedSection === 'non-technical'}
                     title={ strings().resources.nonTechnical.title }
                     body={ <NonTechnical /> } />
-
-                <Section
-                    key='buips'
-                    expanded={ this.state.selectedSection === 'buips'}
-                    title={ strings().resources.buips.title }
-                    body={ <Buips /> } />
             </Page>
         );
     }
