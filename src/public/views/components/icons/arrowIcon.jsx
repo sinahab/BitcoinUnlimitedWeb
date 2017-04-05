@@ -29,4 +29,10 @@ class ArrowIcon extends React.Component {
     }
 }
 
+ArrowIcon.propTypes = {
+  expanded: React.PropTypes.bool,
+  onClick: React.PropTypes.func
+};
+
+
 export default ArrowIcon

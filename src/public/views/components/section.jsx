@@ -35,4 +35,10 @@ class Section extends React.Component {
     }
 }
 
+Section.propTypes = {
+  expanded: React.PropTypes.bool,
+  title: React.PropTypes.node,
+  body: React.PropTypes.node
+};
+
 export default Section

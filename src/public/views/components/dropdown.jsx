@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-class LinkDropdown extends React.Component {
+class Dropdown extends React.Component {
     render() {
         return (
             <div className="dropdown__container">
@@ -17,4 +17,8 @@ class LinkDropdown extends React.Component {
     }
 }
 
-export default LinkDropdown
+Dropdown.propTypes = {
+    title: React.PropTypes.node
+}
+
+export default Dropdown
