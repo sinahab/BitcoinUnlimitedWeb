@@ -5,12 +5,54 @@ import { strings } from '../../../lib/i18n';
 
 import Section from '../section.jsx';
 import Release from './release.jsx'
+import Signatures1012 from './signatures_1-0-1-2.jsx'
+import Signatures1011 from './signatures_1-0-1-1.jsx'
 import Signatures1001 from './signatures_1-0-0-1.jsx'
 import Signatures0121 from './signatures_0-12-1.jsx'
 import Signatures0120 from './signatures_0-12-0.jsx'
 import Signatures0112 from './signatures_0-11-2.jsx'
 
 class OfficialRelease extends React.Component {
+    renderV1012Body() {
+        return (
+            <Release
+                osx64='/downloads/bitcoinUnlimited-1.0.1.2-osx64.tar.gz'
+                osx32='/downloads/bitcoinUnlimited-1.0.1.2-osx.tar.gz'
+                osxDmg='/downloads/bitcoinUnlimited-1.0.1.2-osx.dmg'
+                windows64Exe='/downloads/bitcoinUnlimited-1.0.1.2-win64-setup.exe'
+                windows32Exe='/downloads/bitcoinUnlimited-1.0.1.2-win32-setup.exe'
+                linux64='/downloads/bitcoinUnlimited-1.0.1.2-linux64.tar.gz'
+                linux32='/downloads/bitcoinUnlimited-1.0.1.2-linux32.tar.gz'
+                arm64='/downloads/bitcoinUnlimited-1.0.1.2-arm64.tar.gz'
+                arm32='/downloads/bitcoinUnlimited-1.0.1.2-arm32.tar.gz'
+                source='https://github.com/BitcoinUnlimited/BitcoinUnlimited/releases/tag/1.0.1.2'>
+
+                <Signatures1012 />
+            </Release>
+        )
+    }
+
+    renderV1011Body() {
+        return (
+            <Release
+                osx64='/downloads/bitcoinUnlimited-1.0.1.1-osx64.tar.gz'
+                osx32='/downloads/bitcoinUnlimited-1.0.1.1-osx.dmg'
+                osxDmg='/downloads/bitcoinUnlimited-1.0.1.1-osx.tar.gz'
+                windows64Exe='/downloads/bitcoinUnlimited-1.0.1.1-win64-setup.exe'
+                windows64Zip='/downloads/bitcoinUnlimited-1.0.1.1-win64.zip'
+                windows32Exe='/downloads/bitcoinUnlimited-1.0.1.1-win32-setup.exe'
+                windows32Zip='/downloads/bitcoinUnlimited-1.0.1.1-win32.zip'
+                linux64='/downloads/bitcoinUnlimited-1.0.1.1-linux64.tar.gz'
+                linux32='/downloads/bitcoinUnlimited-1.0.1.1-linux32.tar.gz'
+                arm64='/downloads/bitcoinUnlimited-1.0.1.1-arm64.tar.gz'
+                arm32='/downloads/bitcoinUnlimited-1.0.1.1-arm32.tar.gz'
+                source='https://github.com/BitcoinUnlimited/BitcoinUnlimited/releases/tag/1.0.1.1'>
+
+                <Signatures1011 />
+            </Release>
+        )
+    }
+
     renderV1001Body() {
         return (
             <Release
@@ -87,6 +129,16 @@ class OfficialRelease extends React.Component {
     render() {
         return (
             <div className="pt2">
+                <Section
+                    title='v1.0.1.2'
+                    body={ this.renderV1012Body() }
+                    expanded={ false } />
+
+                <Section
+                    title='v1.0.1.1'
+                    body={ this.renderV1011Body() }
+                    expanded={ false } />
+
                 <Section
                     title='v1.0.0.1'
                     body={ this.renderV1001Body() }

@@ -42,21 +42,22 @@ export default React.createClass({
                 </div>
 
                 <br />
-                    1.0.0.1 {strings().download.signatures.statement}:<br /><br />
-                    <pre>{CHECKSUMS1_0_0_1}</pre>
-                    <br />
-                    {strings().download.signatures.tip}
-                    <br/>
-                    <br />
-                    {strings().download.signatures.andrew} (1zerg12nRXZ41Pw4tfCTqgtdiJx6D1We3 - {strings().download.signatures.thezerg})
-                    <br/>
-                    {strings().download.signatures.signature}:<br />HAyvt/ZfhC0rTxuz2baDMJIe6ETI/D7WoqXBjWgciOmCY6lv+dKoG/TaaalE5zYHJSn2va+OucYYJtePKekijr4=
-                    <br/><br/>
-                    {strings().download.signatures.sickpig} (1LwvkQTWmotqTosgBcK8kFPCKzW2BPiE1G)<br/>
-                {strings().download.signatures.signature}:<br />IEDdGccB3yN0sdc3SyjuRi3FZgyZUya2TqnOc64R3ADUbozKeV/UKzi/zTLm8k+3+qAWV5YtqF6hNqzjDtXAIys=
-                    <br/><br/>
-                    {strings().download.signatures.deadalnix} (1KEaWZ7tpLF4n5xFf5bpTPff7G7uJZiDGw)<br/>
-                {strings().download.signatures.signature}:<br />H+OGhBmcEA4xr3nGrjH1riihwybxw9mBb7n3Bzf/Z/geOV9tV5qjsr21/jDP6WZ1VEsauWf+a+enrOLEgDsUfA8=
+                 1.0.0.1 {strings().download.signatures.statement}:<br /><br />
+                 <pre>{CHECKSUMS1_0_0_1}</pre>
+                 <br />
+                 {strings().download.signatures.tip}
+                 <br/>
+                 <br />
+                 {strings().download.signatures.andrew} (1zerg12nRXZ41Pw4tfCTqgtdiJx6D1We3 - {strings().download.signatures.thezerg})
+                 <br/>
+                 {strings().download.signatures.signature}:<br />GwsAg+EvOxIYqHZfQfZXW+NLaVeHezl7CuNWIE1HqZr4D1SpvZAqzSNlMl4RFVprpCZqKfmV/y7FCDS93m5mBUM=
+                 <br/><br/>
+                 {strings().download.signatures.sickpig} (1LwvkQTWmotqTosgBcK8kFPCKzW2BPiE1G)<br/>
+                {strings().download.signatures.signature}:<br />H4KsTrAhlXbIXnuokxreCbQHy5LpUhQlauE5O8n8tSwCBZt66QIGDlLTy02URgD3ORWXbCFqbrr5HbQPtZbb7UU=
+                 <br/><br/>
+                 {strings().download.signatures.deadalnix} (1KEaWZ7tpLF4n5xFf5bpTPff7G7uJZiDGw)<br/>
+                {strings().download.signatures.signature}:<br />H2m8fPV6twB7wjL6umJ9zy8D/wSLolKJwEKzNs1ehcnGJtiTe1071AqPYyQerzTh7vozklr+X8xSZVySRB+DQ5c=
+                 <br/>
                 </div>
             </div>
         );

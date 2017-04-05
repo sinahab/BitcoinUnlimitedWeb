@@ -24,7 +24,12 @@ class Download extends React.Component {
 
     render() {
         return (
-            <Page name="download" title={ strings().download.title } subtitle={ strings().download.subtitle } >
+            <Page
+                name="download"
+                title={ strings().download.title }
+                subtitle={ strings().download.subtitle }
+                intro={ strings().download.supporting }>
+
                 <Section
                     key='latest'
                     expanded={ this.state.selectedSection === 'latest'}
@@ -36,12 +41,6 @@ class Download extends React.Component {
                     expanded={ this.state.selectedSection === 'installation'}
                     title={ strings().download.installation.title }
                     body={ <InstallInstructions /> } />
-
-                <Section
-                    key='signatures'
-                    expanded={ this.state.selectedSection === 'signatures'}
-                    title={ strings().download.signatures.title }
-                    body={ <Signatures1011 /> } />
 
                 <Section
                     key='notes'

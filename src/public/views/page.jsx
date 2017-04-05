@@ -12,13 +12,17 @@ class Page extends React.Component {
             <div id={this.props.name}>
                 <Header active={this.props.name} />
                 <div className="p2 py4 center">
-                    <div className="py2 h1">{ this.props.title }</div>
-                    <div className="py2 h3">{ this.props.subtitle }</div>
+                    <div className='inline-block section__container'>
+                        <div className="py2 h1">{ this.props.title }</div>
+                        <div className="py2 h3">{ this.props.subtitle }</div>
 
-                    <div className='inline-block left-align p2 pb4 section__container'>
-                        { this.props.children }
+                        { this.props.intro ? <div className='py2 lh-copy'>{this.props.intro}</div> : '' }
+
+                        <div className='left-align p2 pb4'>
+                            { this.props.children }
+                        </div>
+
                     </div>
-
                 </div>
                 <Footer />
             </div>
