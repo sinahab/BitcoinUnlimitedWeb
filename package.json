@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-unlimited-web",
-  "version": "0.8.3",
+  "version": "0.8.7",
   "description": "The Bitcoin Unlimited web site",
   "author": "Bitcoin Unlimited Developers",
   "contributors": [
@@ -57,12 +57,11 @@
     "grunt-contrib-copy": "^0.8.2",
     "grunt-contrib-stylus": "^1.2.0",
     "grunt-contrib-watch": "^0.6.1",
-    "history": "^1.17.0",
     "nodemon": "^1.11.0",
-    "react": "^0.14.5",
+    "react": "^15.4.2",
     "react-burger-menu": "^1.10.14",
-    "react-dom": "^0.14.5",
-    "react-router": "^1.0.3",
-    "react-tooltip": "^3.2.7"
+    "react-dom": "^15.4.2",
+    "react-router": "^2.0.0",
+    "react-tooltip": "^3.2.10"
   }
 }

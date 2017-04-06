@@ -3,7 +3,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link, IndexRoute } from 'react-router';
-import { createHistory } from 'history';
+import { browserHistory } from 'react-router'
 
 import Index from './pages/index.jsx';
 import Solutions from './pages/solutions.jsx';
@@ -18,7 +18,7 @@ import EmergentConsensus from './pages/emergent-consensus.jsx';
 import NotFound from './pages/not-found.jsx';
 
 ReactDOM.render((
-    <Router onUpdate={() => window.scrollTo(0, 0)} history={createHistory()}>
+    <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
         <Route path='/'>
             <IndexRoute component={Index} />
             <Route path='index' component={Index} />
