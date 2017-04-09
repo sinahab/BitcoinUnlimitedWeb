@@ -14,19 +14,28 @@ class Member extends React.Component {
     }
 
     setClickableClass() {
-        if (this.props.publicKey) {
+        if (this.hasTooltip()) {
             return('inline-block px0 member--clickable')
         } else {
             return('inline-block px0')
         }
     }
 
+    hasTooltip() {
+        const value = (this.props.publicKey || this.props.bio) ? true : false
+        return value
+    }
+
     renderTooltipBody() {
-        let bio, name = ''
+        let bio, name, bitcoin_address = ''
 
         if (this.props.bio) {
             bio = this.stringsToParagraphs(this.props.bio)
             name = <p className='bold center'> {this.props.name} </p>
+        }
+
+        if (this.props.publicKey) {
+            bitcoin_address = "Bitcoin address: " + this.props.publicKey
         }
 
         return (
@@ -36,7 +45,7 @@ class Member extends React.Component {
                     { bio }
                 </div>
                 <div className='left-align'>
-                    Bitcoin address: {this.props.publicKey}
+                    { bitcoin_address }
                 </div>
             </span>
         )
@@ -50,17 +59,17 @@ class Member extends React.Component {
 
     render() {
         return (
-            <div className='p2 inline-block align-top member__container'>
+            <div className='p2 center inline-block align-top member__container'>
                 { this.renderImage() }
 
                 <div className='pt1'>
                     <div> {this.props.name} </div>
-                    <div data-tip data-for={this.props.publicKey} className={ this.setClickableClass() }>
+                    <div data-tip data-for={this.hasTooltip() ? this.props.avatar : ''} className={ this.setClickableClass() }>
                         ({this.props.avatar})
                     </div>
                 </div>
 
-                <ReactTooltip className='member__tooltip' place='bottom' event='click' id={this.props.publicKey}>
+                <ReactTooltip className='member__tooltip' place='bottom' event='click' id={this.props.avatar}>
                     { this.renderTooltipBody() }
                 </ReactTooltip>
             </div>
