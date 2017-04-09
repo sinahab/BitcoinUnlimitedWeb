@@ -6,21 +6,30 @@
             "name": "Andrew Clifford",
             "publicKey": "15TiujYmnHa33fjEnasBBm1eWcGx9YEXPL",
             "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/#post-3900",
-            "photoUrl": "img/about/Andrew_Clifford.png"
+            "photoUrl": "img/about/Andrew_Clifford.png",
+            "bio": [
+                "Andrew Clifford started information technology work in 1981 developing accounting applications. He consulted for 20 years on financial trading systems in the City of London: at several equities trading firms. For ten years he was technical manager for one major system which, at its peak, handled 1% of the shares traded globally. He left the City in 2010 to become a writer, then learned about Bitcoin in late-2012. Since then he has been immersed in community efforts to help this cryptocurrency develop towards translating the world economy onto a sound monetary system in order to improve living standards everywhere."
+            ]
         },
         {
             "avatar": "theZerg",
             "name": "Andrew Stone",
             "publicKey": "1zerg12nRXZ41Pw4tfCTqgtdiJx6D1We3",
             "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/",
-            "photoUrl": "img/about/Andrew_Stone.png"
+            "photoUrl": "img/about/Andrew_Stone.png",
+            "bio": [
+                "Andrew Stone is the developer of Bitcoin Unlimited, has been an investor in Bitcoin since early 2012 and is currently the Software Architect at OpenClovis, Inc, a company that provides clustering and high availability software to telecom, aerospace and defense equipment manufacturers."
+            ]
         },
         {
             "avatar": "Peter R",
             "name": "Peter Rizun",
             "publicKey": "1BWZe6XkGLcf6DWC3TFXiEtZmcyAoNq5BW",
             "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/#post-3939",
-            "photoUrl": "img/about/Peter_Rizun.png"
+            "photoUrl": "img/about/Peter_Rizun.png",
+            "bio": [
+                "Peter R. Rizun is a physicist and entrepreneur living in Vancouver, Canada, and is co-founder and co-managing editor for Ledger. His main research interest is developing analytical theory that explains properties and emergent phenomenon of the Bitcoin Network. He has written two papers related to Bitcoin that received significant interest, “A Transaction Fee Market Exists Without A Block Size Limit” and “Reduce Orphaning Risk and Improve Zero Confirmation Security With Subchains”, and gave a talk on block space as an economic commodity at the Scaling Bitcoin conference in Montreal. He was the recipient of the $105,000 Natural Sciences and Engineering Research Council (NSERC) CGS Doctoral Award and was recognized as a “Leader of Tomorrow” by the Alberta Science and Technology Foundation (ASTech). He holds a B.A.Sc. degree in Engineering Physics from the University of British Columbia and a Ph.D. in Medical Physics from the University of Calgary."
+            ]
         },
         {
             "avatar": "sickpig",
@@ -29,7 +38,8 @@
             "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/#post-3940",
             "photoUrl": "img/about/Andrea_Suisani.png",
             "bio": [
-                "A software developer for almost twenty years, recently transitioned to what they use to call a full-stack software developer. That means doing 4 jobs while being payed only for one. On the bright side such a role gives opportunity to improve skills through a lot of IT fields like database system administration, system administration, coding and project management. Holding a Bachelor degree in statistics, and getting into Bitcoin in 2011, Andrea briefly pool mined with a Radeon GPU, and hasn't looked back since."
+                "A software developer for almost twenty years, recently transitioned to what they use to call a full-stack software developer. That means doing 4 jobs while being payed only for one. On the bright side such a role gives opportunity to improve skills through a lot of IT fields like database system administration, system administration, coding and project management.",
+                "Holding a Bachelor degree in statistics, and getting into Bitcoin in 2011, Andrea briefly pool mined with a Radeon GPU, and hasn't looked back since."
             ]
         },
         {
@@ -37,7 +47,10 @@
             "name": "Peter Tschipper",
             "publicKey": "1AmdP3nFWSJhkzszXHZNQiJLx7eUGRbzvs",
             "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/page-4#post-9222",
-            "photoUrl": "img/about/Peter_Tschipper.png"
+            "photoUrl": "img/about/Peter_Tschipper.png",
+            "bio": [
+                "Peter Tschipper is a full time Bitcoin Unlimited developer living on Vancouver Island, Canada. Peter holds a degree in Engineering from the University of Toronto and has worked in the areas of Finance, Health Care and Mineral Exploration. Most of his tech experiences are in the field of Performance Engineering and his main interest is in applying that knowledge to further the goal of Bitcoin On-Chain scaling."
+            ]
         },
         {
             "avatar": "Rogerver",
@@ -68,7 +81,21 @@
             "name": "Haipo Yang",
             "publicKey": "",
             "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/page-6#post-31181",
-            "photoUrl": "img/about/Haipo_Yang.png"
+            "photoUrl": "img/about/Haipo_Yang.png",
+            "bio": [
+                "Haipo Yang is ViaBTC's founder and CEO.",
+                "Haipo got to know Bitcoin in 2011, began his investments in 2013, and founded ViaBTC in May 2016. He has grown ViaBTC to be one of the largest and most advanced mining pools globally. An experienced developer, he independently set up the technical infrastructure for the pool and took it from 0 to 1."
+            ]
+        },
+        {
+        	"avatar": "digitsu",
+        	"name": "Jerry Chan",
+        	"publicKey": "1DJCRBbdsDErAPdK2JwAe8SSBxdhuzj3wo",
+        	"link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/page-3#post-8931",
+            "photoUrl": "img/about/Jerry_Chan.png",
+            "bio": [
+                "Jerry Chan is a financial technologist who has worked on Wall Street trading technology at Goldman Sachs and JPMorgan for a total of 14 years. Jerry is editor of the crypto-currency blog WallStreetTechnologist.com and works on various Bitcoin related projects around Asia, the most recent of which is Satoricoin.jp the first customizable physical bitcoin aimed at the mass market. Jerry holds a degree in Electrical and Computer Engineering from the University of Waterloo, Canada."
+            ]
         }
     ],
     "withoutHeadshots": [
@@ -145,12 +172,6 @@
             "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/page-3#post-8066"
         },
         {
-        	"avatar": "digitsu",
-        	"name": "Jerry Chan",
-        	"publicKey": "1DJCRBbdsDErAPdK2JwAe8SSBxdhuzj3wo",
-        	"link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/page-3#post-8931"
-        },
-        {
             "avatar": "Roger_Murdock",
             "name": "John Swingle",
             "publicKey": "1AmtAAg9NK3j44y5RB6QBYrLnYJo3cJAtb",
@@ -221,12 +242,6 @@
         	"name": "",
         	"publicKey": "19a3fheZVGragEreBzXhjWMuSev2PrHToF",
         	"link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/#post-3946"
-        },
-        {
-        	"avatar": "Erdogan",
-        	"name": "",
-        	"publicKey": "1DJCRBbdsDErAPdK2JwAe8SSBxdhuzj3wo",
-        	"link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/#post-3955"
         },
         {
         	"avatar": "VeritasSapere",
