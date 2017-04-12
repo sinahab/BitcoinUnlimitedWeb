@@ -4,9 +4,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import { strings } from '../../../lib/i18n';
 
-export default React.createClass({
-
-    render: function () {
+class HeroStatic extends React.Component {
+    render() {
         return (
             <div className="hero__container--static center py3 white">
                     <div className="h1 py2">{strings().index.hero.v1.title}</div>
@@ -17,4 +16,6 @@ export default React.createClass({
             </div>
         );
     }
-});
+};
+
+export default HeroStatic

@@ -4,9 +4,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import { strings } from '../../../lib/i18n';
 
-export default React.createClass({
-
-    render: function () {
+class Investors extends React.Component {
+    render() {
         return (
             <div>
                 <p> { strings().solutions.investors.body[0] } </p>
@@ -17,4 +16,6 @@ export default React.createClass({
 
         );
     }
-});
+};
+
+export default Investors

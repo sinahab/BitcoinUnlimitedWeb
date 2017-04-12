@@ -4,9 +4,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import { strings } from '../../../lib/i18n';
 
-export default React.createClass({
-
-    render: function () {
+class Contact extends React.Component {
+    render() {
         return (
             <ul className='py1'>
                 <li className='pb1'>
@@ -41,4 +40,6 @@ export default React.createClass({
             </ul>
         );
     }
-});
+};
+
+export default Contact

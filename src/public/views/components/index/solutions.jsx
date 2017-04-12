@@ -8,9 +8,8 @@ import InvestorIcon from '../icons/investorIcon.jsx'
 import MinerIcon from '../icons/minerIcon.jsx'
 import NodeIcon from '../icons/nodeIcon.jsx'
 
-export default React.createClass({
-
-    render: function () {
+class Solutions extends React.Component {
+    render() {
         return (
             <div className="p2 py4 center">
                 <div className="py2 h1">{ strings().index.solutions.title }</div>
@@ -65,5 +64,6 @@ export default React.createClass({
             </div>
         );
     }
+};
 
-});
+export default Solutions

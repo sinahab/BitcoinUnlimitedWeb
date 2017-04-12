@@ -5,9 +5,8 @@ import { Link } from 'react-router';
 import { strings } from '../../../lib/i18n';
 import InvestorIcon from '../icons/investorIcon.jsx'
 
-export default React.createClass({
-
-    render: function () {
+class InvestorsTitle extends React.Component {
+    render() {
         return (
             <div className="inline-block">
                 <div className='inline pr1 icon--center'>
@@ -17,4 +16,6 @@ export default React.createClass({
             </div>
         );
     }
-});
+};
+
+export default InvestorsTitle

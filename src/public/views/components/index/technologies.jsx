@@ -5,9 +5,8 @@ import { Link } from 'react-router';
 import { strings } from '../../../lib/i18n';
 import BulletIcon from '../icons/bulletIcon.jsx'
 
-export default React.createClass({
-
-    render: function () {
+class Technologies extends React.Component {
+    render() {
         return (
             <div className="p2 py4 center">
                 <div className="py2 h1">{ strings().index.technologies.title }</div>
@@ -39,5 +38,6 @@ export default React.createClass({
             </div>
         );
     }
+};
 
-});
+export default Technologies

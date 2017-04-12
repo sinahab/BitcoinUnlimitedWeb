@@ -9,10 +9,8 @@ import Solutions from '../components/index/solutions.jsx';
 import Divider from '../components/index/divider.jsx';
 import Technologies from '../components/index/technologies.jsx';
 
-
-export default React.createClass({
-
-    render: function() {
+class Index extends React.Component {
+    render() {
         return (
             <div id="index">
                 <Header active='index' />
@@ -24,5 +22,6 @@ export default React.createClass({
             </div>
         );
     }
+};
 
-});
+export default Index

@@ -4,8 +4,8 @@ import React from 'react';
 import WebHeader from './components/header/webHeader.jsx'
 import MobileHeader from './components/header/mobileHeader.jsx'
 
-export default React.createClass({
-    render: function () {
+class Header extends React.Component {
+    render() {
         return (
             <div>
                 <WebHeader />
@@ -14,5 +14,6 @@ export default React.createClass({
             </div>
         );
     }
+};
 
-});
+export default Header

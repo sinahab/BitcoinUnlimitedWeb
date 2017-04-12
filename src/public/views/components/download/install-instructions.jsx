@@ -31,9 +31,8 @@ sudo make install
 import React from 'react';
 import { strings } from '../../../lib/i18n';
 
-export default React.createClass({
-
-    render: function () {
+class InstallInstructions extends React.Component {
+    render() {
         return (
             <div className='py2'>
                 {strings().download.installation.helpZero}
@@ -51,4 +50,6 @@ export default React.createClass({
         );
     }
 
-});
+};
+
+export default InstallInstructions

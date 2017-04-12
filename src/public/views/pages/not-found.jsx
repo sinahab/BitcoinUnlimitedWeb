@@ -6,9 +6,8 @@ import { strings } from '../../lib/i18n';
 import Header from '../header.jsx';
 import Footer from '../footer.jsx';
 
-export default React.createClass({
-
-    render: function() {
+class NotFound extends React.Component {
+    render() {
         return (
             <div id='not-found'>
                 <Header active='not-found' />
@@ -20,4 +19,6 @@ export default React.createClass({
             </div>
         );
     }
-});
+};
+
+export default NotFound

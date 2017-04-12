@@ -4,9 +4,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import { strings } from '../../../lib/i18n';
 
-export default React.createClass({
-
-    render: function () {
+class Hero extends React.Component {
+    render() {
         return (
             <div className="hero__container center py3 white">
                 <div className="slideshow">
@@ -34,4 +33,6 @@ export default React.createClass({
             </div>
         );
     }
-});
+};
+
+export default Hero

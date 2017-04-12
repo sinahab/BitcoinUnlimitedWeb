@@ -4,9 +4,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import { strings } from '../../../lib/i18n';
 
-export default React.createClass({
-
-    render: function () {
+class Join extends React.Component {
+    render() {
         return (
             <div>
                 <p className='lh-copy'>
@@ -21,4 +20,6 @@ export default React.createClass({
             </div>
         );
     }
-});
+};
+
+export default Join

@@ -19,9 +19,8 @@ const CHECKSUMS1_0_1_1 =  `
   'version': '1.0.1.1'}
 `;
 
-export default React.createClass({
-
-    render: function () {
+class Signatures1011 extends React.Component {
+    render() {
         return (
             <div className='pt2'>
                 <div>
@@ -64,5 +63,6 @@ export default React.createClass({
             </div>
         );
     }
+};
 
-});
+export default Signatures1011

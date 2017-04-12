@@ -20,9 +20,8 @@ const CHECKSUMS12 =  `
 
 `;
 
-export default React.createClass({
-
-    render: function () {
+class Signatures0120 extends React.Component {
+    render() {
         return (
             <div className='pt2'>
                 <div>
@@ -53,5 +52,6 @@ export default React.createClass({
             </div>
         );
     }
+};
 
-});
+export default Signatures0120

@@ -4,9 +4,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import { strings } from '../../../lib/i18n';
 
-export default React.createClass({
-
-    render: function () {
+class Users extends React.Component {
+    render() {
         return (
             <div>
                 <p> { strings().solutions.users.body[0] } </p>
@@ -18,4 +17,6 @@ export default React.createClass({
 
         );
     }
-});
+};
+
+export default Users
