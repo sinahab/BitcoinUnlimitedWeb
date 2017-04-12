@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class ArrowIcon extends React.Component {
     expandedArrow() {
@@ -30,8 +31,8 @@ class ArrowIcon extends React.Component {
 }
 
 ArrowIcon.propTypes = {
-  expanded: React.PropTypes.bool,
-  onClick: React.PropTypes.func
+  expanded: PropTypes.bool,
+  onClick: PropTypes.func
 };
 
 

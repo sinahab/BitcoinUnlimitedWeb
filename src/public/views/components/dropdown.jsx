@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Dropdown extends React.Component {
     render() {
@@ -18,7 +19,7 @@ class Dropdown extends React.Component {
 }
 
 Dropdown.propTypes = {
-    title: React.PropTypes.node
+    title: PropTypes.node
 }
 
 export default Dropdown

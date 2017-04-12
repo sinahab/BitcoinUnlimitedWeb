@@ -2,6 +2,7 @@
 
 import React from 'react';
 import ArrowIcon from './icons/arrowIcon.jsx'
+import PropTypes from 'prop-types';
 
 class Section extends React.Component {
     constructor(props) {
@@ -36,9 +37,9 @@ class Section extends React.Component {
 }
 
 Section.propTypes = {
-  expanded: React.PropTypes.bool,
-  title: React.PropTypes.node,
-  body: React.PropTypes.node
+  expanded: PropTypes.bool,
+  title: PropTypes.node,
+  body: PropTypes.node
 };
 
 export default Section
