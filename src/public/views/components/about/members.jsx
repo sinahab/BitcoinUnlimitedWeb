@@ -21,6 +21,7 @@ class Members extends React.Component {
                                     avatar={member.avatar}
                                     publicKey={member.publicKey}
                                     name={member.name}
+                                    title={member.title}
                                     application={member.link} />
                             )
                         })

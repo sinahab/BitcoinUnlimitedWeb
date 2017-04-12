@@ -13,6 +13,14 @@ class Member extends React.Component {
         }
     }
 
+    renderTitle() {
+        if (this.props.title) {
+            return ( <div> {this.props.title} </div> )
+        } else {
+            return
+        }
+    }
+
     setClickableClass() {
         if (this.hasTooltip()) {
             return('inline-block px0 member--clickable')
@@ -59,7 +67,7 @@ class Member extends React.Component {
 
     render() {
         return (
-            <div className='p2 center inline-block align-top member__container'>
+            <div className='p2 pb3 center inline-block align-top member__container'>
                 { this.renderImage() }
 
                 <div className='pt1'>
@@ -67,6 +75,7 @@ class Member extends React.Component {
                     <div data-tip data-for={this.hasTooltip() ? this.props.avatar : ''} className={ this.setClickableClass() }>
                         ({this.props.avatar})
                     </div>
+                    { this.renderTitle() }
                 </div>
 
                 <ReactTooltip className='member__tooltip' place='bottom' event='click' id={this.props.avatar}>
