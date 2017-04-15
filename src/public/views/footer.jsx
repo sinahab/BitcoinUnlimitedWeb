@@ -34,10 +34,13 @@ class Footer extends React.Component {
 
                         <div className='left-align align-top inline-block footer__section'>
                             <h4><Link className='white text-decoration-none' to='/faq'>{strings().header.faq.title}</Link></h4>
-                            <Link className='block py1 link dim' to='/faq/users'>{strings().header.faq.users}</Link>
-                            <Link className='block py1 link dim' to='/faq/nodes'>{strings().header.faq.nodes}</Link>
-                            <Link className='block py1 link dim' to='/faq/miners'>{strings().header.faq.miners}</Link>
-                            <Link className='block py1 link dim' to='/faq/investors'>{strings().header.faq.investors}</Link>
+                            <Link className='block py1 link dim' to='/faq/what-is-bu'>{strings().header.faq.whatIsBu}</Link>
+                            <Link className='block py1 link dim' to='/faq/hard-forks-and-consensus'>{strings().header.faq.hardForksAndConsensus}</Link>
+                            <Link className='block py1 link dim' to='/faq/scaling'>{strings().header.faq.scaling}</Link>
+                            <Link className='block py1 link dim' to='/faq/attacks-and-risks'>{strings().header.faq.attacksAndRisks}</Link>
+                            <Link className='block py1 link dim' to='/faq/who-is-bu'>{strings().header.faq.whoIsBu}</Link>
+                            <Link className='block py1 link dim' to='/faq/myths'>{strings().header.faq.myths}</Link>
+                            <Link className='block py1 link dim' to='/faq/contribute'>{strings().header.faq.contribute}</Link>
                         </div>
 
                         <div className='left-align align-top inline-block footer__section'>

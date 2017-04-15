@@ -33,10 +33,13 @@ class WebHeader extends React.Component {
                     </Dropdown>
 
                     <Dropdown title={<Link className='non-decorated black inline-block mx2 py2' to='/faq'>{strings().header.faq.title}</Link>}>
-                        <Link className='non-decorated black block p2' to='/faq/users'>{strings().header.faq.users}</Link>
-                        <Link className='non-decorated black block p2' to='/faq/nodes'>{strings().header.faq.nodes}</Link>
-                        <Link className='non-decorated black block p2' to='/faq/miners'>{strings().header.faq.miners}</Link>
-                        <Link className='non-decorated black block p2' to='/faq/investors'>{strings().header.faq.investors}</Link>
+                        <Link className='non-decorated black block p2' to='/faq/what-is-bu'>{strings().header.faq.whatIsBu}</Link>
+                        <Link className='non-decorated black block p2' to='/faq/hard-forks-and-consensus'>{strings().header.faq.hardForksAndConsensus}</Link>
+                        <Link className='non-decorated black block p2' to='/faq/scaling'>{strings().header.faq.scaling}</Link>
+                        <Link className='non-decorated black block p2' to='/faq/attacks-and-risks'>{strings().header.faq.attacksAndRisks}</Link>
+                        <Link className='non-decorated black block p2' to='/faq/who-is-bu'>{strings().header.faq.whoIsBu}</Link>
+                        <Link className='non-decorated black block p2' to='/faq/myths'>{strings().header.faq.myths}</Link>
+                        <Link className='non-decorated black block p2' to='/faq/contribute'>{strings().header.faq.contribute}</Link>
                     </Dropdown>
 
                     <Dropdown title={<Link className='non-decorated black inline-block mx2 py2' to='/about'>{strings().header.about.title}</Link>}>

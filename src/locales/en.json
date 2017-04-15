@@ -183,9 +183,28 @@
     "faq": {
         "title": "Bitcoin Unlimited FAQ",
         "subtitle": "All Your Questions Answered.",
-        "general": {
-            "title": "General"
+        "whatIsBu": {
+            "title": "What is Bitcoin Unlimited?"
         },
+        "hardForksAndConsensus": {
+            "title": "Hard forks and Consensus"
+        },
+        "scaling": {
+            "title": "On-chain and Off-chain Scaling"
+        },
+        "attacksAndRisks": {
+            "title": "Attacks and Risks"
+        },
+        "whoIsBu": {
+            "title": "Who is Bitcoin Unlimited?"
+        },
+        "myths": {
+            "title": "Myths"
+        },
+        "contribute": {
+            "title": "How can I contribute to Bitcoin Unlimited?"
+        },
+
         "users": {
             "title": "For Users",
             "questions": {
@@ -564,10 +583,13 @@
         },
         "faq": {
             "title": "FAQ",
-            "users": "For Users",
-            "nodes": "For Node Operators",
-            "miners": "For Miners",
-            "investors": "For Investors"
+            "whatIsBu" : "What is Bitcoin Unlimited?",
+            "hardForksAndConsensus" : "Forks and Consensus",
+            "scaling" : "Scaling",
+            "attacksAndRisks" : "Attacks and Risks",
+            "whoIsBu" : "Who is Bitcoin Unlimited?",
+            "myths" : "Myths",
+            "contribute" : "Contribute"
         },
         "resources": {
             "title": "Resources",
@@ -589,47 +611,6 @@
         }
     },
     "footer": {
-        "download": {
-            "title": "Download",
-            "latest": "Latest Release",
-            "notes": "Release Notes",
-            "signatures": "Signatures",
-            "installation": "Installation Notes",
-            "older": "Older Releases"
-        },
-        "donate": "Donate",
-        "about": {
-            "title": "About",
-            "organization": "Organization",
-            "members": "Members",
-            "join": "How to join",
-            "contact": "Contact us"
-        },
-        "faq": {
-            "title": "FAQ",
-            "users": "For Users",
-            "nodes": "For Node Operators",
-            "miners": "For Miners",
-            "investors": "For Investors"
-        },
-        "resources": {
-            "title": "Resources",
-            "technical": "Technical Works",
-            "nonTechnical": "Non-technical Works"
-        },
-        "solutions": {
-            "title": "Solutions",
-            "users": "For Users",
-            "nodes": "For Node Operators",
-            "miners": "For Miners",
-            "investors": "For Investors"
-        },
-        "technologies": {
-            "title": "Technologies",
-            "adjustableCap": "Adjustable Block-size Cap",
-            "xthin": "Xthin",
-            "parallelValidation": "Parallel validation"
-        },
         "copy": "MIT License. No Rights Reserved."
     },
     "notfound": {

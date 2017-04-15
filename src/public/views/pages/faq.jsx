@@ -5,10 +5,13 @@ import { strings } from '../../lib/i18n';
 import Page from '../page.jsx'
 import Section from '../components/section.jsx';
 
-import UserFaq from '../components/faq/userFaq.jsx'
-import NodeFaq from '../components/faq/nodeFaq.jsx'
-import MinerFaq from '../components/faq/minerFaq.jsx'
-import InvestorFaq from '../components/faq/investorFaq.jsx'
+import WhatIsBuFaq from '../components/faq/whatIsBuFaq.jsx'
+import HardForksAndConsensusFaq from '../components/faq/hardForksAndConsensusFaq.jsx'
+import ScalingFaq from '../components/faq/scalingFaq.jsx'
+import AttacksAndRisksFaq from '../components/faq/attacksAndRisksFaq.jsx'
+import WhoIsBuFaq from '../components/faq/whoIsBuFaq.jsx'
+import MythsFaq from '../components/faq/mythsFaq.jsx'
+import ContributeFaq from '../components/faq/contributeFaq.jsx'
 
 class Faq extends React.Component {
     constructor(props) {
@@ -24,28 +27,46 @@ class Faq extends React.Component {
         return (
             <Page title={ strings().faq.title } subtitle={ strings().faq.subtitle } >
                 <Section
-                    key='users'
-                    expanded={ this.state.selectedSection === 'users'}
-                    title={ strings().faq.users.title }
-                    body={ <UserFaq /> } />
+                    key='what-is-bu'
+                    expanded={ this.state.selectedSection === 'what-is-bu' }
+                    title={ strings().faq.whatIsBu.title }
+                    body={ <WhatIsBuFaq /> } />
 
                 <Section
-                    key='nodes'
-                    expanded={ this.state.selectedSection === 'nodes'}
-                    title={ strings().faq.nodes.title }
-                    body={ <NodeFaq /> } />
+                    key='hard-forks-and-consensus'
+                    expanded={ this.state.selectedSection === 'hard-forks-and-consensus' }
+                    title={ strings().faq.hardForksAndConsensus.title }
+                    body={ <HardForksAndConsensusFaq /> } />
 
                 <Section
-                    key='miners'
-                    expanded={ this.state.selectedSection === 'miners'}
-                    title={ strings().faq.miners.title }
-                    body={ <MinerFaq /> } />
+                    key='scaling'
+                    expanded={ this.state.selectedSection === 'scaling' }
+                    title={ strings().faq.scaling.title }
+                    body={ <ScalingFaq /> } />
 
                 <Section
-                    key='investors'
-                    expanded={ this.state.selectedSection === 'investors'}
-                    title={ strings().faq.investors.title }
-                    body={ <InvestorFaq /> } />
+                    key='attacks-and-risks'
+                    expanded={ this.state.selectedSection === 'attacks-and-risks' }
+                    title={ strings().faq.attacksAndRisks.title }
+                    body={ <AttacksAndRisksFaq /> } />
+
+                <Section
+                    key='who-is-bu'
+                    expanded={ this.state.selectedSection === 'who-is-bu' }
+                    title={ strings().faq.whoIsBu.title }
+                    body={ <WhoIsBuFaq /> } />
+
+                <Section
+                    key='myths'
+                    expanded={ this.state.selectedSection === 'myths' }
+                    title={ strings().faq.myths.title }
+                    body={ <MythsFaq /> } />
+
+                <Section
+                    key='contribute'
+                    expanded={ this.state.selectedSection === 'contribute' }
+                    title={ strings().faq.contribute.title }
+                    body={ <ContributeFaq /> } />
             </Page>
         );
     }
