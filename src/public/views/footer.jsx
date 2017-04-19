@@ -34,17 +34,6 @@ class Footer extends React.Component {
                         </div>
 
                         <div className='left-align align-top inline-block footer__section'>
-                            <h4><Link className='white text-decoration-none' to='/faq'>{strings().header.faq.title}</Link></h4>
-                            <Link className='block py1 link dim' to='/faq/what-is-bu'>{strings().header.faq.whatIsBu}</Link>
-                            <Link className='block py1 link dim' to='/faq/hard-forks-and-consensus'>{strings().header.faq.hardForksAndConsensus}</Link>
-                            <Link className='block py1 link dim' to='/faq/scaling'>{strings().header.faq.scaling}</Link>
-                            <Link className='block py1 link dim' to='/faq/attacks-and-risks'>{strings().header.faq.attacksAndRisks}</Link>
-                            <Link className='block py1 link dim' to='/faq/who-is-bu'>{strings().header.faq.whoIsBu}</Link>
-                            <Link className='block py1 link dim' to='/faq/myths'>{strings().header.faq.myths}</Link>
-                            <Link className='block py1 link dim' to='/faq/contribute'>{strings().header.faq.contribute}</Link>
-                        </div>
-
-                        <div className='left-align align-top inline-block footer__section'>
                             <h4><Link className='white text-decoration-none' to='/about'>{strings().header.about.title}</Link></h4>
                             <Link className='block py1 link dim' to='/about/organization'>{strings().header.about.organization}</Link>
                             <Link className='block py1 link dim' to='/about/members'>{strings().header.about.members}</Link>
@@ -53,6 +42,7 @@ class Footer extends React.Component {
                         </div>
 
                         <div className='left-align align-top inline-block footer__section'>
+                            <h4><Link className='white text-decoration-none' to='/faq'>{strings().header.faq.title}</Link></h4>
                             <h4><Link className='white text-decoration-none' to='/download'>{strings().header.download.title}</Link></h4>
                             <h4><Link className='white text-decoration-none' to='/donate'>{strings().header.donate}</Link></h4>
                         </div>
