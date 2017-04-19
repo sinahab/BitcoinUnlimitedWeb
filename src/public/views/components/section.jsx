@@ -26,7 +26,7 @@ class Section extends React.Component {
     render() {
         return (
             <div className='pt1 pb2'>
-                <div onClick={this.toggleExpanded}>
+                <div className='clickable inline-block' onClick={this.toggleExpanded}>
                     <div className='inline pr1'> <ArrowIcon expanded={this.state.expanded} /> </div>
                     <div className='inline bold'> { this.props.title } </div>
                 </div>
