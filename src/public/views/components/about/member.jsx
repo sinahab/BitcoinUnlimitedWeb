@@ -78,7 +78,7 @@ class Member extends React.Component {
                     { this.renderTitle() }
                 </div>
 
-                <ReactTooltip className='member__tooltip' place='bottom' event='click' id={this.props.avatar}>
+                <ReactTooltip className='member__tooltip' place='bottom' globalEventOff='click' event='click' id={this.props.avatar}>
                     { this.renderTooltipBody() }
                 </ReactTooltip>
             </div>
