@@ -69,12 +69,6 @@ class WhoIsBuFaq extends React.Component {
                         <p>
                             Bitcoin Unlimited is all in. It has zero funds in fiat money. It uses the Bitcoins to support the development of features of the client and other initiatives the members of Bitcoin Unlimited voted on. The funds are mostly, but not exclusively used to finance the development of the Bitcoin Unlimited client, with a focus on scalability.
                         </p>
-                        <p>
-                            Further information:
-                        </p>
-                        <ul>
-                            <li><a className='link--underline dim black' href="https://bitco.in/forum/conversations/dawn-of-a-new-era-for-bitcoin-unlimited.449/" target="_blank">Dawn of a new era for Bitcoin Unlimited</a></li>
-                        </ul>
                     </div> }
                     expanded={ false } />
 
@@ -82,15 +76,8 @@ class WhoIsBuFaq extends React.Component {
                     title={ "Is Bitcoin Unlimited’s use of the funds transparent?" }
                     body={ <div>
                         <p>
-                            You can’t cheat the blockchain. Just have a look at Bitcoin Unlimited’s public address. Here you see our financial affairs. If you want to have further options, just have a look at our latest financial statement.
+                            Yes, please refer to our <a className='link--underline dim black' href="https://bitco.in/forum/threads/bitcoin-unlimited-financial-report-1-june-2016-31-december-2016.1818/" target="_blank">latest financial report</a>.
                         </p>
-                        <p>
-                            Further information:
-                        </p>
-                        <ul>
-                            <li><a className='link--underline dim black' href="https://blockchain.info/address/3AtbpAikJ6C11ZCHiYbEKcSjyoVjzfxYwU" target="_blank">blockchain.info address</a></li>
-                            <li><a className='link--underline dim black' href="https://bitco.in/forum/threads/bitcoin-unlimited-financial-report-1-june-2016-31-december-2016.1818/" target="_blank">Read the financial report</a></li>
-                        </ul>
                     </div> }
                     expanded={ false } />
 

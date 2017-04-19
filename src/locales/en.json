@@ -106,7 +106,8 @@
         "parallelValidation": {
             "title": "Parallel Validation",
             "body": [
-                "Prior to parallel validation, when a node received a new block, it would essentially freeze until it had either accepted or rejected the block in question. During this validation period, the node would neither relay new transactions nor attempt to validate competing blocks. This resulted in an attack vector where a malicious entity could mine an extremely slow-to-verify block and temporarily freeze the network.",
+                "Prior to parallel validation, when a node received a new block, it would essentially freeze until it had either accepted or rejected the block in question. During this validation period, the node would neither relay new transactions nor attempt to validate competing blocks.",
+                "This resulted in an attack vector where a malicious entity could mine an extremely slow-to-verify block and temporarily freeze the network.",
                 "Parallel validation neutralizes this attack vector by allowing nodes to validate more than one block--along with new incoming transactions--all at the same time. This improves Bitcoin’s performance as a payment network because there is no longer any interruption in transaction processing during block validation. Furthermore, because a fast-to-validate block will \"win\" a block race against a slow-to-validate block found at the same time, the widespread adoption of parallel validation would add a cost of approximately 1.25 BTC per validation-minute due to the increased orphan risk of slow-to-verify blocks."
             ]
         }

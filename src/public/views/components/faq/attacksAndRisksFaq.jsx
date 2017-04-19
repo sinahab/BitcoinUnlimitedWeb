@@ -19,7 +19,7 @@ class AttacksAndRisksFaq extends React.Component {
                             This theory doesn’t explain why and when the ecosystem might do so. Instead it grossly misunderstands the roles and incentives in Bitcoin Unlimited, while completely ignoring the mechanics of open source and the market. If 80 percent of the ecosystem decides to conspire against the rest, they could do so today. Bitcoin Unlimited doesn’t change this. It doesn’t force anybody to use specific settings and it doesn’t prevent anybody from forking Bitcoin. Nakamoto consensus is built on the belief that a majority of economic actors will NOT intentionally destroy Bitcoin.
                         </p>
                         <p>
-                            The theory, that Bitcoin Unlimited inevitably leads to a centralized future, is the same theory the states deploy to legitimate regulation of markets. Bitcoin need not, cannot and must not be regulated.
+                            The theory, that Bitcoin Unlimited inevitably leads to a centralized future, is the same theory the states deploy to legitimize regulation of markets. Bitcoin need not, cannot and must not be regulated.
                         </p>
                         <p>
                             Further reading:
