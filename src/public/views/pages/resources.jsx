@@ -5,10 +5,9 @@ import { strings } from '../../lib/i18n';
 import Page from '../page.jsx'
 import Section from '../components/section.jsx';
 
-import BlockSize from '../components/resources/blockSize.jsx';
 import Technical from '../components/resources/technical.jsx';
 import NonTechnical from '../components/resources/nonTechnical.jsx';
-import Buips from '../components/resources/buips.jsx';
+import NolNet from '../components/resources/nolNet.jsx';
 
 class Resources extends React.Component {
     constructor(props) {
@@ -34,6 +33,12 @@ class Resources extends React.Component {
                     expanded={ this.state.selectedSection === 'non-technical'}
                     title={ strings().resources.nonTechnical.title }
                     body={ <NonTechnical /> } />
+
+                <Section
+                    key='nolnet'
+                    expanded={ this.state.selectedSection === 'nolnet'}
+                    title={ strings().resources.nolNet.title }
+                    body={ <NolNet /> } />
             </Page>
         );
     }

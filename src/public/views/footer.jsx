@@ -30,6 +30,7 @@ class Footer extends React.Component {
                             <h4><Link className='white text-decoration-none' to='/resources'>{strings().header.resources.title}</Link></h4>
                             <Link className='block py1 link dim' to='/resources/technical'>{strings().header.resources.technical}</Link>
                             <Link className='block py1 link dim' to='/resources/non-technical'>{strings().header.resources.nonTechnical}</Link>
+                            <Link className='block py1 link dim' to='/resources/nolnet'>{strings().header.resources.nolNet}</Link>
                         </div>
 
                         <div className='left-align align-top inline-block footer__section'>
