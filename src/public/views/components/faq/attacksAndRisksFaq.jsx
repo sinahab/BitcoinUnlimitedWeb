@@ -99,7 +99,7 @@ class AttacksAndRisksFaq extends React.Component {
                             Further information:
                         </p>
                         <ul>
-                            <li><a className='link--underline dim black' href="https://www.bitcoinunlimited.info/resources/feemarket.pdf" target="_blank">A Transaction Fee Market Exists Without a Block Size Limit</a></li>
+                            <li><a className='link--underline dim black' href="https://www.bitcoinunlimited.info/resources/feemarket.pdf" target="_blank">A Transaction Fee Market Exists Without a Block Size Limit [PDF]</a></li>
                         </ul>
                     </div> }
                     expanded={ false } />

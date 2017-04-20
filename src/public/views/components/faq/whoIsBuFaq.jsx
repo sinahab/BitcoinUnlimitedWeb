@@ -34,7 +34,7 @@ class WhoIsBuFaq extends React.Component {
                             Further information:
                         </p>
                         <ul>
-                            <li><a className='link--underline dim black' href="/resources/BUarticles.pdf" target="_blank">The Articles of Federation</a></li>
+                            <li><a className='link--underline dim black' href="/resources/BUarticles.pdf" target="_blank">The Articles of Federation [PDF]</a></li>
                         </ul>
                     </div> }
                     expanded={ false } />
@@ -43,7 +43,7 @@ class WhoIsBuFaq extends React.Component {
                     title={ "Who can become member of Bitcoin Unlimited and what do members do?" }
                     body={ <div>
                         <p>
-                            Every member of Bitcoin Unlimited can vote on so called "Bitcoin Unlimited Improvement Proposals" (BUIP), release a BUIP for voting and apply for positions in Bitcoin Unlimited like secretary, developer and so on (see <a className='link--underline dim black' target='_blank' href='/resources/BUarticles.pdf'>Articles</a>).
+                            Every member of Bitcoin Unlimited can vote on so called "Bitcoin Unlimited Improvement Proposals" (BUIP), release a BUIP for voting and apply for positions in Bitcoin Unlimited like secretary, developer and so on (see <a className='link--underline dim black' target='_blank' href='/resources/BUarticles.pdf'>Articles [PDF]</a>).
                         </p>
                         <p>
                             Membership is free, but requires the approval by other members through a public voting. To reduce the risk to be overrun by trolls, the current members of Bitcoin Unlimited decide on new members based on the information and social media profiles they disclose. There is no basic right to be accepted as a member.

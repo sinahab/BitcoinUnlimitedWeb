@@ -14,11 +14,11 @@ class Organization extends React.Component {
 
                 <ol>
                   <li className='pb1'>To foster competing implementations of the Bitcoin protocol in order to add robustness to the network.</li>
-                  <li>To support the continued growth and adoption of Bitcoin as a peer-to-peer electronic cash system as described in <a className='link--underline dim black' href="https://bitcoin.com/bitcoin.pdf" target="_blank">Satoshi Nakamoto's white paper</a>.</li>
+                  <li>To support the continued growth and adoption of Bitcoin as a peer-to-peer electronic cash system as described in <a className='link--underline dim black' href="https://bitcoin.com/bitcoin.pdf" target="_blank">Satoshi Nakamoto's white paper [PDF]</a>.</li>
                 </ol>
 
                 <p className='lh-copy'>
-                  The organization is governed by its <a className='link--underline dim black' href="/resources/BUarticles.pdf" target="_blank">Articles of Federation</a> and controversial decisions are settled by members voting. The organization is funded by donations, and it <a className='link--underline dim black' href="https://medium.com/@peter_r/call-for-proposals-making-satoshis-vision-a-reality-with-bitcoin-unlimited-4ff5da246dc7" target="_blank">awards grants</a> to qualified groups and individuals to help fund projects in line with its mandates.
+                  The organization is governed by its <a className='link--underline dim black' href="/resources/BUarticles.pdf" target="_blank">Articles of Federation [PDF]</a> and controversial decisions are settled by members voting. The organization is funded by donations, and it <a className='link--underline dim black' href="https://medium.com/@peter_r/call-for-proposals-making-satoshis-vision-a-reality-with-bitcoin-unlimited-4ff5da246dc7" target="_blank">awards grants</a> to qualified groups and individuals to help fund projects in line with its mandates.
                 </p>
             </div>
 

@@ -19,7 +19,7 @@ class ScalingFaq extends React.Component {
                             Further information:
                         </p>
                         <ul>
-                            <li><a className='link--underline dim black' href="https://www.bitcoinunlimited.info/resources/bitcoin.pdf" target="_blank">Bitcoin: A Peer-to-Peer Electronic Cash System</a></li>
+                            <li><a className='link--underline dim black' href="https://www.bitcoinunlimited.info/resources/bitcoin.pdf" target="_blank">Bitcoin: A Peer-to-Peer Electronic Cash System [PDF]</a></li>
                             <li><a className='link--underline dim black' href="http://www.mail-archive.com/cryptography@metzdowd.com/msg09964.html" target="_blank">Satoshi: Bitcoin P2P e-cash paper</a></li>
                         </ul>
                     </div> }
@@ -41,7 +41,7 @@ class ScalingFaq extends React.Component {
                             Further information:
                         </p>
                         <ul>
-                            <li><a className='link--underline dim black' href="http://fc16.ifca.ai/bitcoin/papers/CDE+16.pdf" target="_blank">On Scaling Decentralized Blockchains</a></li>
+                            <li><a className='link--underline dim black' href="http://fc16.ifca.ai/bitcoin/papers/CDE+16.pdf" target="_blank">On Scaling Decentralized Blockchains [PDF]</a></li>
                         </ul>
                     </div> }
                     expanded={ false } />

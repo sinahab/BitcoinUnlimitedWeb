@@ -93,7 +93,7 @@ class EmergentConsensus extends React.Component {
                                 <a className='black italic dim link--underline' href="http://www.pbs.org/wgbh/nova/nature/emergence.html" target="_blank">Emergence</a> Nova ScienceNOW
                             </li>
                             <li className='left-align py2'>
-                                <a className='black italic dim link--underline' href="https://arxiv.org/pdf/nlin/0506028.pdf" target="_blank">Types and Forms of Emergence</a> by Jochen Fromm
+                                <a className='black italic dim link--underline' href="https://arxiv.org/pdf/nlin/0506028.pdf" target="_blank">Types and Forms of Emergence [PDF]</a> by Jochen Fromm
                             </li>
                         </ul>
 

@@ -15,7 +15,7 @@ class Technical extends React.Component {
                     <Resource title={
                         <div>
                             Rizun, P. R.  'A Transaction Fee Market Exists Without a Block Size Limit.' <div className='inline-block italic'>Scaling Bitcoin Conference Montreal</div>. 2015
-                            <a className='px1 dim black' target='_blank' href="/resources/feemarket.pdf">(Article)</a>
+                            <a className='px1 dim black' target='_blank' href="/resources/feemarket.pdf">(Article [PDF])</a>
                             <a className='dim black' target='_blank' href="https://www.youtube.com/watch?v=ad0Pjj_ms2k">(Video)</a>
                         </div>
                         } body={ strings().resources.technical.space[0].body } />
@@ -23,7 +23,7 @@ class Technical extends React.Component {
                     <Resource title={
                         <div>
                             Stone, G. A. 'An Examination of Single-Transaction Blocks and Their Effect on Network Throughput and Block Size.' 2015
-                            <a className='px1 dim black' target='_blank' href="/resources/1txn.pdf">(Article)</a>
+                            <a className='px1 dim black' target='_blank' href="/resources/1txn.pdf">(Article [PDF])</a>
                         </div>
                         } body={ strings().resources.technical.space[1].body } />
                 </ul>
