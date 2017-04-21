@@ -141,12 +141,6 @@
         "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/page-6#post-30390"
     },
     {
-        "avatar": "Roger_Murdock",
-        "name": "John Swingle",
-        "publicKey": "1AmtAAg9NK3j44y5RB6QBYrLnYJo3cJAtb",
-        "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/page-4#post-14340"
-    },
-    {
         "avatar": "Lee Adams",
         "name": "Lee Adams",
         "publicKey": "1ruQ2wceuMt83aXQsERyWGxQawHqXERSd",
@@ -379,6 +373,12 @@
         "name": "",
         "publicKey": "",
         "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/page-3#post-8036"
+    },
+    {
+        "avatar": "Roger_Murdock",
+        "name": "",
+        "publicKey": "1AmtAAg9NK3j44y5RB6QBYrLnYJo3cJAtb",
+        "link": "https://bitco.in/forum/threads/bitcoin-unlimited-membership-join-us.208/page-4#post-14340"
     },
     {
         "avatar": "sgbett",
