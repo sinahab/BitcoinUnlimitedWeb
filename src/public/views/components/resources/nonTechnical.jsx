@@ -13,7 +13,7 @@ class NonTechnical extends React.Component {
                 <ul>
                     <Resource title={
                         <div>
-                            Rizun, P. R. 'What we\'re doing with Bitcoin Unlimited, simply.' <div className='inline-block italic'>Medium</div>. 2017.
+                            Rizun, P. R. 'What we’re doing with Bitcoin Unlimited, simply.' <div className='inline-block italic'>Medium</div>. 2017.
                             <a className='px1 dim black' target='_blank' href="https://medium.com/@peter_r/what-were-doing-with-bitcoin-unlimited-simply-6f71072f9b94#.s9a1qvnbe">(Article)</a>
                         </div>
                         } body={ strings().resources.nonTechnical.articles[0].body } />
