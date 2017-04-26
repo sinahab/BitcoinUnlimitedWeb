@@ -9,7 +9,6 @@ class MythsFaq extends React.Component {
     render() {
         return (
             <div className="pt2">
-
                 <Section
                     title={ "Is Bitcoin Unlimited an attack?" }
                     body={ <div>
@@ -22,6 +21,15 @@ class MythsFaq extends React.Component {
                         <ul>
                             <li><a className='link--underline dim black' href="http://archive.is/1kfyU" target="_blank">archive.is/1kfyU</a></li>
                         </ul>
+                    </div> }
+                    expanded={ false } />
+
+                <Section
+                    title={ "Does BU even have an upper limit on the blocksize encoded in it?" }
+                    body={ <div>
+                        <p>
+                            Yes. The only technical difference is that the limit is in a different file.
+                        </p>
                     </div> }
                     expanded={ false } />
 
@@ -54,6 +62,41 @@ class MythsFaq extends React.Component {
                     expanded={ false } />
 
                 <Section
+                    title={ "Will miners haphazardly change the blocksize resulting in frequent chain forks or long orphan chains?" }
+                    body={ <div>
+                        <p>
+                            If we assume that bitcoin (nakamoto consensus) works, this would require miners to suddenly become irrational.
+                        </p>
+                    </div> }
+                    expanded={ false } />
+
+                <Section
+                    title={ "Is BU based on some new complicated AD algorithm?" }
+                    body={ <div>
+                        <p>
+                            BU is not based on AD. AD functionality is completely optional. In case of a protocol upgrade there is a problem of what to do with economically active nodes that are left running for a long period without any supervision. There are two options:
+                        </p>
+                        <ul>
+                            <li className='pb1'>
+                                1. The network decides to cut unupgraded nodes off the network, in the hope that this is better for the majority of them. This is called a hard-fork.
+                            </li>
+                            <li>
+                                2. The network decides to make the best effort to keep unupgraded nodes on the network, in the hope that this is better for the majority of them. This is called a soft-fork.
+                            </li>
+
+                        </ul>
+                        <p>
+                            However, inevitably, the are going to be protocol upgrades where both of these options result in economic loss to some of these unupgraded nodes. Thats why there should be a third option:
+                        </p>
+                        <ul>
+                            <li>
+                                3. Let node operators to decide in advance, if their node should be automatically upgraded and remain connected or not. This is precisely what the AD functionality does.
+                            </li>
+                        </ul>
+                    </div> }
+                    expanded={ false } />
+
+                <Section
                     title={ "Is Bitcoin Unlimited hostile to Bitcoin Core?" }
                     body={ <div>
                         <p>
@@ -63,17 +106,16 @@ class MythsFaq extends React.Component {
                     expanded={ false } />
 
                 <Section
-                    title={ "Will Bitcoin Unlimited give full control to the miner?" }
+                    title={ "Will miners have control over the network?" }
                     body={ <div>
                         <p>
-                            Some people said that Bitcoin Unlimited’s settings simulate control of nodes while giving the miner full control about the properties of Bitcoin. This is not true. In fact, with EB and AD Bitcoin Unlimited gives the user MORE instead of less options to interoperate with miners, including the degree of deterrence for miners when they violate rules.
+                            Yes, in the same sense as owners of the company have sovereign power over that company (in capitalism). Miners are owners of the physical bitcoin network and are free to run any software that they like on their machines. They are also free to configure their software however they see fit. This is how it has always been, BU does not change this in any way.
                         </p>
                         <p>
-                            Bitcoin Unlimited does not eliminate Nakamoto Consensus and Bitcoin’s resilience against attacks.
+                            No, because the customers of a company have the ultimate power in the end. The customers of the bitcoin network are the so called "economic majority" - everyone that uses it in any meaningful way (people sending transactions, hodlers, speculators, everyone running a full node for any economic or even altruistic reason). Again, BU does not change this in any way.
                         </p>
                     </div> }
                     expanded={ false } />
-
 
                 <Section
                     title={ "Is Bitcoin Unlimited a tool of the Chinese government?" }
