@@ -30,9 +30,6 @@ class Contact extends React.Component {
                             <a className="link--underline dim black" href="mailto:info@bitcoinunlimited.info?subject=Bitcoin%20Unlimited%20Slack%20Invite&body=Hi%21%0D%0A%0D%0ACould%20you%20please%20invite%20me%20to%20the%20Bitcoin%20Unlimited%20Slack%20group%3F%20My%20email%20address%20is%20%5BINSERT%20EMAIL%20ADDRESS%20HERE%5D.%0D%0A%0D%0AThank%20you%21" target="_blank">{ strings().about.contact.slack }</a>
                         </li>
                         <li className='pb1'>
-                            <a className="link--underline dim black" href="https://webchat.freenode.net/?channels=#btc" target="_blank">{ strings().about.contact.irc }</a>
-                        </li>
-                        <li className='pb1'>
                             <a className="link--underline dim black" href="https://github.com/BitcoinUnlimited/BitcoinUnlimited/issues" target="_blank">{ strings().about.contact.issues }</a>
                         </li>
                     </ul>

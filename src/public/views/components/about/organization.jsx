@@ -13,7 +13,7 @@ class Organization extends React.Component {
                 </p>
 
                 <ol>
-                  <li className='pb1'>To foster competing implementations of the Bitcoin protocol in order to add robustness to the network.</li>
+                  <li className='pb1'>To foster competing implementations of the Bitcoin protocol in order to provide more choice to node operators and to add robustness to the network.</li>
                   <li>To support the continued growth and adoption of Bitcoin as a peer-to-peer electronic cash system as described in <a className='link--underline dim black' href="https://bitcoin.com/bitcoin.pdf" target="_blank">Satoshi Nakamoto's white paper [PDF]</a>.</li>
                 </ol>
 
