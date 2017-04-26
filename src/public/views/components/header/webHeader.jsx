@@ -31,6 +31,7 @@ class WebHeader extends React.Component {
                         <Link className='non-decorated black block p2' to='/resources/technical'>{strings().header.resources.technical}</Link>
                         <Link className='non-decorated black block p2' to='/resources/non-technical'>{strings().header.resources.nonTechnical}</Link>
                         <Link className='non-decorated black block p2' to='/resources/nolnet'>{strings().header.resources.nolNet}</Link>
+                        <Link className='non-decorated black block p2' to='/resources/buips'>{strings().header.resources.buips}</Link>
                     </Dropdown>
 
                     <Dropdown title={<Link className='non-decorated black inline-block mx2 py2' to='/faq'>{strings().header.faq.title}</Link>}>

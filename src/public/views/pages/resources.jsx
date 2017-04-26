@@ -8,6 +8,7 @@ import Section from '../components/section.jsx';
 import Technical from '../components/resources/technical.jsx';
 import NonTechnical from '../components/resources/nonTechnical.jsx';
 import NolNet from '../components/resources/nolNet.jsx';
+import Buips from '../components/resources/buips.jsx';
 
 class Resources extends React.Component {
     constructor(props) {
@@ -39,6 +40,12 @@ class Resources extends React.Component {
                     expanded={ this.state.selectedSection === 'nolnet'}
                     title={ strings().resources.nolNet.title }
                     body={ <NolNet /> } />
+
+                <Section
+                    key='buips'
+                    expanded={ this.state.selectedSection === 'buips'}
+                    title={ strings().resources.buips.title }
+                    body={ <Buips /> } />
             </Page>
         );
     }
