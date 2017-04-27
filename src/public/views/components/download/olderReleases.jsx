@@ -11,8 +11,39 @@ import Signatures1001 from './signatures_1-0-0-1.jsx'
 import Signatures0121 from './signatures_0-12-1.jsx'
 import Signatures0120 from './signatures_0-12-0.jsx'
 import Signatures0112 from './signatures_0-11-2.jsx'
+import Signatures1013 from './signatures_1-0-1-3.jsx'
 
 class OfficialRelease extends React.Component {
+    renderV1013Body() {
+        return (
+            <Release
+                osx64='/downloads/bitcoinUnlimited-1.0.1.3-osx64.tar.gz'
+                osx64Mirror='https://github.com/BitcoinUnlimited/BitcoinUnlimitedWebDownloads/raw/master/bitcoinUnlimited-1.0.1.3-osx64.tar.gz'
+                osx32='/downloads/bitcoinUnlimited-1.0.1.3-osx.tar.gz'
+                osx32Mirror='https://github.com/BitcoinUnlimited/BitcoinUnlimitedWebDownloads/raw/master/bitcoinUnlimited-1.0.1.3-osx.tar.gz'
+                osxDmg='/downloads/bitcoinUnlimited-1.0.1.3-osx.dmg'
+                osxDmgMirror='https://github.com/BitcoinUnlimited/BitcoinUnlimitedWebDownloads/raw/master/bitcoinUnlimited-1.0.1.3-osx.dmg'
+                windows64Exe='/downloads/bitcoinUnlimited-1.0.1.3-win64-setup.exe'
+                windows64Zip='/downloads/bitcoinUnlimited-1.0.1.3-win64.zip'
+                windows64Mirror='https://github.com/BitcoinUnlimited/BitcoinUnlimitedWebDownloads/raw/master/bitcoinUnlimited-1.0.1.3-win64-setup.exe'
+                windows32Exe='/downloads/bitcoinUnlimited-1.0.1.3-win32-setup.exe'
+                windows32Zip='/downloads/bitcoinUnlimited-1.0.1.3-win32.zip'
+                windows32Mirror='https://github.com/BitcoinUnlimited/BitcoinUnlimitedWebDownloads/raw/master/bitcoinUnlimited-1.0.1.3-win32-setup.exe'
+                linux64='/downloads/bitcoinUnlimited-1.0.1.3-linux64.tar.gz'
+                linux64Mirror='https://github.com/BitcoinUnlimited/BitcoinUnlimitedWebDownloads/raw/master/bitcoinUnlimited-1.0.1.3-linux64.tar.gz'
+                linux32='/downloads/bitcoinUnlimited-1.0.1.3-linux32.tar.gz'
+                linux32Mirror='https://github.com/BitcoinUnlimited/BitcoinUnlimitedWebDownloads/raw/master/bitcoinUnlimited-1.0.1.3-linux32.tar.gz'
+                arm64='/downloads/bitcoinUnlimited-1.0.1.3-arm64.tar.gz'
+                arm64Mirror='https://github.com/BitcoinUnlimited/BitcoinUnlimitedWebDownloads/raw/master/bitcoinUnlimited-1.0.1.3-arm64.tar.gz'
+                arm32='/downloads/bitcoinUnlimited-1.0.1.3-arm32.tar.gz'
+                arm32Mirror='https://github.com/BitcoinUnlimited/BitcoinUnlimitedWebDownloads/raw/master/bitcoinUnlimited-1.0.1.3-arm32.tar.gz'
+                source='https://github.com/BitcoinUnlimited/BitcoinUnlimited/releases/tag/1.0.1.3'>
+
+                <Signatures1013 />
+            </Release>
+        )
+    }
+
     renderV1012Body() {
         return (
             <Release
@@ -129,6 +160,11 @@ class OfficialRelease extends React.Component {
     render() {
         return (
             <div className="pt2">
+                <Section
+                    title='v1.0.1.3'
+                    body={ this.renderV1013Body() }
+                    expanded={ false } />
+
                 <Section
                     title='v1.0.1.2'
                     body={ this.renderV1012Body() }
