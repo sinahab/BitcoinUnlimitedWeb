@@ -20,7 +20,7 @@ class Donate extends React.Component {
                 <div className="p2 py4 center">
                     <div className="py2 h1">{ strings().donate.title }</div>
 
-                    <div className='inline-block left-align lh-copy p2 pb4 section__container'>
+                    <div className='left-align lh-copy p2 pb4 section__container'>
                         { this.stringsToParagraphs(strings().donate.body) }
                         <div className='pt1 center'>
                             <img src='/img/donation-address-qr.png' alt='Fingerprint' />

@@ -26,7 +26,12 @@ class Solutions extends React.Component {
 
     render() {
         return (
-            <Page name="solutions" title={ strings().solutions.title } subtitle={ strings().solutions.subtitle }>
+            <Page
+                name="solutions"
+                title={ strings().solutions.title }
+                subtitle={ strings().solutions.subtitle }
+                intro={ strings().solutions.intro } >
+
                 <Section
                     key='users'
                     expanded={ this.state.selectedSection === 'users'}

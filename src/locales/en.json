@@ -55,6 +55,7 @@
     "solutions": {
         "title": "Solutions",
         "subtitle": "Bitcoin Unlimited provides a voice to all stakeholders in the Bitcoin ecosystem.",
+        "intro": "The BU client's flexibility allows you to configure your full-node according to your priorities.",
         "users": {
             "title": "For Users",
             "body": [
