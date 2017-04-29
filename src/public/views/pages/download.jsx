@@ -27,8 +27,7 @@ class Download extends React.Component {
             <Page
                 name="download"
                 title={ strings().download.title }
-                subtitle={ strings().download.subtitle }
-                intro={ strings().download.supporting }>
+                subtitle={ strings().download.subtitle }>
 
                 <Section
                     key='latest'

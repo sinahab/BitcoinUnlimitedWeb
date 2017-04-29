@@ -523,7 +523,6 @@
     "download": {
         "title": "Download",
         "subtitle": "The Bitcoin Unlimited project maintains an enhanced version of the Bitcoin Core \"Satoshi\" client.",
-        "supporting": "We are currently supporting the 1.0.0 release and have older releases 0.11.2, 0.12.0, and 0.12.1",
         "latest": {
             "title": "Latest Release",
             "download": "Download the latest release of Bitcoin Unlimited",
