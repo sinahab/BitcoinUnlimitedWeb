@@ -98,7 +98,7 @@
             ]
         },
         "xthin": {
-            "title": "Xthin",
+            "title": "Xtreme Thin Blocks (Xthin)",
             "body": [
                 "Bitcoin Unlimited was the first client to fix the inefficiency in the core Bitcoin code that resulted in transactions often being received twice by each node: once when the transaction was first broadcast by a user to the peer-to-peer network, and again when a solved block containing the now-confirmed transaction was found by a miner.",
                 "Rather than requesting the block verbatim, an Xthin-equipped node images its mempool onto a Bloom filter that its sends with its \"get data\" request; the transmitting node sends the block contents by hash for all the transactions imaged onto the Bloom filter and in full otherwise. In the unlikely event that the receiving node is unable to reconstruct the block, it requests the still-missing transactions, resulting in a second round trip between the nodes."
