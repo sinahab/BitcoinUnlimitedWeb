@@ -18,7 +18,10 @@
         "photoUrl": "img/about/Andrew_Stone.png",
         "title": "Lead Developer",
         "bio": [
-            "Andrew Stone is the developer of Bitcoin Unlimited, has been an investor in Bitcoin since early 2012 and is currently the Software Architect at OpenClovis, Inc, a company that provides clustering and high availability software to telecom, aerospace and defense equipment manufacturers."
+            "Andrew Stone is the lead developer for Bitcoin Unlimited.",
+            "Andrew produced video game development software (Game-Maker) in 1991 which sold in 3 countries (US, GB, and South Korea). He graduated with a Bachelors of Science in Computer Science from Yale University in 1995. He then worked at a number of telecom startups including Ascom Nexion (acquired by Fujitsu Network Communications for $130m), Ignitus Communications (acquired by Lucent fro $240m), and Camiant Inc. (acquired by Tekelec for $130m).",
+            "Andrew then led engineering at OpenClovis Inc whose high-availability clustering software is deployed worldwide. He also produced hardware and software for an Arduino-compatible embedded LED drive (Lightuino) that was directly sold worldwide and was used in interior design prototype automobiles for BMW and Rolls-Royce.",
+            "Andrew was introduced to and invested in Bitcoin in 2012."
         ]
     },
     {
